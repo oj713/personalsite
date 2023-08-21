@@ -7,6 +7,7 @@
 - revise content to say "professional portfolio" rather than "advanced writing in the disciplines" where appropriate
 
 ### Design Goals:
+- fix sizing on standard laptop
 - My formatting is inconsistent at best. Fix that!
 - revisit font choice, try to enhance readability
 - Add light mode / dark mode toggle
