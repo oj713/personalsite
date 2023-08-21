@@ -1,0 +1,32 @@
+import React from 'react';
+
+const Contact = () => {
+    return (
+    <div className = "mainPane sixty" >
+    <div>
+        <div className = "row">
+            <div className = "col-10">
+                <h1>Contact</h1>
+            </div>
+            <div className = "col-2"></div>
+        </div>
+        <div className = "row mt-2">
+            <div className = "col-2"></div>
+            <div className = "background2 block col-10">
+                <p>
+                    Email:<a className = "orange"> johnson.omi@northeastern.edu</a>
+                    <br/>
+                    <br/>
+                    LinkedIn:<a target="_blank" href = "https://www.linkedin.com/in/omi-johnson/" className = "yellow"> https://www.linkedin.com/in/omi-johnson/</a>
+                    <br/>
+                    <br/>
+                    GitHub: <a target="_blank" href = "https://github.com/oj713" className = "orange">https://github.com/oj713</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+    )
+}
+
+export default Contact;

@@ -1,0 +1,45 @@
+.icon {
+    font-size: 1.4em;
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--yellow);
+}
+
+
+/* nav tabs OG */
+.nav-link, .nav-link:hover {
+    color: var(--orange);
+}
+
+.homeButton {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .1s ease-in-out, visibility .1s;
+}
+
+.homeButton.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* .active .icon {
+    font-size: 1.6em;
+    top: 0em;
+}
+
+.down {
+    position: relative;
+    top: 0em;
+}
+
+.active div.transition {
+    visibility: visible;
+    width: 100%;
+}
+
+div.transition {
+    visibility: hidden;
+    width: 0;
+    transition: width .3s ease-in-out;
+} */

@@ -1,13 +1,171 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --background1: #181824;
+  --background2: rgb(45, 44, 48, .6);
+  --background3: rgb(63, 63, 94, .6);
+
+  --yellow: rgb(252, 189, 26);
+  --yellow-bg: rgb(252, 189, 26, .4);
+
+  --orange: rgb(247, 127, 0);
+  --orange-bg: rgb(247, 127, 0, .4);
+
+  --font-size: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.background2 {
+  background-color: var(--background2);
+}
+
+.background3 {
+  background-color: var(--background3);
+}
+
+.yellow-bg {
+  background-color: var(--yellow-bg);
+}
+
+.orange-bg {
+  background-color: var(--orange-bg);
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+.orange {
+  color: var(--orange);
+}
+
+body {
+  background-color: #181824;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Futura';
+  font-weight: 'Lighter';
+  font-size: var(--font-size);
+  background-image: url("./Assets/RESEARCH.png");
+  background-repeat: no-repeat;
+  background-size: auto 100vh;
+  background-attachment: fixed;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+h3 {
+  font-size: 1.1em;
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Styling for boxes */
+
+.up {
+  position: relative;
+  bottom: .1em;
+  margin-left: .2em;
+}
+
+.icon {
+  font-size: 1.5em;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.border {
+  border: 3px white;
+}
+
+.mainPane {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1200px;
+}
+
+.sixty {
+  width: 60%;
+  height: 60vh;
+}
+
+.eighty {
+  width: 80%;
+  height: 80vh;
+}
+
+.block {
+  border-radius: .5em;
+  display:block;
+  padding: .5em .8em;
+}
+
+.arrow-icon {
+  position:relative;
+  top:.2em;
+  transition: transform .3s ease-in-out;
+}
+
+[aria-expanded="true"] .arrow-icon {
+  transform: rotate(-180deg);
+}
+
+.pdf-container {
+  position:relative;
+  width: 100%;
+  padding-bottom: 125%;
+}
+
+.pdf-container iframe {
+  position:absolute;
+  top:0;
+  left: 10%;
+  width:80%;
+  height:100%;
+  border: none;
+}
+
+div.narrative h3 {
+  font-style:normal;
+  font-size: 1.2em;
+  margin: 1.5em 0em 1em 0em;
+}
+
+div.narrative hr {
+  border: 1px solid white;
+  opacity: 100%;
+}
+
+div.narrative p {
+  text-indent: 2em;
+}
+
+div.narrative p.orange {
+  text-indent: 0em;
+}
+
+div.narrative img {
+  margin: 2em 0em 1em 0em;
+}
+
+.bottomCorner {
+  position:absolute;
+  bottom: 0;
 }
