@@ -15,7 +15,7 @@
 - just in general have the site adapt well to smaller sizes
 - make background image stop moving around on scroll
 - swap out background image on some pages
-- implement animated navigation tabs!
+- implement animated navigation tabs! The selected tab grows larger, deselected tabs are circles. 
 
 ![navtabs](navtabs.png)
 
