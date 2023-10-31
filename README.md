@@ -1,7 +1,5 @@
 ## ENGW 3315: Advanced Writing in the Disciplines
 
-https://engw3315--playful-pika-d10517.netlify.app/
-
 ### Content Goals: 
 - Add significant coding projects
 - add sudoku game for funsies (?) 
