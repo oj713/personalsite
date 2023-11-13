@@ -6,9 +6,11 @@
     background-color: var(--yellow);
 }
 
+.nav-link:hover {
+    color: white;
+}
 
-/* nav tabs OG */
-.nav-link, .nav-link:hover {
+.nav-link {
     color: var(--orange);
 }
 
@@ -22,24 +24,3 @@
     visibility: hidden;
     opacity: 0;
 }
-
-/* .active .icon {
-    font-size: 1.6em;
-    top: 0em;
-}
-
-.down {
-    position: relative;
-    top: 0em;
-}
-
-.active div.transition {
-    visibility: visible;
-    width: 100%;
-}
-
-div.transition {
-    visibility: hidden;
-    width: 0;
-    transition: width .3s ease-in-out;
-} */

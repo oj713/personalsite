@@ -46,7 +46,11 @@ const Forecasting = () => {
             This browser does not support PDFs. Please download the file instead. 
         </iframe>
     </div>
-    <div style = {{"height":"10vh"}}></div>
+    <div style = {{"height":"2vh"}}></div>
+        <div className = "text-center" style = {{"height":"10vh"}}>
+            <br/>
+            <a className="yellowhover" href = "#">Back to Top</a>
+        </div>
     </div>
     )
 }

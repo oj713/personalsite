@@ -18,7 +18,7 @@ const Bigelow = () => {
             <div className = "col-1"></div>
             <div className = "col-8">
                 <div className = "block background2">
-                <p>I am currently employed as a research technician at the Tandy Center of Ocean Forecasting, a lab within the Bigelow Laboratory of Ocean Sciences. I'm using R and machine learning algorithms to build forecasts of suitable North Atlantic Right Whale feeding habitats in the years 2055 and 2075. The North Atlantic Right Whale (<i>E. glacialis</i>) is a critically endangered whale species, with less than 350 individuals left in the wild. Starting in 2010, climate shifts in the Gulf of Maine caused Right Whale populations to shift unexpectedly, challenging traditional conservation tactics. My research uses abundance data of right whale prey species (<i>C. finmarchicus</i> and <i>C. hyperboreus</i>) and fine-resolution environmental covariates to build models predicting future suitable feeding habitat. These forecasts can be used to inform survey effort and further modeling. See below for a semester draft of my research. Since this draft was published, I've introduced additional improvements such as ensemble modeling techniques and non-linear threshold calculations.</p>
+                <p>I am currently employed as a research technician at the Tandy Center of Ocean Forecasting, a lab within the Bigelow Laboratory of Ocean Sciences. I'm using R and machine learning algorithms to build forecasts of suitable North Atlantic Right Whale feeding habitats in the years 2055 and 2075. The North Atlantic Right Whale (<i>E. glacialis</i>) is a critically endangered whale species, with less than 350 individuals left in the wild. Recent climate shifts in the Gulf of Maine have triggered changes in right whale feeding patterns, challenging traditional conservation tactics. My research uses abundance data of right whale prey species (<i>C. finmarchicus</i> and <i>C. hyperboreus</i>) and fine-resolution environmental covariates to build models predicting future suitable feeding habitat. These forecasts can be used to inform survey effort and further modeling. See below for a December 2022 draft of my research. Since this draft was published, I've introduced additional improvements such as ensemble modeling techniques and non-linear threshold calculations.</p>
                 <a class="block background3 d-flex justify-content-between" data-bs-toggle="collapse" href="#bigelowAbstract">Abstract
                 <GoTriangleDown className = "arrow-icon"/></a>
                 <div id="bigelowAbstract" class="collapse">
@@ -59,7 +59,11 @@ const Bigelow = () => {
                 <p>One distinguishing factor of my research is the scale and resolution of my predictions. Most predictions of <i>Calanus</i> spp. or Right Whale habitat only consider small areas of the coast or are at low resolution. My research uses 1/12 degree, downscaled environmental covariates from <a href = "https://online.ucpress.edu/elementa/article/9/1/00055/116900/Projections-of-physical-conditions-in-the-Gulf-of" target = "_blank" className = "yellow">Brickman et al. 2021</a> to generate detailed predictions across the entire Northeast Atlantic Shelf. To allow other modelers at my lab to use this dataset, I built a comprehensive walkthrough in GitHub using complete example code, explanations, and helper methods.</p>
             </div>
         </div>
-        <div style = {{"height": "10vh"}}></div>
+        <div style = {{"height":"2vh"}}></div>
+        <div className = "text-center" style = {{"height":"10vh"}}>
+            <br/>
+            <a className="yellowhover" href = "#">Back to Top</a>
+        </div>
     </div>
     </div>
     )

@@ -6,7 +6,7 @@ const Contact = () => {
     <div>
         <div className = "row">
             <div className = "col-10">
-                <h1>Contact</h1>
+                <h1><b>Contact</b></h1>
             </div>
             <div className = "col-2"></div>
         </div>

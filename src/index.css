@@ -40,18 +40,25 @@ body {
   background-color: #181824;
   box-sizing: border-box;
   color: white;
-  font-family: 'Futura';
-  font-weight: 'Lighter';
+  font-family: Helvetica, sans-serif;
+  /* font-family: 'Futura';
+  font-weight: 'Lighter'; */
   font-size: var(--font-size);
-  background-image: url("./Assets/RESEARCH.png");
-  background-repeat: no-repeat;
-  background-size: auto 100vh;
-  background-attachment: fixed;
 }
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+.bg {
+  background-image: url("./Assets/RESEARCH.png");
+  background-repeat: no-repeat;
+  background-size: auto 100vh;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -70,6 +77,10 @@ h3 {
 a {
   text-decoration: none;
   color: white;
+}
+
+p {
+  margin-bottom: .3em;
 }
 
 /* Styling for boxes */
@@ -104,6 +115,11 @@ a {
 .sixty {
   width: 60%;
   height: 60vh;
+}
+
+.sixtyeighty {
+  width: 60%;
+  height: 80vh;
 }
 
 .eighty {
@@ -142,30 +158,15 @@ a {
   border: none;
 }
 
-div.narrative h3 {
-  font-style:normal;
-  font-size: 1.2em;
-  margin: 1.5em 0em 1em 0em;
-}
-
-div.narrative hr {
-  border: 1px solid white;
-  opacity: 100%;
-}
-
-div.narrative p {
-  text-indent: 2em;
-}
-
-div.narrative p.orange {
-  text-indent: 0em;
-}
-
-div.narrative img {
-  margin: 2em 0em 1em 0em;
-}
-
 .bottomCorner {
   position:absolute;
   bottom: 0;
+}
+
+.yellowhover:hover {
+  color: var(--yellow);
+}
+
+.orangehover:hover {
+  color: var(--orange);
 }
