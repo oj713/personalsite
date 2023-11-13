@@ -7,6 +7,7 @@ const Forecasting = () => {
     return (
     <div className = "mainPane eighty">
     <div>
+        <div style = {{"height":"2vh"}}></div>
         {/* Bigelow Paper */}
         <div className = "row">
             <div className = "col-1"></div>

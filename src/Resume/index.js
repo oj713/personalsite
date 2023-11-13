@@ -7,6 +7,7 @@ const Resume = () => {
     return (
     <div className = "mainPane eighty">
     <div>
+        <div style = {{"height":"2vh"}}></div>
         <a href = "/PDFfiles/OJohnson_Resume.pdf" target="_blank" rel="noopener noreferrer">
             <div className="d-flex justify-content-between background2 rounded p-2 mt-2">
                <span><AiOutlineFilePdf className = "up orange icon"/> Resume_OJohnson.pdf</span>

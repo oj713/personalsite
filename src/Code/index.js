@@ -75,7 +75,7 @@ const Code = () => {
             </div>
             <div className = "col-6 text-center">
                 <iframe src="https://oj713.github.io/Web-Design/plant_watering/index.html" 
-                title="Water Me!" width = "75%" height="100%" className = "rounded mh-500"></iframe>
+                title="Water Me!" width = "80%" height="100%" className = "rounded mh-500"></iframe>
             </div>
         </div>
         {/* Google Doodle */}

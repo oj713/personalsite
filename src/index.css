@@ -9,7 +9,7 @@
   --orange: rgb(247, 127, 0);
   --orange-bg: rgb(247, 127, 0, .4);
 
-  --font-size: 20px;
+  --font-size: 16px;
 }
 
 .background2 {
@@ -123,7 +123,7 @@ p {
 }
 
 .eighty {
-  width: 80%;
+  width: 70%;
   height: 80vh;
 }
 
