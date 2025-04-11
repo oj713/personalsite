@@ -20,7 +20,7 @@ const NavigationTabs = () => {
 
     return (
         <div>
-        <ul className="nav d-flex flex-row-reverse nav-pills p-4">
+        <ul className="nav d-flex flex-row-reverse nav-pills p-3">
             {tabs.map(tab => 
                 <Link key = {tab.name} 
                     className={`${active === tab.name ? "active" : "hidden"} btn rounded-pill d-flex nav-link text-capitalize`} 

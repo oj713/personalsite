@@ -1,4 +1,4 @@
-:root {
+body {
   --background1: #181824;
   --background2: rgb(45, 44, 48, .6);
   --background3: rgb(63, 63, 94, .6);
@@ -7,9 +7,28 @@
   --yellow-bg: rgb(252, 189, 26, .4);
 
   --orange: rgb(247, 127, 0);
-  --orange-bg: rgb(247, 127, 0, .4);
+  --orange-bg: rgba(47, 44, 39, 0.4);
 
   --font-size: 16px;
+
+  background-color: #181824;
+  box-sizing: border-box;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  /* font-family: 'Futura';
+  font-weight: 'Lighter'; */
+  font-size: var(--font-size);
+}
+body.dark {
+  --background1: #ffffff;
+  --background2: rgba(240, 239, 230, 0.6);
+  --background3: rgba(220, 210, 192, 0.6);
+
+  --yellow: rgb(227, 181, 17);
+  --yellow-bg: rgba(227, 169, 21, 0.4);
+
+  --orange: rgb(247, 127, 0);
+  --orange-bg: rgba(47, 44, 39, 0.4);
 }
 
 .background2 {
@@ -36,15 +55,6 @@
   color: var(--orange);
 }
 
-body {
-  background-color: #181824;
-  box-sizing: border-box;
-  color: white;
-  font-family: Helvetica, sans-serif;
-  /* font-family: 'Futura';
-  font-weight: 'Lighter'; */
-  font-size: var(--font-size);
-}
 *,
 *::before,
 *::after {
@@ -169,4 +179,16 @@ p {
 
 .orangehover:hover {
   color: var(--orange);
+}
+
+.vertcenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nostyle {
+  color: white;
+  background-color: transparent;
+  border: none;
 }

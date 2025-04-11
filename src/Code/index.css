@@ -1,9 +1,3 @@
 iframe.mh-500 {
     min-height: 500px;
 }
-
-.vertcenter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}

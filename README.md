@@ -4,11 +4,19 @@
 
 Personal website to highlight professional accomplishments. Built using React.js, Bootstrap, and Javascript and hosted on Netlify. 
 
-### Future Goals 
-- Responsive Design 
-- Add light mode / dark mode toggle
-- Implement animated navigation tabs. The selected tab grows larger, deselected tabs are circles. 
-- Fix small design inconsistencies. 
+### Goals 
+- Custom domain
+- Responsive
+- Light mode/dark mode toggle
+- "publications" tab
+- "projects" updated tab
+    - Parkour
+    - Found software engineering work
+    - Tidymodels tutorial website, brickman walkthrough
+- "resume" tab
+- Animated nav tabs
+- Design inconsistencies
+- Animated elements in home screen + improved bio
 
 ![navtabs](navtabs.png)
 
