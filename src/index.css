@@ -3,32 +3,38 @@ body {
   --background2: rgb(45, 44, 48, .6);
   --background3: rgb(63, 63, 94, .6);
 
-  --yellow: rgb(252, 189, 26);
-  --yellow-bg: rgb(252, 189, 26, .4);
+  --accent1: rgb(252, 189, 26);
+  --accent1-bg: rgb(252, 189, 26, .4);
 
-  --orange: rgb(247, 127, 0);
-  --orange-bg: rgba(47, 44, 39, 0.4);
+  --accent2: rgb(247, 127, 0);
+  --accent2-bg: rgb(247, 127, 0, .4);
+
+  --text-col: white;
+  --text-col2: white; 
 
   --font-size: 16px;
 
-  background-color: #181824;
+  background-color: var(--background1);
   box-sizing: border-box;
-  color: white;
+  color: var(--text-col);
   font-family: Helvetica, sans-serif;
   /* font-family: 'Futura';
   font-weight: 'Lighter'; */
   font-size: var(--font-size);
 }
 body.dark {
-  --background1: #ffffff;
+  --background1: #fffded;
   --background2: rgba(240, 239, 230, 0.6);
   --background3: rgba(220, 210, 192, 0.6);
 
-  --yellow: rgb(227, 181, 17);
-  --yellow-bg: rgba(227, 169, 21, 0.4);
+  --accent1: #fce762;
+  --accent1-bg: rgba(213, 163, 38, 0.4);
 
-  --orange: rgb(247, 127, 0);
-  --orange-bg: rgba(47, 44, 39, 0.4);
+  --accent2: #ffb17A;
+  --accent2-bg: rgba(47, 44, 39, 0.4);
+
+  --text-col: black;
+  --text-col2: #4F4789;
 }
 
 .background2 {
@@ -39,20 +45,20 @@ body.dark {
   background-color: var(--background3);
 }
 
-.yellow-bg {
-  background-color: var(--yellow-bg);
+.accent1-bg {
+  background-color: var(--accent1-bg);
 }
 
-.orange-bg {
-  background-color: var(--orange-bg);
+.accent2-bg {
+  background-color: var(--accent2-bg);
 }
 
-.yellow {
-  color: var(--yellow);
+.accent1 {
+  color: var(--accent1);
 }
 
-.orange {
-  color: var(--orange);
+.accent2 {
+  color: var(--accent2);
 }
 
 *,
@@ -69,6 +75,9 @@ body.dark {
   width: 100vw;
   height: 100vh;
   z-index: -1;
+}
+.dark .bg {
+  background-image: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -110,7 +119,7 @@ p {
 }
 
 .border {
-  border: 3px white;
+  border: 3px solid var(--text-col);
 }
 
 .mainPane {
@@ -173,12 +182,12 @@ p {
   bottom: 0;
 }
 
-.yellowhover:hover {
-  color: var(--yellow);
+.accent1hover:hover {
+  color: var(--accent1);
 }
 
-.orangehover:hover {
-  color: var(--orange);
+.accent2hover:hover {
+  color: var(--accent2);
 }
 
 .vertcenter {
@@ -188,7 +197,7 @@ p {
 }
 
 .nostyle {
-  color: white;
+  color: var(--text-col);
   background-color: transparent;
   border: none;
 }

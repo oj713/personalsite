@@ -28,8 +28,8 @@ const Bigelow = () => {
                 </div>
                 <a href = "/PDFfiles/SemesterPaper.pdf" target="_blank" rel="noopener noreferrer">
                     <div className="d-flex justify-content-between p-2 mt-2">
-                       <span><AiOutlineFilePdf className = "up orange icon"/> Predicting novel <i>E. glacialis</i> foraging habitat.pdf</span>
-                       <span><AiOutlineDownload className = "up orange icon"/></span>
+                       <span><AiOutlineFilePdf className = "up accent2 icon"/> Predicting novel <i>E. glacialis</i> foraging habitat.pdf</span>
+                       <span><AiOutlineDownload className = "up accent2 icon"/></span>
                     </div>
                 </a>
             </div>
@@ -44,8 +44,8 @@ const Bigelow = () => {
         </div>
         <div className = "row mt-2">
             <div className = "col-6"></div>
-            <div className = "block yellow-bg col-6">
-                <p>Part of my research work at Bigelow was to explore the capabilities of a set of R modeling packages called <a href = "https://www.tidymodels.org/" target = "_blank" className = "orange">Tidymodels</a>. This relatively new set of packages aims to simplify the modeling process by providing tools to streamline data preparation and a common interface for a variety of modeling engines. The website was built using RMarkdown and provides a comprehensive walkthrough of each Tidymodels package, complete with thorough coding examples and further resources.</p>
+            <div className = "block accent1-bg col-6">
+                <p>Part of my research work at Bigelow was to explore the capabilities of a set of R modeling packages called <a href = "https://www.tidymodels.org/" target = "_blank" className = "accent2">Tidymodels</a>. This relatively new set of packages aims to simplify the modeling process by providing tools to streamline data preparation and a common interface for a variety of modeling engines. The website was built using RMarkdown and provides a comprehensive walkthrough of each Tidymodels package, complete with thorough coding examples and further resources.</p>
             </div>
         </div>
         {/* Brickman Walkthrough */}
@@ -56,14 +56,14 @@ const Bigelow = () => {
         </div>
         <div className = "row mt-2">
             <div className = "col-1"></div>
-            <div className = "block orange-bg col-6">
-                <p>One distinguishing factor of my research is the scale and resolution of my predictions. Most predictions of <i>Calanus</i> spp. or Right Whale habitat only consider small areas of the coast or are at low resolution. My research uses 1/12 degree, downscaled environmental covariates from <a href = "https://online.ucpress.edu/elementa/article/9/1/00055/116900/Projections-of-physical-conditions-in-the-Gulf-of" target = "_blank" className = "yellow">Brickman et al. 2021</a> to generate detailed predictions across the entire Northeast Atlantic Shelf. To allow other modelers at my lab to use this dataset, I built a comprehensive walkthrough in GitHub using complete example code, explanations, and helper methods.</p>
+            <div className = "block accent2-bg col-6">
+                <p>One distinguishing factor of my research is the scale and resolution of my predictions. Most predictions of <i>Calanus</i> spp. or Right Whale habitat only consider small areas of the coast or are at low resolution. My research uses 1/12 degree, downscaled environmental covariates from <a href = "https://online.ucpress.edu/elementa/article/9/1/00055/116900/Projections-of-physical-conditions-in-the-Gulf-of" target = "_blank" className = "accent1">Brickman et al. 2021</a> to generate detailed predictions across the entire Northeast Atlantic Shelf. To allow other modelers at my lab to use this dataset, I built a comprehensive walkthrough in GitHub using complete example code, explanations, and helper methods.</p>
             </div>
         </div>
         <div style = {{"height":"2vh"}}></div>
         <div className = "text-center" style = {{"height":"10vh"}}>
             <br/>
-            <a className="yellowhover" href = "#">Back to Top</a>
+            <a className="accent1hover" href = "#">Back to Top</a>
         </div>
     </div>
     </div>

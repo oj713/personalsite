@@ -18,13 +18,13 @@ const Home = () => {
                 <p>Welcome to my professional portfolio! My name is Omi and I'm a fourth-year Computer and Environmental Science major at Northeastern University. I'm passionate about developing intuitive, efficient software applications and thinking about complex problems from user and data-focused perspectives. My backgrounds in climate activism and environmental research drive an interest in sustainability and green tech which I hope to apply to future careers. I have significant work experience in ecological forecasting, teaching, and quality assurance for iOS. This site collates some major pieces from my academic career — please use the tabs in the top right corner to explore my work. Enjoy!</p>
                 <br/>
                 <div>
-                    <p className = "text-right"><i>Source code for this website on my <a className = "orange" target="_blank" href="https://github.com/oj713/personalsite">GitHub.</a></i></p>
+                    <p className = "text-right"><i>Source code for this website on my <a className = "accent2" target="_blank" href="https://github.com/oj713/personalsite">GitHub.</a></i></p>
                 </div>
             </div>
         </div>
     </div>
     </div>
-    <div className = "bottomCorner"><p class="yellow ps-4"><i>Background image: 2075 forecasts of</i> E. glacialis <i>habitat suitability in the Northeast Atlantic. See <a className = "white"href="/bigelow">Bigelow.</a></i></p></div>
+    <div className = "bottomCorner"><p class="accent1 ps-4"><i>Background image: 2075 forecasts of</i> E. glacialis <i>habitat suitability in the Northeast Atlantic. See <a className = "white"href="/bigelow">Bigelow.</a></i></p></div>
     </>
     )
 }

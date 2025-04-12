@@ -14,13 +14,13 @@ const Contact = () => {
             <div className = "col-2"></div>
             <div className = "background2 block col-10">
                 <p>
-                    Email:<a className = "orange"> johnson.omi@northeastern.edu</a>
+                    Email:<a className = "accent2"> johnson.omi@northeastern.edu</a>
                     <br/>
                     <br/>
-                    LinkedIn:<a target="_blank" href = "https://www.linkedin.com/in/omi-johnson/" className = "yellow"> https://www.linkedin.com/in/omi-johnson/</a>
+                    LinkedIn:<a target="_blank" href = "https://www.linkedin.com/in/omi-johnson/" className = "accent1"> https://www.linkedin.com/in/omi-johnson/</a>
                     <br/>
                     <br/>
-                    GitHub: <a target="_blank" href = "https://github.com/oj713" className = "orange">https://github.com/oj713</a>
+                    GitHub: <a target="_blank" href = "https://github.com/oj713" className = "accent2">https://github.com/oj713</a>
                 </p>
             </div>
         </div>

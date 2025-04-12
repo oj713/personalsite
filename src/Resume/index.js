@@ -10,8 +10,8 @@ const Resume = () => {
         <div style = {{"height":"2vh"}}></div>
         <a href = "/PDFfiles/OJohnson_Resume.pdf" target="_blank" rel="noopener noreferrer">
             <div className="d-flex justify-content-between background2 rounded p-2 mt-2">
-               <span><AiOutlineFilePdf className = "up orange icon"/> Resume_OJohnson.pdf</span>
-               <span><AiOutlineDownload className = "up orange icon"/></span>
+               <span><AiOutlineFilePdf className = "up accent2 icon"/> Resume_OJohnson.pdf</span>
+               <span><AiOutlineDownload className = "up accent2 icon"/></span>
             </div>
         </a>
         {/* Education */}
@@ -23,7 +23,7 @@ const Resume = () => {
             <div className = "col-1"></div>
             <div className = "col-9">
                 <div className = "block background2">
-                <div class="yellow-bg block mb-3 d-flex justify-content-between">
+                <div class="accent1-bg block mb-3 d-flex justify-content-between">
                     <span><b>Northeastern University</b> <i>Boston, MA</i></span>
                     <span>Sept 2020 - May 2025</span>
                 </div>
@@ -75,7 +75,7 @@ const Resume = () => {
             <div className = "col-1"></div>
             <div className = "col-11">
                 <div className = "block background2">
-                <div class="orange-bg block mb-3 d-flex justify-content-between">
+                <div class="accent2-bg block mb-3 d-flex justify-content-between">
                     <span><b>Bigelow Laboratory for Ocean Sciences</b> <i>East Boothbay, ME</i></span>
                     <span>Feb 2022 - Present</span>
                 </div>
@@ -89,7 +89,7 @@ const Resume = () => {
                     <li> Investigated Tidymodels modeling package for general lab use and created RMarkdown website and GitHub demo repository with comprehensive tutorials</li>
                 </ul>
 
-                <div class="yellow-bg block mb-3 mt-5 d-flex justify-content-between">
+                <div class="accent1-bg block mb-3 mt-5 d-flex justify-content-between">
                         <span><b>Northeastern University</b> <i>Boston, MA</i></span>
                         <span>Aug 2022 - Present</span>
                     </div>
@@ -104,7 +104,7 @@ const Resume = () => {
                         <li>Work with co-op advisors, section instructor, and co-TA on lesson plans and responsibilities</li>
                     </ul>
 
-                    <div class="orange-bg block mb-3 mt-5 d-flex justify-content-between">
+                    <div class="accent2-bg block mb-3 mt-5 d-flex justify-content-between">
                         <span><b>Ginger Labs</b> <i>San Francisco, CA</i></span>
                         <span>Jan - Aug 2023</span>
                     </div>
@@ -141,7 +141,7 @@ const Resume = () => {
     <div style = {{"height":"2vh"}}></div>
     <div className = "text-center" style = {{"height":"10vh"}}>
         <br/>
-        <a className="yellowhover" href = "#">Back to Top</a>
+        <a className="accent1hover" href = "#">Back to Top</a>
     </div>
     </div>
     )

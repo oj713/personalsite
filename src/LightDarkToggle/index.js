@@ -1,5 +1,4 @@
 import React from 'react';
-import "./index.css";
 import { MdOutlineLightMode } from "react-icons/md";
 import { MdOutlineDarkMode } from "react-icons/md";
 import { useColorScheme } from "./useColorScheme";
