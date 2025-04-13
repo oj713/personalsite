@@ -7,11 +7,11 @@
 }
 
 .nav-link:hover {
-    color: var(--text-col);
+    color: var(--accent2);
 }
 
 .nav-link {
-    color: var(--accent2);
+    color: var(--text-col);
 }
 
 .homeButton {

@@ -24,7 +24,7 @@ const Home = () => {
         </div>
     </div>
     </div>
-    <div className = "bottomCorner"><p class="accent1 ps-4"><i>Background image: 2075 forecasts of</i> E. glacialis <i>habitat suitability in the Northeast Atlantic. See <a className = "white"href="/bigelow">Bigelow.</a></i></p></div>
+    <div className = "bottomCorner"><p class="accent1 ps-3"><i>Background: Original forecasts.</i></p></div>
     </>
     )
 }

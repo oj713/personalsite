@@ -14,7 +14,6 @@ const NavigationTabs = () => {
     const tabs = [
         {name:"contact", icon:<AiOutlineMail className = "icon down"/>},
         {name:"resume", icon:<IoDocumentTextOutline className = "icon down"/>},
-        {name:"forecasting", icon:<AiOutlineLineChart className = "icon down"/>}, 
         {name:"web", icon:<BiCodeAlt className = "icon down"/>},
         {name:"bigelow", icon:<GiWhaleTail className = "icon down"/>}]
 
@@ -31,7 +30,7 @@ const NavigationTabs = () => {
             )}
             <Link className = {`me-3 ${active ? "" : "hidden"} homeButton`} key = "home" to = "/">
                 <AiOutlineHome className = "icon mt-2"/>
-            </Link>
+            </Link> 
         </ul>
         </div>
     )

@@ -24,9 +24,9 @@ export function useColorScheme() {
 
   useEffect(() => {
     if (value) {
-      document.body.classList.add("dark");
+      document.body.classList.add("light");
     } else {
-      document.body.classList.remove("dark");
+      document.body.classList.remove("light");
     }
   }, [value]);
 

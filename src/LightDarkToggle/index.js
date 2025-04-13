@@ -10,8 +10,8 @@ const LightDarkToggle = () => {
         <button className = "p-3 ps-4 vertcenter nostyle"
                 onClick = {() => setIsDarkMode(!isDarkMode)}>
             {isDarkMode ?
-                <MdOutlineLightMode className = "icon down"/> :
-                <MdOutlineDarkMode className = "icon down"/>
+                <MdOutlineDarkMode className = "icon down"/> :
+                <MdOutlineLightMode className = "icon down"/>
             }
         </button>
     )

@@ -1,6 +1,6 @@
 body {
   --background1: #181824;
-  --background2: rgb(45, 44, 48, .6);
+  --background2: rgb(45, 44, 48, .8);
   --background3: rgb(63, 63, 94, .6);
 
   --accent1: rgb(252, 189, 26);
@@ -22,16 +22,16 @@ body {
   font-weight: 'Lighter'; */
   font-size: var(--font-size);
 }
-body.dark {
+body.light {
   --background1: #fffded;
-  --background2: rgba(240, 239, 230, 0.6);
-  --background3: rgba(220, 210, 192, 0.6);
+  --background2: rgba(227, 245, 224, .8);
+  --background3: rgba(121, 185, 170, 0.6);
 
-  --accent1: #fce762;
-  --accent1-bg: rgba(213, 163, 38, 0.4);
+  --accent1: rgb(52, 137, 166);
+  --accent1-bg: rgba(115, 187, 211, 0.6);
 
-  --accent2: #ffb17A;
-  --accent2-bg: rgba(47, 44, 39, 0.4);
+  --accent2: rgb(76, 169, 94);
+  --accent2-bg: rgba(169, 224, 143, 0.6);
 
   --text-col: black;
   --text-col2: #4F4789;
@@ -68,16 +68,17 @@ body.dark {
 }
 
 .bg {
-  background-image: url("./Assets/RESEARCH.png");
+  background-image: url("./Assets/darkmode.png");
   background-repeat: no-repeat;
-  background-size: auto 100vh;
+  background-size: cover;
+  background-position: center;
   position: fixed;
   width: 100vw;
   height: 100vh;
   z-index: -1;
 }
-.dark .bg {
-  background-image: none;
+.light .bg {
+  background-image: url("./Assets/lightmode.png");
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -95,7 +96,7 @@ h3 {
 
 a {
   text-decoration: none;
-  color: white;
+  color: var(--text-col);
 }
 
 p {
