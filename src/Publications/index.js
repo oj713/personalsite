@@ -88,9 +88,25 @@ const Publications = () => {
                     <a href = "https://oj713.github.io/tidymodels/" target="_blank" rel = "noreferrer"><h3 className = "m-1">Tidymodels Tutorial Website<IoMdOpen className = "up"/></h3></a>
                     <p> A website thoroughly detailing the capabilities of <a href = "https://www.tidymodels.org/" target = "_blank" rel = "noreferrer" className = "accent1">Tidymodels</a>, a set of R modeling packages designed to increase modularity and align modeling paradigms with "tidy" data principles. This package was instrumental in the development of my modeling pipeline; The walkthrough is built using RMarkdown and is specialized for ecological forecasting, including thorough coding examples and links to outside resources. </p>
                 </div>
-                <div className = "block right-whale-bg mt-3">
-                    <a href = "https://arcg.is/1CzLOC0" target="_blank" rel = "noreferrer"><h3 className = "m-1">Saving the North Atlantic Right Whale<IoMdOpen className = "up"/></h3></a>
-                    <p> What does it mean to save the North Atlantic right whale? How does reducing ship strike collisions and fishing gear entanglements complicate the work of other industries in the Gulf of Maine? In this ArcGIS StoryMap, I use peer-reviewed sources and current events news to construct a narrative about effective strategies for right whale conservation, recent protests from the American Lobster Industry, and technological innovations driving the story forward. Forecasts like my published research are just one piece of the puzzle. </p>
+                <div className="block right-whale-bg mt-3">
+                  <div className="overlay"></div>
+                  <div className="content">
+                    <a href="https://arcg.is/1CzLOC0" target="_blank" rel="noreferrer">
+                      <h3 className="m-1">
+                        Saving the North Atlantic Right Whale <IoMdOpen className="up" />
+                      </h3>
+                    </a>
+                    <p>
+                      What does it mean to save the North Atlantic right whale? How does
+                      reducing ship strike collisions and fishing gear entanglements
+                      complicate the work of other industries in the Gulf of Maine? In this
+                      ArcGIS StoryMap, I use peer-reviewed sources and current events news to
+                      construct a narrative about effective strategies for right whale
+                      conservation, recent protests from the American Lobster Industry, and
+                      technological innovations driving the story forward. Forecasts like my
+                      published research are just one piece of the puzzle.
+                    </p>
+                  </div>
                 </div>
                 <div className = "block accent2-bg mt-3">
                     <a href = "https://github.com/oj713/brickman-walkthrough" target="_blank" rel = "noreferrer"><h3 className = "m-1">Brickman Data Walkthrough<IoMdOpen className = "up"/></h3></a>
