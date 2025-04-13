@@ -72,7 +72,7 @@ const ImageGallery = ({ images }) => {
             className="gallery-item"
             onClick={() => openLightbox(index)}
           >
-            <img src={img.src} alt={img.caption} />
+            <img src={img.preview || img.src} alt={img.caption} />
           </div>
         ))}
       </div>

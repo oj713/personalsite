@@ -38,14 +38,14 @@
 
 .lightbox-content {
   position: relative;
-  max-width: 70vw;
+  max-width: min(80vw, 800px);
   max-height: 70vh;
   text-align: center;
 }
 
 .lightbox-content img {
   max-height: 60vh;
-  max-width: 70vw;
+  max-width: min(70vw, 600px);
   object-fit: contain;
 }
 
