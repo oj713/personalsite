@@ -4,7 +4,7 @@ import {GoTriangleDown} from 'react-icons/go';
 import {AiOutlineFilePdf, AiOutlineDownload, AiFillGithub} from 'react-icons/ai';
 import "./index.css";
 
-const Code = () => {
+const Projects = () => {
     return (
     <div className = "mainPane sixtyeighty">
         <div>
@@ -107,4 +107,4 @@ const Code = () => {
     )
 }
 
-export default Code;
+export default Projects;

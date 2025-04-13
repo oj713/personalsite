@@ -14,8 +14,8 @@ const NavigationTabs = () => {
     const tabs = [
         {name:"contact", icon:<AiOutlineMail className = "icon down"/>},
         {name:"resume", icon:<IoDocumentTextOutline className = "icon down"/>},
-        {name:"web", icon:<BiCodeAlt className = "icon down"/>},
-        {name:"bigelow", icon:<GiWhaleTail className = "icon down"/>}]
+        {name:"projects", icon:<BiCodeAlt className = "icon down"/>},
+        {name:"publications", icon:<GiWhaleTail className = "icon down"/>}]
 
     return (
         <div>

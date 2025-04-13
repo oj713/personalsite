@@ -3,7 +3,7 @@ import {IoMdOpen} from 'react-icons/io';
 import {GoTriangleDown} from 'react-icons/go';
 import {AiOutlineFilePdf, AiOutlineDownload} from 'react-icons/ai';
 
-const Bigelow = () => {
+const Publications = () => {
     return (
     <div className = "mainPane eighty">
     <div>
@@ -70,4 +70,4 @@ const Bigelow = () => {
     )
 }
 
-export default Bigelow;
+export default Publications;
