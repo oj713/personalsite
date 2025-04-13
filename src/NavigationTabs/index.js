@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link, useLocation} from 'react-router-dom';
 import "./index.css";
-import {AiOutlineHome, AiOutlineLineChart, AiOutlineMail} from 'react-icons/ai';
+import {AiOutlineHome, AiOutlineMail} from 'react-icons/ai';
 import {IoDocumentTextOutline} from 'react-icons/io5';
 import {BiCodeAlt} from 'react-icons/bi';
 import {GiWhaleTail} from 'react-icons/gi';

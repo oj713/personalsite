@@ -1,71 +1,106 @@
 import React from 'react';
 import {IoMdOpen} from 'react-icons/io';
-import {GoTriangleDown} from 'react-icons/go';
-import {AiOutlineFilePdf, AiOutlineDownload} from 'react-icons/ai';
+import CollapseBar from '../Assets/collapseBar.js';
+import {AiFillGithub, AiOutlineFilePdf} from 'react-icons/ai';
+import {GiWhaleTail} from 'react-icons/gi';
+import ImageGallery from '../Assets/imageGallery.js';
+import BackToTop from '../Assets/backToTop.js';
+import "./index.css";
+
+const images = [
+    {
+      src: "/Images/Bigelow/Rightwhale.png",
+      caption: "North Atlantic Right Whale. These whales boast beautiful, smooth tails that make them easy to identify. Photo: Peter Crosson, licensed under CC BY-NC-SA 2.0.",
+    },
+    {
+      src: "/Images/Bigelow/Cfinmarchicus.png",
+      caption: "Calanus Finmarchicus, a lipid-rich copepod fed upon by right whales. These and C. Hyperboreus were used as input prey layers for the model. Photo: David Fields.",
+    },
+    {
+      src: "/Images/Bigelow/cfin_abund.png",
+      caption: "Data of C. Finmarchicus abundance sourced from the National Oceanic and Atmospheric Administration's (NOAA's) Fisheries Ecosystem Monitoring Program (MARMAP/EcoMon) survey and the Fisheries and Oceans Canada (DFO) Atlantic Zone Monitoring Program (AZMP) survey. Blue points represent absences, red presences relative to a minimum bioenergetic threshold. A similar dataset was used for C. Hyperboreus."
+    },
+    {
+      src: "/Images/Bigelow/resp_curves.png",
+      caption: "Response curves from a preliminary version of the final C. finmarchicus model. Lines represent how each fold of the boosted regression tree model responded to variation in a covariate while all other covariates were held constant. Vertical lines represent median variable values. This is one example of original model analyses described in the final manuscript."
+    },
+    {
+      src: "/Images/Bigelow/pres_jul.png",
+      caption: "Historical (1990-2015) projections of combined Calanus spp. τh-patch probabilities in July. Combined probabilities are calculated as the summed likelihood of either C. finmarchicus or C. hyperboreus constituting suitable foraging habitat at a point. Areas highlighted here, for example the Gulf of Maine and Gulf of Saint Lawrence, have been historically documented as foraging areas."
+    },
+    {
+      src: "/Images/Bigelow/future_preds.png",
+      caption: "Habitat shift maps for future combined Calanus spp. projections, May through October. Colors represent how combined projected foraging habitat suitability shifted between historical (1990-2015) and representative concentration pathway RCP 8.5 year-2075 (2066-2085) climate projections relative to a habitat probability threshold of 20%. These projections highlight areas of change for future foraging suitability, for example loss of foraging habitat suitability in the Gulf of Maine."
+    },
+];
 
 const Publications = () => {
     return (
     <div className = "mainPane eighty">
     <div>
         <div style = {{"height":"2vh"}}></div>
-        {/* Bigelow Paper */}
+        {/* Header */}
+        <p className = "block d-inline-block accent1-bg">In press at <i>Elementa: Science of the Anthropocene</i></p>
         <div className = "row">
-            <div className = "col-9">
-                <p><i>Bigelow Laboratory of Ocean Sciences</i></p>
-                <h2 className = "m-1">Predicting novel <i>E. glacialis</i> foraging habitat for future climate scenarios on the Northeast Atlantic Shelf</h2>
+            <div className = "col-12">
+                <h2 className = "mx-0 mt-2 mb-3">Suitability of foraging habitat for <i>Eubalaena glacialis</i> under future climate scenarios in the Northwest Atlantic </h2>
+                <p className = "text-smaller ps-1"><i>Omi H. Johnson, Stéphane Plourde, Caroline Lehoux, Camille H. Ross, Benjamin Tupper, Christopher D. Orphanides, Harvey J. Walsh, Nicholas R. Record</i></p>
             </div>
         </div>
+        {/* Description, Abstract, Primary links */}
         <div className = "row mt-2">
             <div className = "col-1"></div>
-            <div className = "col-8">
+            <div className = "col-11">
                 <div className = "block background2">
-                <p>I am currently employed as a research technician at the Tandy Center of Ocean Forecasting, a lab within the Bigelow Laboratory of Ocean Sciences. I'm using R and machine learning algorithms to build forecasts of suitable North Atlantic Right Whale feeding habitats in the years 2055 and 2075. The North Atlantic Right Whale (<i>E. glacialis</i>) is a critically endangered whale species, with less than 350 individuals left in the wild. Recent climate shifts in the Gulf of Maine have triggered changes in right whale feeding patterns, challenging traditional conservation tactics. My research uses abundance data of right whale prey species (<i>C. finmarchicus</i> and <i>C. hyperboreus</i>) and fine-resolution environmental covariates to build models predicting future suitable feeding habitat. These forecasts can be used to inform survey effort and further modeling. See below for a December 2022 draft of my research. Since this draft was published, I've introduced additional improvements such as ensemble modeling techniques and non-linear threshold calculations.</p>
-                <a class="block background3 d-flex justify-content-between" data-bs-toggle="collapse" href="#bigelowAbstract">Abstract
-                <GoTriangleDown className = "arrow-icon"/></a>
-                <div id="bigelowAbstract" class="collapse">
-                    <p className = "mt-3" style = {{"font-size":".9em", "text-indent": "2em"}}> The critically endangered North Atlantic right whale (<i>Eubalaena glacialis</i>) faces significant anthropogenic mortalities and has been the focus of a variety of conservation efforts and legal battles. Recent climate shifts in the Gulf Stream have caused unpredictability in right whale distributions and created challenges for traditional management techniques. Early warnings of emerging <i>E. glacialis</i> habitat can help with proactive management and potentially avoid significant mortality events. <i>E. glacialis</i> primarily feeds on aggregations of <i>Calanus</i> spp. dense enough to meet bioenergetic requirements. Predicting distributions of <i>Calanus</i> spp. feeding habitats during future climate scenarios will reveal insight into future<i> E. glacialis </i>distribution shifts. In this study, we trained boosted regression tree modeling algorithms with <i>C. finmarchicus </i>and <i>C. hyperboreus </i>feeding habitat data and monthly environmental covariates to build species-specific models of present and future habitat distributions on the northeast American shelf between the Mid-Atlantic Bight and Labrador Shelf. Present-day feeding habitat data was derived by comparing species abundance data from U.S. and Canadian shelf areas to a depth-varying critical bioenergetic threshold for <i>E. glacialis</i>. Environmental covariates were sourced from fine-resolution, modeled projections of the North Atlantic and included monthly measurements of bathymetry, mixed layer depth, sea surface temperature and salinity, bottom water temperature and salinity, and current velocity. The trained models were then projected to the years 2055 and 2075 for representative concentration pathway (RCP) 4.5 and 8.5 management scenarios to examine new and lost feeding habitats relative to present day. The models had generally high performance (AUC {`>`} .9) and indicated bottom temperature and mixed layer depth as important covariates. Present-day projections correlated to known areas of high habitat suitability, as well as additional areas on the Labrador Shelf and Flemish Cap. Future projections indicated decreased habitat suitability in the Gulf of Maine and areas in the Gulf of Saint Lawrence, with retained and increased suitability in the Scotian Shelf, Newfoundland and Labrador Shelves, and the Flemish Cap. Directing some survey efforts towards emerging foraging habitats can enable conservation management to anticipate distribution shifts that have led to high mortality in the past. </p>
+                <p> 
+                    Machine learning can be a powerful tool to anticipate and counteract rapid phenomena like climate change. In the case of the critically endangered North Atlantic Right Whale (<i>Eubalaena Glacialis</i>), recent climate shifts in the Gulf Stream have disrupted historical foraging patterns and challenged conservation tactics. In this research, conducted within the <a className = "accent1" target="_blank" rel="noreferrer" href = "https://www.bigelow.org/">Bigelow Laboratory of Ocean Sciences</a>, we sought to leverage boosted regression trees and modeled environmental covariates to predict <i>E. glacialis</i> foraging suitability for 2055 and 2075. This research is unique in that it covers the entire, cross-boundary foraging range of <i>E. glacialis</i> at a finely detailed 1/12° resolution. The research also leverages a bioenergetics-threshold approach to deliver more insightful predictions based on multiple prey species. This research can be used to inform survey effort and help protect <i>E. glacialis</i> from anthropogenic threats such as ship strikes and entanglement in fishing gear.
+                </p>
+                <p>
+                    This research began as an internship project in Spring 2022 and continued part-time through Spring 2025. To reach the finished paper, I built 100+ experimental models in R using a variety of modeling algorithms such as GAMs, Neural Networks, Random Forests, and GLMs to determine an optimal algorithm. I also developed a comprehensive, modular modeling pipeline to easily facilitate version creation and plot generation. The final forecasts are based on two independent, 100-fold boosted regression tree models representing the two most abundant prey species in the region, <i>Calanus finmarchicus</i> and <i>C. hyperboreus</i>. The completed models displayed high performance, with AUCs &gt; 90%. The research manuscript, now in press at <i>Elementa: Science of the Anthropocene</i>, thoughtfully details results such as model performance, caveats like overfitting and spatial autocorrelation, final forecast results, and implications for right whale conservation.
+                </p>
+                <p className = "text-smaller pt-3">
+                    <i>This work has been presented at the 2022 Ecological Forecasting Initiative Conference; the 2024 Northeastern University RISE Conference; and the 2024 North Atlantic Right Whale Consortium</i>
+                </p>
+                <CollapseBar title = "Abstract">
+                    <p className = "mt-3" style = {{"font-size":".9em", "text-indent": "2em"}}> The critically endangered North Atlantic right whale (<i>Eubalaena glacialis</i>) faces significant anthropogenic mortality. Recent climatic shifts in traditional habitats have caused abrupt changes in right whale distributions, challenging traditional conservation strategies. Tools that can help anticipate new areas where <i>E. glacialis</i> might forage could inform proactive management. In this study, we trained boosted regression tree algorithms with fine-resolution modeled environmental covariates to build prey copepod (<i>Calanus</i>) species-specific models of historical and future distributions of <i>E. glacialis</i> foraging habitat on the northwest Atlantic shelf, from the Mid-Atlantic Bight to the Labrador Shelf. We determined foraging suitability using <i>E. glacialis</i> foraging thresholds for <i>Calanus</i> spp. adjusted by a bathymetry-dependent bioenergetic correction factor based on known foraging behavior constraints. Models were then projected to 2046&#45;2065 and 2066&#45;2085 modeled climatologies for representative concentration pathway scenarios RCP 4.5 and RCP 8.5 with the goal of identifying potential shifts in foraging habitat. The models had generally high performance (area under the receiver operating characteristic curve &gt; 0.9) and indicated ocean bottom conditions and bathymetry as important covariates. Historical (1990&#45;2015) projections aligned with known areas of high foraging habitat suitability as well as potential suitable areas on the Labrador Shelf. Future projections suggested that the suitability of potential foraging habitat would decrease in parts of the Gulf of Maine and southwestern Gulf of Saint Lawrence, while potential habitat would be maintained or improved on the western Scotian Shelf, in the Bay of Fundy, on the Newfoundland and Labrador shelves, and at some locations along the continental shelf breaks. Overall, suitable habitat is projected to decline. Directing some survey efforts towards emerging potential foraging habitats can enable conservation management to anticipate the type of distribution shifts that have led to high mortality in the past.  </p>
+                </CollapseBar>
                 </div>
+                <a href = "/PDFfiles/NARWC_Poster.pdf" target="_blank" rel="noopener noreferrer"><p className = "pt-3"><GiWhaleTail className = "icon accent1 up"/> Download the poster presented at the North Atlantic Right Whale Consortium 2024</p></a>
+                <a href = "https://github.com/BigelowLab/predicting_NARW" target = "_blank" rel = "noopener noreferrer"><p className = "pt-2"><AiFillGithub className = "icon accent1 up"/> View the source code on GitHub </p></a>
+                <p className = "pt-2"><AiOutlineFilePdf className = "icon accent1 up"/> Since this piece is in press, the manuscript is not yet available.</p>
                 </div>
-                <a href = "/PDFfiles/SemesterPaper.pdf" target="_blank" rel="noopener noreferrer">
-                    <div className="d-flex justify-content-between p-2 mt-2">
-                       <span><AiOutlineFilePdf className = "up accent2 icon"/> Predicting novel <i>E. glacialis</i> foraging habitat.pdf</span>
-                       <span><AiOutlineDownload className = "up accent2 icon"/></span>
-                    </div>
-                </a>
             </div>
         </div>
-        {/* Tidymodels Tutorial */}
-        <div className = "row mt-5">
-            <div className = "col-5">
-            </div>
-            <div className = "col-7">
-                <a href = "https://oj713.github.io/tidymodels/" target="_blank"><h2 className = "m-1">Tidymodels Tutorial Website<IoMdOpen className = "up"/></h2></a>
-            </div>
-        </div>
-        <div className = "row mt-2">
-            <div className = "col-6"></div>
-            <div className = "block accent1-bg col-6">
-                <p>Part of my research work at Bigelow was to explore the capabilities of a set of R modeling packages called <a href = "https://www.tidymodels.org/" target = "_blank" className = "accent2">Tidymodels</a>. This relatively new set of packages aims to simplify the modeling process by providing tools to streamline data preparation and a common interface for a variety of modeling engines. The website was built using RMarkdown and provides a comprehensive walkthrough of each Tidymodels package, complete with thorough coding examples and further resources.</p>
-            </div>
-        </div>
-        {/* Brickman Walkthrough */}
-        <div className = "row mt-5">
-            <div className = "col-5">
-                <a href = "https://github.com/oj713/brickman-walkthrough" target="_blank"><h2 className = "m-1">Brickman Data Walkthrough<IoMdOpen className = "up"/></h2></a>
-            </div>
-        </div>
+
+        {/* Image Gallery */}
+        <div style = {{"height":"3em"}}></div>
+
+        <ImageGallery images = {images}/>
+
+        {/* Related Work */}
+        <div style = {{"height":"3em"}}></div>
+
+        <h2 className = "mx-0 mt-2 mb-3">Related Projects</h2>
         <div className = "row mt-2">
             <div className = "col-1"></div>
-            <div className = "block accent2-bg col-6">
-                <p>One distinguishing factor of my research is the scale and resolution of my predictions. Most predictions of <i>Calanus</i> spp. or Right Whale habitat only consider small areas of the coast or are at low resolution. My research uses 1/12 degree, downscaled environmental covariates from <a href = "https://online.ucpress.edu/elementa/article/9/1/00055/116900/Projections-of-physical-conditions-in-the-Gulf-of" target = "_blank" className = "accent1">Brickman et al. 2021</a> to generate detailed predictions across the entire Northeast Atlantic Shelf. To allow other modelers at my lab to use this dataset, I built a comprehensive walkthrough in GitHub using complete example code, explanations, and helper methods.</p>
+            <div className = "col-11">
+                <div className = "block accent2-bg">
+                    <a href = "https://oj713.github.io/tidymodels/" target="_blank" rel = "noreferrer"><h3 className = "m-1">Tidymodels Tutorial Website<IoMdOpen className = "up"/></h3></a>
+                    <p> A website thoroughly detailing the capabilities of <a href = "https://www.tidymodels.org/" target = "_blank" rel = "noreferrer" className = "accent1">Tidymodels</a>, a set of R modeling packages designed to increase modularity and align modeling paradigms with "tidy" data principles. This package was instrumental in the development of my modeling pipeline; The walkthrough is built using RMarkdown and is specialized for ecological forecasting, including thorough coding examples and links to outside resources. </p>
+                </div>
+                <div className = "block right-whale-bg mt-3">
+                    <a href = "https://arcg.is/1CzLOC0" target="_blank" rel = "noreferrer"><h3 className = "m-1">Saving the North Atlantic Right Whale<IoMdOpen className = "up"/></h3></a>
+                    <p> What does it mean to save the North Atlantic right whale? How does reducing ship strike collisions and fishing gear entanglements complicate the work of other industries in the Gulf of Maine? In this ArcGIS StoryMap, I use peer-reviewed sources and current events news to construct a narrative about effective strategies for right whale conservation, recent protests from the American Lobster Industry, and technological innovations driving the story forward. Forecasts like my published research are just one piece of the puzzle. </p>
+                </div>
+                <div className = "block accent2-bg mt-3">
+                    <a href = "https://github.com/oj713/brickman-walkthrough" target="_blank" rel = "noreferrer"><h3 className = "m-1">Brickman Data Walkthrough<IoMdOpen className = "up"/></h3></a>
+                    <p> My research relies on modelled environmental covariates sourced from <a href = "https://online.ucpress.edu/elementa/article/9/1/00055/116900/Projections-of-physical-conditions-in-the-Gulf-of" target = "_blank" rel = "noreferrer" className = "accent1">Brickman et al. 2021</a>, which features 1/12°, high-resolution projections of key covariates across the Northern Atlantic. This dataset has plenty of potential beyond my own work for use in other ecological forecast scenarios. This walkthrough presents a set of prepackaged functions and clear explanations for how anyone with a presence/absence dataset can build their own high resolution forecasts using the Brickman covariates. </p>
+                </div>
             </div>
         </div>
-        <div style = {{"height":"2vh"}}></div>
-        <div className = "text-center" style = {{"height":"10vh"}}>
-            <br/>
-            <a className="accent1hover" href = "#">Back to Top</a>
-        </div>
-    </div>
+
+        {/* Back to top */}
+        <BackToTop/>
     </div>
     )
 }

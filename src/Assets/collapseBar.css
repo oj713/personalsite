@@ -1,0 +1,16 @@
+.arrow-icon {
+    transform: translateY(.2em);
+    transition: transform 0.3s ease;
+}
+.rotate-180 {
+    transform: rotate(-180deg);
+}
+
+button.collapseButton {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--background3);
+    width: 100%;
+    color: var(--text-col);
+    border: none;
+}
