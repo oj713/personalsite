@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { AiFillGithub } from 'react-icons/ai';
 
 const Home = () => {
@@ -29,7 +30,7 @@ const Home = () => {
         </div>
     </div>
     </div>
-    <div className = "bottomCorner d-none d-md-block"><p class="accent2 ps-3 text-smaller"><i>Background: Original forecasts. See <a href = "/publications#bigelow">Publications</a>.</i></p></div>
+    <div className = "bottomCorner d-none d-md-block"><p class="accent2 ps-3 text-smaller"><i>Background: Original forecasts. See <Link to = "/publications#bigelow">Publications</Link>.</i></p></div>
     </>
     )
 }

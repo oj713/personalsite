@@ -4,6 +4,7 @@ import Projects from './Projects';
 import Contact from './contact.js';
 import Resume from './Resume';
 import NavigationTabs from './NavigationTabs';
+import ScrollToHash from './Assets/scrollToTop.js';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <div class = "bg"></div>
         <div>
           <NavigationTabs/>
+          <ScrollToHash />
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/publications" element = {<Publications/>}/>

@@ -2,6 +2,7 @@ import React from 'react';
 import PdfDownload from '../Assets/pdfDownload';
 import {GiWhaleTail, GiSlicedBread} from 'react-icons/gi';
 import BackToTop from '../Assets/backToTop';
+import { Link } from 'react-router-dom';
 import "./index.css";
 
 const techKnowledge = [
@@ -119,7 +120,7 @@ const Resume = () => {
                         </div>
                         <br/>
                         <div>
-                            <a className = "accent2hover" href = "/publications#bigelow"> <GiWhaleTail className = "icon accent2 up"/> Published Work! See <i>Publications</i>.</a>
+                            <Link className = "accent2hover" to = "/publications#bigelow"> <GiWhaleTail className = "icon accent2 up"/> Published Work! See <i>Publications</i>.</Link>
                         </div>
     
                         <ul className="mt-3">
@@ -143,7 +144,7 @@ const Resume = () => {
                         </div>
                         <br/>
                         <div>
-                            <a className = "accent2hover" href = "/publications#parissaclay"> <GiSlicedBread className = "icon accent2 up"/> Published Work! See <i>Publications</i>.</a>
+                            <Link className = "accent2hover" to = "/publications#paris-saclay"> <GiSlicedBread className = "icon accent2 up"/> Published Work! See <i>Publications</i>.</Link>
                         </div>
     
                         <ul className="mt-3">
