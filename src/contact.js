@@ -19,8 +19,6 @@ const Contact = () => {
                 <div className = "d-flex pb-3">
                     <AiOutlineMail className = "icon accent1"/>
                     <p className = "ps-3">
-                        ojohnson3207@gmail.com <br/>
-                        ojohnson@bigelow.org <br/>
                         johnson.omi@northeastern.edu
                     </p>
                 </div>

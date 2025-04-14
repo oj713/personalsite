@@ -1,8 +1,8 @@
 import React from 'react';
-import {IoMdOpen} from 'react-icons/io';
 import { GiMirrorMirror, GiSharkFin } from "react-icons/gi";
 import { BiSolidTreeAlt } from "react-icons/bi";
 import {AiFillGithub} from 'react-icons/ai';
+import { IoColorPaletteSharp } from "react-icons/io5";
 import ImageGallery from '../Assets/imageGallery.js';
 import BackToTop from '../Assets/backToTop.js';
 import "./index.css";
@@ -61,6 +61,33 @@ const parkour_images = [
     }
 ];
 
+const fmf_images = [
+    {
+        src: "/Images/FMF/char.png",
+        caption: "Booting the application up shows a character select screen."
+    },
+    {
+        src: "/Images/FMF/map.png",
+        caption: "Players are dropped onto a map with a tile-based rendering system and collidable objects. Frames are scattered about the map. Multiple players can log on at a time."
+    },
+    {
+        src: "/Images/FMF/chat.png",
+        caption: "Players can chat to each other through the terminal."
+    },
+    {
+        src: "/Images/FMF/move.gif",
+        preview: "/Images/FMF/move.jpg",
+        caption: "Players can move around the map using arrow keys. Standing in front of a frame will trigger a view button."
+    },
+    {
+        src: "/Images/FMF/upload.png",
+        caption: "Users can upload new images to any empty frames. These images will be visible to everyone and disappear after five minutes."
+    },
+    {
+        src: "/Images/FMF/viewart.png",
+        caption: "Once an image is populated, the frame will fill on the map and other users can view your work!"
+    }
+];
 
 
 const Projects = () => {
@@ -99,10 +126,42 @@ const Projects = () => {
 
         <div style = {{"height":"3em"}}></div>
 
+        {/* Five Minute Frames */}
+        <div>
+            {/* Header */}
+            <p className = "block d-inline-block accent1-bg">October - December 2023</p>
+            <div className = "row">
+                <div className = "col-12">
+                    <h2 className = "mx-0 mt-2 mb-3"><IoColorPaletteSharp className = "up"/> Five Minute Frames</h2>
+                    <p className = "text-smaller ps-1"><i>D programming language, Networking, Unit Testing, Agile</i></p>
+                </div>
+            </div>
+            <div className = "row mt-2">
+                <div className = "col-1"></div>
+                <div className = "col-11">
+                    {/* Description */}
+                    <div className = "block background2">
+                    <p>
+                        This application lets everyone have a chance to be an artist! Five Minute Frames is a game application that lets users chat, upload images, and view the work of others in an interactive gallery. Images only last five minutes, so everyone can get a turn! Users can choose their own sprite and move around a map to view different frames.
+                    </p>
+                    <p>
+                        The program is built using the D programming language, which is related to C++. The application is built using a client-server architecture, where the server is responsible for managing the game state and the clients are responsible for rendering the game. Chats over the terminal are managed using a custom protocol. The map and images are rendered with a GUI and sprite-based animation. This project was completed in a group using Agile development methodology and thorough unit testing.
+                    </p>
+                    </div>
+
+                    <div style = {{"height":"2em"}}></div>
+
+                    <ImageGallery images={fmf_images}/>
+                </div>
+            </div>
+        </div>
+
+        <div style = {{"height":"3em"}}></div>
+
         {/* Parkour */}
         <div>
             {/* Header */}
-            <p className = "block d-inline-block accent1-bg">June - August 2023</p>
+            <p className = "block d-inline-block accent1-bg">July - August 2022</p>
             <div className = "row">
                 <div className = "col-12">
                     <a href = "https://parkour-social-media-site.netlify.app/" target="_blank" rel="noopener noreferrer"><h2 className = "mx-0 mt-2 mb-3"><BiSolidTreeAlt className = "up"/> Parkour: U.S. National Parks Social Media</h2></a>
@@ -140,7 +199,7 @@ const Projects = () => {
         {/* Google Doodle */}
         <div>
             {/* Header */}
-            <p className = "block d-inline-block accent1-bg">November 2022</p>
+            <p className = "block d-inline-block accent1-bg">November 2021</p>
             <div className = "row">
                 <div className = "col-12">
                     <a href = "https://oj713.github.io/Web-Design/google_doodle/index.html" target="_blank" rel="noopener noreferrer"><h2 className = "mx-0 mt-2 mb-3"><GiSharkFin className = "up"/>Google Doodle</h2></a>
