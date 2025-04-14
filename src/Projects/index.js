@@ -1,108 +1,189 @@
 import React from 'react';
 import {IoMdOpen} from 'react-icons/io';
-import {GoTriangleDown} from 'react-icons/go';
-import {AiOutlineFilePdf, AiOutlineDownload, AiFillGithub} from 'react-icons/ai';
+import { GiMirrorMirror, GiSharkFin } from "react-icons/gi";
+import { BiSolidTreeAlt } from "react-icons/bi";
+import {AiFillGithub} from 'react-icons/ai';
+import ImageGallery from '../Assets/imageGallery.js';
+import BackToTop from '../Assets/backToTop.js';
 import "./index.css";
+
+const ccc_images = [
+    {
+        src: "/Images/CCC/c_guereza.jpg",
+        caption: "Colobus Guereza. These monkeys are native to Africa and are known for their long tails and black and white fur. They are arboreal and live in social groups. Photo: Flickr"
+    },
+    {
+        src: "/Images/CCC/primates_mirrors.jpg",
+        caption: "Primates, including Colobus Guereza, have demonstrated interest in mirror-based enrichment. Colobus Guereza in particular are not food-motivated, so mirror-based enrichment is a promising avenue. Photo: Looky Lou"
+    },
+    {
+        src: "/Images/CCC/init_design.png",
+        caption: "Initial designs featured one large mirror rather than the final modular design. A key component retained through all designs was giving the monkeys agency to hide the mirror, preventing undue stress."
+    },
+    {
+        src: "/Images/CCC/box.JPG",
+        caption: "Initial prototype of the design using PVC sheet. The final design will have 5 holes rather than 2. A rope-based cover obscures a circular slot that can be replaced with mirror modules."
+    },
+    {
+        src: "/Images/CCC/leaf_modules.JPG",
+        caption: "Partially constructed pilot prototype. In the pilot testing (taking place late April), we will be testing the preferences of the monkeys between flap covers. Covers pictured: firehose leaf, silicone leaf, hard plastic leaf, firehose drapes."
+    },
+    {
+        src: "/Images/CCC/location.png",
+        caption: "Final intended location of the device within the Colobus Guereza enclosure at Stone Zoo. Testing will take place for two weeks in mid-June."
+    }
+];
+
+const parkour_images = [
+    {
+        src: "/Images/Parkour/homepage.png",
+        caption: "The homepage of the Parkour application shows current National Parks news served by their API as well as content from followed accounts, if logged in."
+    },
+    {
+        src: "/Images/Parkour/register.png",
+        caption: "New users can register for an account using the registration page. The application uses a MongoDB database to store user information."
+    },
+    {
+        src: "/Images/Parkour/profile.png",
+        caption: "The profile page contains user posts, followed accounts, and likes. Users can create new posts, delete posts, and edit their profile information."
+    },
+    {
+        src: "/Images/Parkour/parkprofile.png",
+        caption: "Navigating to the profile of a park shows specialized headers and posts as well as park-specific posting options. Rangers also have a special icon."
+    },
+    {
+        src: "/Images/Parkour/search.png",
+        caption: "The search page allows users to search for parks and users by name. Results are pulled from the National Parks API."
+    },
+    {
+        src: "/Images/Parkour/parkinfo.png",
+        caption: "Detailed information on all parks is available through the National Parks API. If a park is also a member on the application, posts from their profile are also shown."
+    }
+];
+
+
 
 const Projects = () => {
     return (
-    <div className = "mainPane sixtyeighty">
+    <div className = "mainPane eighty">
+
+        {/* ACI */}
         <div>
-            <div style={{"height": "2em"}}></div>
+            {/* Header */}
+            <p className = "block d-inline-block accent1-bg">March 2025 - <i>Present</i></p>
             <div className = "row">
-                <div className = "col-10">
-                    <h2 className = "m-1" style = {{"font-size":"2em"}}><b>Web Development</b></h2>
+                <div className = "col-12">
+                    <h2 className = "mx-0 mt-2 mb-3"><GiMirrorMirror className = "up"/> Colobus Curio Cabinet: Sensor-enabled, Mirror-based enrichment for <i>Colobus Guereza</i> monkeys</h2>
+                    <p className = "text-smaller ps-1"><i>Raspberry Pi, HTML/CSS, User-Centered Design, Physical Fabrication</i></p>
                 </div>
-                <div className = "col-2"></div>
             </div>
             <div className = "row mt-2">
-                <div className = "col-2"></div>
-                <div className = "col-10">
-                    <div className = "background2 block pb-1"><p>While I have a breadth of coding skills ranging from data analysis and functional programming to object-oriented software development, I particularly enjoy web development for its user-oriented focus and complex design considerations. I've learned web design and development through my design coursework, independent exploration, and graduate-level Web class.</p>
+                <div className = "col-1"></div>
+                <div className = "col-11">
+                    {/* Description */}
+                    <div className = "block background2">
+                    <p>
+                        In the modern age, animals are increasingly interacting with technology: service dogs must navigate automatic doors, smart collars can inform animal health, and zoo animals can interact with touch screens. Animal-Computer Interaction is a recently emerged field of research that studies the intersection of animals and technology. A key tenant of this field is that technology should be created using the principles of user-centered design and human-computer interaction, thus enabling natural and consented use of technology by animals.
+                    </p>
+                    <p>
+                        In this project within the <a className = "accent1" href = "https://www.interactanimallab.com/" target = "_blank" rel="noreferrer"> Interact Animal Lab </a>, we are constructing a sensor-enabled, mirror-based enrichment device for <i>Colobus Guereza</i> monkeys. The device consists of modular mirror components covered by movable flaps. The device is intended to encourage natural behaviors in <i>C. Guereza</i>, such as foraging and exploration of novel enrichment. Sensors and touch-screen modules will be used to collect data on effectiveness and add extra depth to play. This project is conducted in collaboration with <a className = "accent1" href = "https://www.zoonewengland.org/stone-zoo" target = "_blank" rel="noreferrer"> Stone Zoo </a> and will be tested with their 5 <i>C. Guereza</i> individuals in mid-June. 
+                    </p>
                     </div>
+
+                    <div style = {{"height":"2em"}}></div>
+
+                    <ImageGallery images={ccc_images}/>
                 </div>
             </div>
-            <div style = {{"height":"2vh"}}></div>
+        </div>
+
+        <div style = {{"height":"3em"}}></div>
+
         {/* Parkour */}
-        <div className = "row mt-5">
-            <div className = "col-6">
-                <iframe src="https://parkour-social-media-site.netlify.app/" 
-                title="Parkour" width = "100%" height="100%" className = "rounded mh-500"></iframe>
+        <div>
+            {/* Header */}
+            <p className = "block d-inline-block accent1-bg">June - August 2023</p>
+            <div className = "row">
+                <div className = "col-12">
+                    <a href = "https://parkour-social-media-site.netlify.app/" target="_blank" rel="noopener noreferrer"><h2 className = "mx-0 mt-2 mb-3"><BiSolidTreeAlt className = "up"/> Parkour: U.S. National Parks Social Media</h2></a>
+                    <p className = "text-smaller ps-1"><i>Node.js, MongoDB, Bootstrap, Redux.js, React.js, Full-Stack Development</i></p>
+                </div>
             </div>
-            <div className = "col vertcenter">
-                <h2 className="m-1">Parkour
-                <a href="https://parkour-social-media-site.netlify.app/" target="_blank" rel="noopener noreferrer"><IoMdOpen className = "up accent1hover"/></a>
-                <a href="https://github.com/oj713/parkour-frontend" target="_blank" rel="noopener noreferrer"><AiFillGithub className = "up accent1hover"/></a></h2>
-                <p><i>Node.js, MongoDB, Bootstrap, Redux.js, React.js</i></p>
-                <div className = "row">
-                    <div className = "col-2"></div>
-                    <div className = "block accent1-bg col">
-                        <p>A social media website by hikers, for hikers! Allows users to register, login, post, and search their favorite National Parks. Hooks to a custom backend API serving user and post information as well as the National Park Service API for additional park information. Built using React hooks, Redux reducers, MongoDB database, and Node.js RESTful API. Fully size responsive with custom CSS.</p>
+            <div className = "row mt-2">
+                <div className = "col-1"></div>
+                <div className = "col-11">
+                    {/* Description */}
+                    <div className = "block background2">
+                    <p>
+                        The U.S. National Parks are a point of national pride and spark fierce appreciation for the natural world. This web-based social media platform demo allows users to share their favorite parks, post photos, and connect directly with parks, rangers, and hikers alike. The application also connects directly to the National Parks API to display the latest news and information about each park.
+                    </p>
+                    <p>
+                        This project is a full-stack web application built within Javascript. The backend server, built using Node.js connected to a MongoDB database, stores user and park information and transmits it to the front end via RESTful APIs. The frontend, built using React, Redux, and Bootstrap, supports user registration, login, and CRUD operations on posts. The application is fully responsive and includes custom CSS styling.
+                    </p>
                     </div>
+                    {/* Primary links */}
+                    <div>
+                        <a className="accent1hover" href = "https://parkour-social-media-site.netlify.app/" target="_blank" rel="noopener noreferrer"><p className = "pt-3"><BiSolidTreeAlt className = "icon accent1 up"/> View the live demo. </p></a>
+                        <a className="accent1hover" href = "https://github.com/oj713/parkour-frontend" target = "_blank" rel = "noopener noreferrer"><p className = "pt-2"><AiFillGithub className = "icon accent1 up"/> View the frontend source code on GitHub. </p></a>
+                        <a className="accent1hover" href = "https://github.com/oj713/parkour-backend" target = "_blank" rel = "noopener noreferrer"><p className = "pt-2"><AiFillGithub className = "icon accent1 up"/> View the backend source code on GitHub. </p></a>
+                    </div>
+
+                    <div style = {{"height":"2em"}}></div>
+
+                    <ImageGallery images={parkour_images}/>
                 </div>
             </div>
         </div>
-        <div style = {{"height":"2vh"}}></div>
-        {/* Personal Site */}
-        <div className = "row mt-5">
-            <div className = "col-2"></div>
-            <div className = "col-8 vertcenter">
-                <h2 className="m-1">Personal Site
-                <a href="https://github.com/oj713/personalsite" target="_blank" rel="noopener noreferrer"><AiFillGithub className = "up accent2hover"/></a></h2>
-                <p><i>React.js, Bootstrap, HTML/CSS, Figma</i></p>
-                <div className = "row">
-                    <div className = "col-2"></div>
-                    <div className = "block accent2-bg col">
-                        <p>You're already here! I built this site using React.js as a writing portfolio that I later refactored to a personal site. I mocked the site using Figma and implemented it using React routing, Bootstrap grid layouts, and React icon libraries. Currently not mobile responsive, but will be soon!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div style = {{"height":"2vh"}}></div>
-        {/* Water Me */}
-        <div className = "row mt-5">
-            <div className = "col vertcenter">
-                <h2 className="m-1">Water Me!
-                <a href="https://oj713.github.io/Web-Design/plant_watering/index.html" target="_blank" rel="noopener noreferrer"><IoMdOpen className = "up accent1hover"/></a>
-                <a href="https://github.com/oj713/Web-Design/tree/main/plant_watering" target="_blank" rel="noopener noreferrer"><AiFillGithub className = "up accent1hover"/></a></h2>
-                <p><i>HTML/CSS, Javascript, Adobe XD</i></p>
-                <div className = "row">
-                    <div className = "col-2"></div>
-                    <div className = "block accent1-bg col">
-                        <p>A simple plant watering application meant to track various houseplants and their watering status. Supports CRUD operations on houseplants. Mocked in Adobe XD, implemented in HTML/CSS, and made functional using Javascript and local storage.</p>
-                    </div>
-                </div>
-            </div>
-            <div className = "col-6 text-center">
-                <iframe src="https://oj713.github.io/Web-Design/plant_watering/index.html" 
-                title="Water Me!" width = "80%" height="100%" className = "rounded mh-500"></iframe>
-            </div>
-        </div>
+
+        <div style = {{"height":"3em"}}></div>
+
         {/* Google Doodle */}
-        <div className = "row mt-5">
-            <div className = "col-8">
-                <iframe src="https://oj713.github.io/Web-Design/google_doodle/index.html" 
-                title="Google Doodle" width = "100%" height="100%" style={{"min-height":"500px"}} className = "rounded"></iframe>
+        <div>
+            {/* Header */}
+            <p className = "block d-inline-block accent1-bg">November 2022</p>
+            <div className = "row">
+                <div className = "col-12">
+                    <a href = "https://oj713.github.io/Web-Design/google_doodle/index.html" target="_blank" rel="noopener noreferrer"><h2 className = "mx-0 mt-2 mb-3"><GiSharkFin className = "up"/>Google Doodle</h2></a>
+                    <p className = "text-smaller ps-1"><i>HTML, CSS, hand-drawn imagery</i></p>
+                </div>
             </div>
-            <div className = "col vertcenter">
-                <h2 className="m-1">Google Doodle
-                <a href="https://oj713.github.io/Web-Design/google_doodle/index.html" target="_blank" rel="noopener noreferrer"><IoMdOpen className = "up accent2hover"/></a>
-                <a href="https://github.com/oj713/Web-Design/tree/main/google_doodle" target="_blank" rel="noopener noreferrer"><AiFillGithub className = "up accent2hover"/></a></h2>
-                <p><i>HTML/CSS</i></p>
-                <div className = "row">
-                    <div className = "col-2"></div>
-                    <div className = "block accent2-bg col">
-                        <p>A custom Google Doodle promoting Shark Awareness day. This project was a chance to experiment with hand-drawn designs and CSS transitions.</p>
+            <div className = "row mt-2">
+                <div className = "col-1"></div>
+                <div className = "col-11">
+                    {/* Description */}
+                    <div className = "block background2">
+                    <p>
+                        A short and simple HTML/CSS project to design a custom Google Doodle. The doodle leverages hand-drawn designs and CSS transitions to create a fun and interactive experience celebrating International Shark Awareness Day.
+                    </p>
+                    </div>
+                    {/* Primary links */}
+                    <div>
+                        <a className="accent1hover" href = "https://oj713.github.io/Web-Design/google_doodle/index.html" target="_blank" rel="noopener noreferrer"><p className = "pt-3"><GiSharkFin className = "icon accent1 up"/> View the live demo. </p></a>
+                    </div>
+
+                    <div style = {{"height":"2em"}}></div>
+
+                    <div className="row">
+                      <div className="col-12 col-sm-6 mb-2 mb-sm-0">
+                        <img
+                          src="./Images/GD/up.png"
+                          alt="Google Doodle, up position"
+                          className="img-fluid rounded"
+                        />
+                      </div>
+                      <div className="col-12 col-sm-6">
+                        <img
+                          src="./Images/GD/down.png"
+                          alt="Google Doodle, down position"
+                          className="img-fluid rounded"
+                        />
+                      </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div style = {{"height":"2vh"}}></div>
-        <div className = "text-center" style = {{"height":"10vh"}}>
-            <br/>
-            <a className="accent1hover" href = "#">Back to Top</a>
-        </div>
-    </div>
+            
+        <BackToTop/>
     </div>
     )
 }
