@@ -1,4 +1,5 @@
 import React from 'react';
+import { AiFillGithub } from 'react-icons/ai';
 
 const Home = () => {
     return (
@@ -22,14 +23,14 @@ const Home = () => {
                 </p>
                 <br/>
                 <div>
-                    <p className = "text-right text-smaller"><i>Source code for this website on my <a className = "accent2" target="_blank" href="https://github.com/oj713/personalsite">GitHub.</a></i></p>
+                    <p className = "text-right text-smaller"><a className = "accent2hover" href = "https://github.com/oj713/personalsite" target = "_blank" rel="noreferrer"><AiFillGithub class = "icon up accent2"/><i> Built with React</i></a></p>
                 </div>
             </div>
         </div>
         </div>
     </div>
     </div>
-    <div className = "bottomCorner"><p class="accent1 ps-3 text-smaller"><i>Background: Original forecasts.</i></p></div>
+    <div className = "bottomCorner"><p class="accent2 ps-3 text-smaller"><i>Background: Original forecasts. See <a href = "/publications#bigelow">Publications</a>.</i></p></div>
     </>
     )
 }

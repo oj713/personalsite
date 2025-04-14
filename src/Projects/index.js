@@ -182,9 +182,9 @@ const Projects = () => {
                     </div>
                     {/* Primary links */}
                     <div>
-                        <a className="accent1hover" href = "https://parkour-social-media-site.netlify.app/" target="_blank" rel="noopener noreferrer"><p className = "pt-3"><BiSolidTreeAlt className = "icon accent1 up"/> View the live demo. </p></a>
-                        <a className="accent1hover" href = "https://github.com/oj713/parkour-frontend" target = "_blank" rel = "noopener noreferrer"><p className = "pt-2"><AiFillGithub className = "icon accent1 up"/> View the frontend source code on GitHub. </p></a>
-                        <a className="accent1hover" href = "https://github.com/oj713/parkour-backend" target = "_blank" rel = "noopener noreferrer"><p className = "pt-2"><AiFillGithub className = "icon accent1 up"/> View the backend source code on GitHub. </p></a>
+                        <a className="accent2hover" href = "https://parkour-social-media-site.netlify.app/" target="_blank" rel="noopener noreferrer"><p className = "pt-3"><BiSolidTreeAlt className = "icon accent2 up"/> View the live demo. </p></a>
+                        <a className="accent2hover" href = "https://github.com/oj713/parkour-frontend" target = "_blank" rel = "noopener noreferrer"><p className = "pt-2"><AiFillGithub className = "icon accent2 up"/> View the frontend source code on GitHub. </p></a>
+                        <a className="accent2hover" href = "https://github.com/oj713/parkour-backend" target = "_blank" rel = "noopener noreferrer"><p className = "pt-2"><AiFillGithub className = "icon accent2 up"/> View the backend source code on GitHub. </p></a>
                     </div>
 
                     <div style = {{"height":"2em"}}></div>
@@ -217,7 +217,7 @@ const Projects = () => {
                     </div>
                     {/* Primary links */}
                     <div>
-                        <a className="accent1hover" href = "https://oj713.github.io/Web-Design/google_doodle/index.html" target="_blank" rel="noopener noreferrer"><p className = "pt-3"><GiSharkFin className = "icon accent1 up"/> View the live demo. </p></a>
+                        <a className="accent2hover" href = "https://oj713.github.io/Web-Design/google_doodle/index.html" target="_blank" rel="noopener noreferrer"><p className = "pt-3"><GiSharkFin className = "icon accent2 up"/> View the live demo. </p></a>
                     </div>
 
                     <div style = {{"height":"2em"}}></div>

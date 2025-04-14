@@ -96,8 +96,8 @@ const Publications = () => {
                 </div>
                 {/* Primary links */}
                 <div>
-                    <a className="accent1hover" href = "https://programs.sigchi.org/chi/2025/program/content/194610" target="_blank" rel="noopener noreferrer"><p className = "pt-3"><GiSlicedBread className = "icon accent1 up"/> View the official landing page at CHI website. </p></a>
-                    <p className = "pt-2"><AiOutlineFilePdf className = "icon accent1 up"/> Since this conference is upcoming, the manuscript is not yet available.</p>
+                    <a className="accent2hover" href = "https://programs.sigchi.org/chi/2025/program/content/194610" target="_blank" rel="noopener noreferrer"><p className = "pt-3"><GiSlicedBread className = "icon accent2 up"/> View the official landing page at CHI website. </p></a>
+                    <p className = "pt-2"><AiOutlineFilePdf className = "icon accent2 up"/> Since this conference is upcoming, the manuscript is not yet available.</p>
                 </div>
 
                 <div style = {{"height":"2em"}}></div>
@@ -139,9 +139,9 @@ const Publications = () => {
                 </div>
                 {/* Primary links */}
                 <div>
-                    <a className="accent1hover" href = "/PDFfiles/NARWC_Poster.pdf" target="_blank" rel="noopener noreferrer"><p className = "pt-3"><GiWhaleTail className = "icon accent1 up"/> Download the poster presented at the North Atlantic Right Whale Consortium 2024.</p></a>
-                    <a className="accent1hover" href = "https://github.com/BigelowLab/predicting_NARW" target = "_blank" rel = "noopener noreferrer"><p className = "pt-2"><AiFillGithub className = "icon accent1 up"/> View the source code on GitHub. </p></a>
-                    <p className = "pt-2"><AiOutlineFilePdf className = "icon accent1 up"/> Since this piece is in press, the manuscript is not yet available.</p>
+                    <a className="accent2hover" href = "/PDFfiles/NARWC_Poster.pdf" target="_blank" rel="noopener noreferrer"><p className = "pt-3"><GiWhaleTail className = "icon accent2 up"/> Download the poster presented at the North Atlantic Right Whale Consortium 2024.</p></a>
+                    <a className="accent2hover" href = "https://github.com/BigelowLab/predicting_NARW" target = "_blank" rel = "noopener noreferrer"><p className = "pt-2"><AiFillGithub className = "icon accent2 up"/> View the source code on GitHub. </p></a>
+                    <p className = "pt-2"><AiOutlineFilePdf className = "icon accent2 up"/> Since this piece is in press, the manuscript is not yet available.</p>
                 </div>
 
                 {/* Image Gallery */}
