@@ -105,8 +105,8 @@ const Projects = () => {
                 </div>
             </div>
             <div className = "row mt-2">
-                <div className = "col-1"></div>
-                <div className = "col-11">
+                <div className = "col-sm-none col-md-1"></div>
+                <div className = "col-sm-12 col-md-11">
                     {/* Description */}
                     <div className = "block background2">
                     <p>
@@ -137,8 +137,8 @@ const Projects = () => {
                 </div>
             </div>
             <div className = "row mt-2">
-                <div className = "col-1"></div>
-                <div className = "col-11">
+                <div className = "col-sm-none col-md-1"></div>
+                <div className = "col-sm-12 col-md-11">
                     {/* Description */}
                     <div className = "block background2">
                     <p>
@@ -169,8 +169,8 @@ const Projects = () => {
                 </div>
             </div>
             <div className = "row mt-2">
-                <div className = "col-1"></div>
-                <div className = "col-11">
+                <div className = "col-sm-none col-md-1"></div>
+                <div className = "col-sm-12 col-md-11">
                     {/* Description */}
                     <div className = "block background2">
                     <p>
@@ -207,8 +207,8 @@ const Projects = () => {
                 </div>
             </div>
             <div className = "row mt-2">
-                <div className = "col-1"></div>
-                <div className = "col-11">
+                <div className = "col-sm-none col-md-1"></div>
+                <div className = "col-sm-12 col-md-11">
                     {/* Description */}
                     <div className = "block background2">
                     <p>

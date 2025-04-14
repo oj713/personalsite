@@ -14,8 +14,8 @@ const Contact = () => {
             <div className = "col-2"></div>
         </div>
         <div className = "row mt-2">
-            <div className = "col-3"></div>
-            <div className = "col-9">
+            <div className = "col-sm-none col-lg-3"></div>
+            <div className = "col-sm-12 col-lg-9">
                 <div className = "d-flex pb-3">
                     <AiOutlineMail className = "icon accent2"/>
                     <span className = "ps-3"> johnson.omi@northeastern.edu </span>

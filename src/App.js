@@ -4,14 +4,12 @@ import Projects from './Projects';
 import Contact from './contact.js';
 import Resume from './Resume';
 import NavigationTabs from './NavigationTabs';
-import LightDarkToggle from './LightDarkToggle';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
 function App() {
   return (
       <BrowserRouter>
         <div class = "bg"></div>
-        <LightDarkToggle/>
         <div>
           <NavigationTabs/>
           <Routes>

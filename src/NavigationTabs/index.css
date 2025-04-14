@@ -1,3 +1,6 @@
+.navigation-wrapper {
+    position: relative;
+}
 .icon {
     font-size: 1.4em;
 }
@@ -23,4 +26,37 @@
 .homeButton.hidden {
     visibility: hidden;
     opacity: 0;
+}
+
+.btntextcol {
+    color: var(--text-col);
+    border: none;
+}
+.btntextcol:hover {
+    color: var(--accent2);
+}
+
+.dropdown-menu-custom {
+    position: absolute;
+    top: 60px; 
+    right: 1rem;
+    padding: none;
+    background: var(--accent2);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    border-radius: 12px;
+    z-index: 1000;
+    overflow: hidden;
+  }
+  
+
+.dropdown-item {
+  text-decoration: none;
+  color: var(--text-col);
+  transition: background 0.2s ease;
+  padding: 0.5rem 1rem;
+}
+
+.dropdown-item:hover,
+.dropdown-item.active {
+  background-color: var(--accent1-bg);
 }
