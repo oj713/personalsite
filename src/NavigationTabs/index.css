@@ -3,7 +3,7 @@
 }
 
 .nav-pills .nav-link.active {
-    background-color: var(--accent1);
+    background-color: var(--accent2);
 }
 
 .nav-link:hover {
@@ -17,7 +17,7 @@
 .homeButton {
     visibility: visible;
     opacity: 1;
-    transition: opacity .1s ease-in-out, visibility .1s;
+    transition: opacity .05s ease-in-out, visibility .05s;
 }
 
 .homeButton.hidden {

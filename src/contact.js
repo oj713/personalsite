@@ -17,24 +17,20 @@ const Contact = () => {
             <div className = "col-2"></div>
             <div className = "background2 block col-10">
                 <div className = "d-flex pb-3">
-                    <AiOutlineMail className = "icon accent1"/>
-                    <p className = "ps-3">
-                        ojohnson3207@gmail.com <br/>
-                        ojohnson@bigelow.org <br/>
-                        johnson.omi@northeastern.edu
-                    </p>
+                    <AiOutlineMail className = "icon accent2"/>
+                    <span className = "ps-3"> johnson.omi@northeastern.edu </span>
                 </div>
                 <div className = "d-flex pb-3">
-                    <AiFillGithub className = "icon accent1"/>
-                    <a target="_blank" href = "https://github.com/oj713" className = "ps-3">https://github.com/oj713</a>
+                    <AiFillGithub className = "icon accent2"/>
+                    <a className = "accent2hover ps-3" target="_blank" href = "https://github.com/oj713">https://github.com/oj713</a>
                 </div>
                 <div className = "d-flex pb-3">
-                    <FaLinkedin className = "icon accent1"/>
-                    <a target="_blank" href = "https://www.linkedin.com/in/omi-johnson/" className = "ps-3">https://www.linkedin.com/in/omi-johnson/</a>
+                    <FaLinkedin className = "icon accent2"/>
+                    <a className = "accent2hover ps-3"  target="_blank" href = "https://www.linkedin.com/in/omi-johnson/">https://www.linkedin.com/in/omi-johnson/</a>
                 </div>
                 <div className = "d-flex">
-                    <FaOrcid className = "icon accent1"/>
-                    <a target="_blank" href = "https://orcid.org/0009-0005-9978-980X" className = "ps-3">https://orcid.org/0009-0005-9978-980X</a>
+                    <FaOrcid className = "icon accent2"/>
+                    <a className = "accent2hover ps-3" target="_blank" href = "https://orcid.org/0009-0005-9978-980X">https://orcid.org/0009-0005-9978-980X</a>
                 </div>
             </div>
         </div>

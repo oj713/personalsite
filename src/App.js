@@ -11,11 +11,9 @@ function App() {
   return (
       <BrowserRouter>
         <div class = "bg"></div>
+        <LightDarkToggle/>
         <div>
-          <div className="header d-flex justify-content-between">
-            <LightDarkToggle/>
-            <NavigationTabs/>
-          </div>
+          <NavigationTabs/>
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/publications" element = {<Publications/>}/>

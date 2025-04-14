@@ -7,7 +7,7 @@ const LightDarkToggle = () => {
     const {isDarkMode, setIsDarkMode} = useColorScheme();
 
     return (
-        <button className = "p-3 ps-4 vertcenter nostyle"
+        <button className = "vertcenter nostyle" style={{position: "fixed", "top": "1em", "left":"1em"}}
                 onClick = {() => setIsDarkMode(!isDarkMode)}>
             {isDarkMode ?
                 <MdOutlineDarkMode className = "icon down"/> :
