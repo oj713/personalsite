@@ -202,7 +202,7 @@ const Projects = () => {
             <p className = "block d-inline-block accent1-bg">November 2021</p>
             <div className = "row">
                 <div className = "col-12">
-                    <a href = "https://oj713.github.io/Web-Design/google_doodle/index.html" target="_blank" rel="noopener noreferrer"><h2 className = "mx-0 mt-2 mb-3"><GiSharkFin className = "up"/>Google Doodle</h2></a>
+                    <a href = "https://oj713.github.io/Web-Design/google_doodle/index.html" target="_blank" rel="noopener noreferrer"><h2 className = "mx-0 mt-2 mb-3"><GiSharkFin className = "up"/> Google Doodle</h2></a>
                     <p className = "text-smaller ps-1"><i>HTML, CSS, hand-drawn imagery</i></p>
                 </div>
             </div>

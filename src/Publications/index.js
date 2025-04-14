@@ -2,8 +2,7 @@ import React from 'react';
 import {IoMdOpen} from 'react-icons/io';
 import CollapseBar from '../Assets/collapseBar.js';
 import {AiFillGithub, AiOutlineFilePdf} from 'react-icons/ai';
-import {GiWhaleTail} from 'react-icons/gi';
-import { GiSlicedBread } from "react-icons/gi";
+import {GiWhaleTail, GiSlicedBread} from 'react-icons/gi';
 import ImageGallery from '../Assets/imageGallery.js';
 import BackToTop from '../Assets/backToTop.js';
 import "./index.css";
@@ -71,7 +70,7 @@ const Publications = () => {
     <div style = {{"height":"2vh"}}></div>
 
     {/* PARIS-SACLAY */}
-    <div>
+    <div id = "paris-saclay">
         {/* Header */}
         <p className = "block d-inline-block accent1-bg"><a href = "https://programs.sigchi.org/chi/2025/program/content/194610" target="_blank" rel="noreferrer">Late-Breaking Work, ACM Computer-Human Interaction (CHI) 2025</a></p>
         <div className = "row">
@@ -111,8 +110,7 @@ const Publications = () => {
     <div style = {{"height":"5em"}}></div>
 
     {/* BIGELOW */}
-    <div>
-    <div>
+    <div id = "bigelow">
         {/* Header */}
         <p className = "block d-inline-block accent1-bg">In press at <a href= "https://online.ucpress.edu/elementa" target="_blank" rel = "noreferrer"><i>Elementa: Science of the Anthropocene</i></a></p>
         <div className = "row">
@@ -187,7 +185,6 @@ const Publications = () => {
                 </div>
             </div>
         </div>
-    </div>
     </div>
 
     {/* Back to top */}

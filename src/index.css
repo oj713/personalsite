@@ -95,6 +95,10 @@ h3 {
   font-size: 1.1em;
   font-style: italic;
 }
+h4 {
+  font-size: 1.1em;
+  display: inline;
+}
 
 a {
   text-decoration: none;
