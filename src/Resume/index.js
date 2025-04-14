@@ -1,6 +1,5 @@
 import React from 'react';
-import Download from '../Assets/download.js';
-import {GoTriangleDown} from 'react-icons/go';
+import PdfDownload from '../Assets/pdfDownload';
 import {AiOutlineFilePdf, AiOutlineDownload} from 'react-icons/ai';
 
 const Resume = () => {
@@ -8,12 +7,7 @@ const Resume = () => {
     <div className = "mainPane eighty">
     <div>
         <div style = {{"height":"2vh"}}></div>
-        <a href = "/PDFfiles/OJohnson_Resume.pdf" target="_blank" rel="noopener noreferrer">
-            <div className="d-flex justify-content-between background2 rounded p-2 mt-2">
-               <span><AiOutlineFilePdf className = "up accent2 icon"/> Resume_OJohnson.pdf</span>
-               <span><AiOutlineDownload className = "up accent2 icon"/></span>
-            </div>
-        </a>
+        <PdfDownload filepath = "/PDFfiles/OJohnson_Resume.pdf">IM NOT UPDATED YET</PdfDownload>
         {/* Education */}
         <div style = {{"height":"4vh"}}></div>
         <div className = "row">
@@ -21,21 +15,20 @@ const Resume = () => {
         </div>
         <div className = "row mt-2">
             <div className = "col-1"></div>
-            <div className = "col-9">
-                <div className = "block background2">
-                <div class="accent1-bg block mb-3 d-flex justify-content-between">
-                    <span><b>Northeastern University</b> <i>Boston, MA</i></span>
-                    <span>Sept 2020 - May 2025</span>
+            <div className = "col-11 block background2">
+                <div class="accent1-bg block d-flex justify-content-between pb-1">
+                    <div>
+                        <span><b>Northeastern University,</b></span> <span>Boston, Massachusetts, USA</span>
+                        <p><i>Bachelor of Science in Computer Science and Environmental and Sustainability Studies</i></p>
+                    </div>
+                    <div className = "vertcenter">April 2025</div>
                 </div>
-                <p><i>Candidate for Bachelor of Science in Computer Science and Environmental Studies
-                    <br/>Minor in Interaction Design</i></p>
                 <br/>
                 <strong>Relevant Courses:</strong>
                 <p>Database Management Systems (Graduate) | Geographic Information Systems (Graduate) | Foundations of Software Engineering (Graduate) | Web Development (Graduate) | Oceanography | Algorithms and Data | Object Oriented Design</p>
                 <br/>
                 <strong>Honors:</strong>
                 <p>GPA: 3.95/4.0 | Honors Scholarship | Dean's List</p>
-                </div>
             </div>
         </div>
         <div style = {{"height":"2vh"}}></div>
