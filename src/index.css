@@ -22,14 +22,14 @@ body {
 }
 body.light {
   --background1: #fffded;
-  --background2: rgba(227, 245, 224, .8);
+  --background2: rgba(202, 232, 215, 0.8);
   --background3: rgba(121, 185, 170, 0.6);
 
-  --accent1: rgb(52, 137, 166);
-  --accent1-bg: rgba(115, 187, 211, 0.6);
+  --accent1: rgb(35, 119, 114);
+  --accent1-bg: rgba(129, 208, 205, 0.6);
 
   --accent2: rgb(76, 169, 94);
-  --accent2-bg: rgba(169, 224, 143, 0.6);
+  --accent2-bg: rgba(168, 213, 147, 0.8);
 
   --text-col: black;
   --text-col2: #4F4789;
@@ -137,15 +137,16 @@ p {
   max-width: 1200px;
 }
 
+.forty {
+  width: 40%;
+  height: 40vh;
+}
+
 .sixty {
   width: 60%;
   height: 60vh;
 }
 
-.sixtyeighty {
-  width: 60%;
-  height: 80vh;
-}
 
 .eighty {
   width: 70%;

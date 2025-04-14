@@ -4,8 +4,8 @@ import { FaLinkedin, FaOrcid } from "react-icons/fa";
 
 const Contact = () => {
     return (
-    <div className = "mainPane sixty" >
-    <div>
+    <div className = "mainPane forty" >
+    <div className = "block background2">
         <div className = "row">
             <div className = "col-10">
                 <h1><b>Contact</b></h1>
@@ -14,8 +14,8 @@ const Contact = () => {
             <div className = "col-2"></div>
         </div>
         <div className = "row mt-2">
-            <div className = "col-2"></div>
-            <div className = "background2 block col-10">
+            <div className = "col-3"></div>
+            <div className = "col-9">
                 <div className = "d-flex pb-3">
                     <AiOutlineMail className = "icon accent2"/>
                     <span className = "ps-3"> johnson.omi@northeastern.edu </span>
