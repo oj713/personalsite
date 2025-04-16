@@ -25,8 +25,8 @@ const ccc_images = [
         caption: "Initial prototype of the design using PVC sheet. The final design will have 5 holes rather than 2. A rope-based cover obscures a circular slot that can be replaced with mirror modules."
     },
     {
-        src: "/Images/CCC/leaf_modules.JPG",
-        caption: "Partially constructed pilot prototype. In the pilot testing (taking place late April), we will be testing the preferences of the monkeys between flap covers. Covers pictured: firehose leaf, silicone leaf, hard plastic leaf, firehose drapes."
+        src: "/Images/CCC/leaf_modules.png",
+        caption: "Pilot prototype. In the pilot testing (taking place late April), we will be testing the preferences of the monkeys between flap covers. Covers pictured: synthetic rope, silicone leaf, hard plastic leaf, firehose drapes."
     },
     {
         src: "/Images/CCC/location.png",
@@ -100,7 +100,7 @@ const Projects = () => {
             <p className = "block d-inline-block accent1-bg">March 2025 - <i>Present</i></p>
             <div className = "row">
                 <div className = "col-12">
-                    <h2 className = "mx-0 mt-2 mb-3"><GiMirrorMirror className = "up"/> Colobus Curio Cabinet: Sensor-enabled, Mirror-based enrichment for <i>Colobus Guereza</i> monkeys</h2>
+                    <h2 className = "mx-0 mt-2 mb-3"><GiMirrorMirror className = "up"/> Animal-Computer Interaction: Sensor-enabled, Mirror-based enrichment for <i>Colobus Guereza</i> monkeys</h2>
                     <p className = "text-smaller ps-1"><i>Raspberry Pi, HTML/CSS, User-Centered Design, Physical Fabrication</i></p>
                 </div>
             </div>
