@@ -2,6 +2,7 @@ import React from 'react';
 import {IoMdOpen} from 'react-icons/io';
 import CollapseBar from '../Assets/collapseBar.js';
 import {AiFillGithub, AiOutlineFilePdf} from 'react-icons/ai';
+import { FaRegNewspaper } from "react-icons/fa6";
 import {GiWhaleTail, GiSlicedBread} from 'react-icons/gi';
 import ImageGallery from '../Assets/imageGallery.js';
 import BackToTop from '../Assets/backToTop.js';
@@ -72,7 +73,7 @@ const Publications = () => {
     {/* PARIS-SACLAY */}
     <div id = "paris-saclay">
         {/* Header */}
-        <p className = "block d-inline-block accent1-bg"><a href = "https://programs.sigchi.org/chi/2025/program/content/194610" target="_blank" rel="noreferrer">Late-Breaking Work, ACM Computer-Human Interaction (CHI) 2025</a></p>
+        <p className = "block d-inline-block accent1-bg"><a href = "https://dl.acm.org/doi/10.1145/3706599.3720102" target="_blank" rel="noreferrer">Late-Breaking Work, ACM Computer-Human Interaction (CHI) 2025</a></p>
         <div className = "row">
             <div className = "col-12">
                 <h2 className = "mx-0 mt-2 mb-3"><GiSlicedBread className = "up"/> Bridging Modeling and Domain Expertise Through Visualization: A Case Study on Bread-Making with Bayesian Networks</h2>
@@ -97,7 +98,8 @@ const Publications = () => {
                 {/* Primary links */}
                 <div>
                     <a className="accent2hover" href = "https://programs.sigchi.org/chi/2025/program/content/194610" target="_blank" rel="noopener noreferrer"><p className = "pt-3"><GiSlicedBread className = "icon accent2 up"/> View the official landing page at CHI website. </p></a>
-                    <p className = "pt-2"><AiOutlineFilePdf className = "icon accent2 up"/> Since this conference is upcoming, the manuscript is not yet available.</p>
+                    <a className = "accent2hover" href = "https://dl.acm.org/doi/10.1145/3706599.3720102" target = "_blank" rel="noreferrer"><p className = "pt-2"><AiOutlineFilePdf className = "icon accent2 up"/> Read the paper for free!</p></a>
+                    <a className = "accent2hover" href = "https://www.khoury.northeastern.edu/chi-2025-khoury-researchers-publish-record-high-papers-for-second-straight-year/" target = "_blank" rel="noreferrer"><p className = "pt-2"><FaRegNewspaper className = "icon accent2 up"/> Read the news coverage by Khoury College.</p></a>
                 </div>
 
                 <div style = {{"height":"2em"}}></div>
