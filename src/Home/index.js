@@ -19,7 +19,7 @@ const Home = () => {
             <div className = "col-sm-none col-md-2"></div>
             <div className = "col-sm-12 col-md-10">
                 <p>
-                    Welcome to my professional portfolio. As a graduating Bachelor's student in Computer Science and Environmental and Sustainability Studies at Northeastern University, I have benefitted from an intensive curriculum including 7 graduate level courses and over 1.5 years of full-time internships. I have well-rounded expertise in full-stack development, machine learning, and user centric design. Through my professional work experience in research and software, I have published two first-author research papers and developed exceptional skills in communication, problem-solving, and attention to detail. Please use this portfolio to explore my work!
+                    Welcome to my professional portfolio. I'm a recent graduate from Northeastern University, with a Bachelor's in Computer Science and Environmental and Sustainability Studies. I have benefitted from an intensive curriculum including 7 graduate courses and over 1.5 years of full-time internships. I have well-rounded expertise in full-stack development, machine learning, and user centric design. Through my professional work experience in research and software, I have published two first-author research papers and developed exceptional skills in communication, problem-solving, and attention to detail. Please use this portfolio to explore my work!
                 </p>
                 <br/>
                 <div>

@@ -114,7 +114,7 @@ const Publications = () => {
     {/* BIGELOW */}
     <div id = "bigelow">
         {/* Header */}
-        <p className = "block d-inline-block accent1-bg">In press at <a href= "https://online.ucpress.edu/elementa" target="_blank" rel = "noreferrer"><i>Elementa: Science of the Anthropocene</i></a></p>
+        <p className = "block d-inline-block accent1-bg"><a href= "https://doi.org/10.1525/elementa.2024.00044" target="_blank" rel = "noreferrer">Research article, <i>Elementa: Science of the Anthropocene</i></a></p>
         <div className = "row">
             <div className = "col-12">
                 <h2 className = "mx-0 mt-2 mb-3"><GiWhaleTail className = "up"/> Suitability of foraging habitat for <i>Eubalaena glacialis</i> under future climate scenarios in the Northwest Atlantic </h2>
@@ -142,10 +142,9 @@ const Publications = () => {
                 {/* Primary links */}
                 <div>
                     <a className="accent2hover" href = "/PDFfiles/NARWC_Poster.pdf" target="_blank" rel="noopener noreferrer"><p className = "pt-3"><GiWhaleTail className = "icon accent2 up"/> Download the poster presented at the North Atlantic Right Whale Consortium 2024.</p></a>
+                    <a className="accent2hover" href = "https://doi.org/10.1525/elementa.2024.00044" target = "_blank" rel = "noopener noreferrer"><p className = "pt-2"><AiOutlineFilePdf className = "icon accent2 up"/> Read the paper for free!</p></a>
                     <a className="accent2hover" href = "https://github.com/BigelowLab/predicting_NARW" target = "_blank" rel = "noopener noreferrer"><p className = "pt-2"><AiFillGithub className = "icon accent2 up"/> View the source code on GitHub. </p></a>
-                    <p className = "pt-2"><AiOutlineFilePdf className = "icon accent2 up"/> Since this piece is in press, the manuscript is not yet available.</p>
                 </div>
-
                 {/* Image Gallery */}
                 <div style = {{"height":"3em"}}></div>
 
