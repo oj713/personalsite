@@ -129,6 +129,7 @@ const Resume = () => {
                         <li>Built 100+ experimental prey distribution models using Tidymodels in R with 4+ ML engines such as boosted regression trees (BRTs), neural networks, and generalized linear models, achieving AUCs &gt; 90%</li>
                         <li>Developed original visualizations in <i>ggplot2</i> illustrating model projections, key habitat shifts, and model performance</li>
                         <li>First author on research paper detailing final cross-validated BRT ensemble projections, model performance, uncertainty sources, and conservation implications for Right Whale management</li>
+                        <li>Building daily, real-time forecast layers in interactive web map application using updated data layers</li>
                         </ul>
                     </div>
     
