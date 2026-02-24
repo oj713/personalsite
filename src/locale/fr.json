@@ -1,0 +1,10 @@
+{
+    "translation": {
+        "navigationtabs": {
+            "contact": "Contact",
+            "resume": "CV", 
+            "projects": "Codage",
+            "publications": "Publications"
+        }
+    }
+}

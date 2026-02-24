@@ -6,17 +6,20 @@ import { IoDocumentTextOutline } from 'react-icons/io5';
 import { BiCodeAlt } from 'react-icons/bi';
 import { GiWhaleTail } from 'react-icons/gi';
 import LightDarkToggle from '../LightDarkToggle';
+import {useTranslation} from 'react-i18next';
 
 const NavigationTabs = () => {
+    const {t} = useTranslation();
+
     const { pathname } = useLocation();
     let [ignore, active] = pathname.split("/");
     const [menuOpen, setMenuOpen] = useState(false);
 
     const tabs = [
-        { name: "contact", label: "Contact", icon: <AiOutlineMail className="icon me-2" /> },
-        { name: "resume", label: "Resume", icon: <IoDocumentTextOutline className="icon me-2" /> },
-        { name: "projects", label: "Projects", icon: <BiCodeAlt className="icon me-2" /> },
-        { name: "publications", label: "Publications", icon: <GiWhaleTail className="icon me-2" /> }
+        { name: "contact", label: t("navigationtabs.contact"), icon: <AiOutlineMail className="icon me-2" /> },
+        { name: "resume", label: t("navigationtabs.resume"), icon: <IoDocumentTextOutline className="icon me-2" /> },
+        { name: "projects", label: t("navigationtabs.projects"), icon: <BiCodeAlt className="icon me-2" /> },
+        { name: "publications", label: t("navigationtabs.publications"), icon: <GiWhaleTail className="icon me-2" /> }
     ];
 
     const toggleMenu = () => setMenuOpen(!menuOpen);
