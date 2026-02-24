@@ -90,7 +90,7 @@ const fmf_images = [
 ];
 
 
-const Projects = () => {
+const Code = () => {
     return (
     <div className = "mainPane eighty">
 
@@ -247,4 +247,4 @@ const Projects = () => {
     )
 }
 
-export default Projects;
+export default Code;

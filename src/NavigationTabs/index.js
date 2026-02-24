@@ -5,7 +5,7 @@ import { AiOutlineHome, AiOutlineMail, AiOutlineMenu, AiOutlineClose } from 'rea
 import { IoDocumentTextOutline } from 'react-icons/io5';
 import { BiCodeAlt } from 'react-icons/bi';
 import { GiWhaleTail } from 'react-icons/gi';
-import LightDarkToggle from '../LightDarkToggle';
+import Settings from '../Settings';
 import {useTranslation} from 'react-i18next';
 
 const NavigationTabs = () => {
@@ -29,7 +29,7 @@ const NavigationTabs = () => {
         <div className="navigation-wrapper">
             {/* Pills-style nav for medium+ screens */}
             <div className="d-none d-md-flex justify-content-between p-3">
-                <LightDarkToggle />
+                <Settings />
                 <ul className="nav flex-row-reverse nav-pills">
                     {tabs.map(tab => (
                         <Link
@@ -48,7 +48,7 @@ const NavigationTabs = () => {
 
             {/* Hamburger menu for small screens */}
             <div className="d-flex justify-content-between d-md-none p-3">
-                <LightDarkToggle />
+                <Settings />
                 <span>
                     <Link to="/" className={`${active ? "" : "hidden"} homeButton fs-4`}>
                         <AiOutlineHome />
