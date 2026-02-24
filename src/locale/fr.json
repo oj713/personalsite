@@ -1,10 +1,19 @@
 {
     "translation": {
-        "navigationtabs": {
+        "nav": {
             "contact": "Contact",
             "resume": "CV", 
-            "projects": "Codage",
+            "code": "Codage",
             "publications": "Publications"
+        },
+        "home": {
+            "subtitle": "Chercheur, ingénieur logiciel, scientifique de l'environnement",
+            "body": "Bienvenue à mon portfolio professionel. Je suis ingénieur de recherche à LIP6 — Sorbonne Université et j'ai récemment récu mon license de Northeastern University dans l'informatique et les études environnementales et de durabilité. J'ai profité d'une programme intense, y compris 7 cours au niveau Master et plus d'1,5 ans des stages à temps plein. J'ai une expertise complète dans le developpement full-stack, l'apprentissage automatique, et la conception centrée sur l'utilisateur. Grâce à mon expérience professionnelle dans la recherche et le logiciel, j'ai publié trois publications de recherche en tant que premier auteur aussi que developpé des compétences dans la communication, en résolution des problèmes et un souci du détail. Veuillez utiliser ce portfolio pour découvrir mon travail !",
+            "buildWithReact": " Construit avec React",
+            "legend": "Arrière-plan: prévisions originales. Voyez "
+        },
+        "contact": {
+            "thankyou": "Merci de votre visite !"
         }
     }
 }

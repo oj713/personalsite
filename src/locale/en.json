@@ -1,10 +1,19 @@
 {
     "translation": {
-        "navigationtabs": {
+        "nav": {
             "contact": "Contact",
             "resume": "Resume", 
-            "projects": "Projects",
+            "code": "Code",
             "publications": "Publications"
+        },
+        "home": {
+            "subtitle": "Researcher, software engineer, environmental scientist",
+            "body": "Welcome to my professional portfolio. I am a Research Engineer at LIP6 — Sorbonne Université and a recent graduate from Northeastern University, with a Bachelor's in Computer Science and Environmental and Sustainability Studies. I have benefitted from an intensive curriculum including 7 graduate courses and over 1.5 years of full-time internships. I have well-rounded expertise in full-stack development, machine learning, and user centric design. Through my professional work experience in research and software, I have published three first-author research papers and developed exceptional skills in communication, problem-solving, and attention to detail. Please use this portfolio to explore my work!",
+            "buildWithReact": " Built with React",
+            "legend": "Background: Original forecasts. See "
+        },
+        "contact": {
+            "thankyou": "Thanks for stopping by!"
         }
     }
 }
