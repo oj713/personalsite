@@ -18,7 +18,7 @@ const NavigationTabs = () => {
     const tabs = [
         { name: "contact", label: t("navigationtabs.contact"), icon: <AiOutlineMail className="icon me-2" /> },
         { name: "resume", label: t("navigationtabs.resume"), icon: <IoDocumentTextOutline className="icon me-2" /> },
-        { name: "projects", label: t("navigationtabs.projects"), icon: <BiCodeAlt className="icon me-2" /> },
+        { name: "code", label: t("navigationtabs.code"), icon: <BiCodeAlt className="icon me-2" /> },
         { name: "publications", label: t("navigationtabs.publications"), icon: <GiWhaleTail className="icon me-2" /> }
     ];
 
