@@ -76,7 +76,7 @@ const Code = () => {
           }}
           hasAbstract = {false}
           linkComponents = {[
-            {link: "https://parkour-social-media-site.netlify.app/", icon: BiSolidTreeAlt},
+            //{link: "https://parkour-social-media-site.netlify.app/", icon: BiSolidTreeAlt},
             {link: "https://github.com/oj713/parkour-frontend", icon: AiFillGithub},
             {link: "https://github.com/oj713/parkour-backend", icon: AiFillGithub}
           ]}

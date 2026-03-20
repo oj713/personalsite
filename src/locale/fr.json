@@ -124,7 +124,6 @@
                 "description": 
                 "<par>The U.S. National Parks are a point of national pride and spark fierce appreciation for the natural world. This web-based social media platform demo allows users to share their favorite parks, post photos, and connect directly with parks, rangers, and hikers alike. The application also connects directly to the National Parks API to display the latest news and information about each park.</par><par>This project is a full-stack web application built within Javascript. The backend server, built using Node.js connected to a MongoDB database, stores user and park information and transmits it to the front end via RESTful APIs. The frontend, built using React, Redux, and Bootstrap, supports user registration, login, and CRUD operations on posts. The application is fully responsive and includes custom CSS styling.</par>",
                 "links": [
-                    "Je visite le démo en direct !",
                     "Je consulte le code source front-end sur GitHub.",
                     "Je consulte le code source back-end sur GitHub."
                 ],
