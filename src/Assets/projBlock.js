@@ -11,7 +11,7 @@ import ImageGallery from "./imageGallery.js";
  * @param {any} descriptionComponents specifications to Trans for the description section (links, etc)
  * @param {boolean} hasAbstract if the proj block has an abstract
  * @param {{link: string, icon: Icon}[]} linkComponents info for custom links
- * @param {{src: string, preview?: string, caption: string}[]} images image objects for gallery
+ * @param {{src: string, preview?: string, caption: string}[]} images image string names for gallery
  * @param {HTML | undefined} additionalContent additional content for a block, if any
  * @returns Project Block
  */
@@ -90,7 +90,7 @@ const ProjectBlock = ({
                     })
                 }
                 <div style = {{"height":"2em"}}></div>
-                {images && <ImageGallery images = {images}/>}
+                {images && <ImageGallery id={id} images = {images}/>}
                 {additionalContent}
             </div>
         </div>

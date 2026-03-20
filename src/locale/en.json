@@ -14,7 +14,8 @@
         },
         "projBlock": {
             "general": {
-                "abstract": "Abstract"
+                "abstract": "Abstract",
+                "imageGallery": "Image Gallery"
             },
             "parissaclay": {
                 "miniTitle": "Late-Breaking Work, ACM Computer-Human Interaction (CHI) 2025",
@@ -27,7 +28,15 @@
                     "View the official landing page at CHI website.",
                     "Read the paper for free!",
                     "Read the news coverage by Khoury College."
-                ]
+                ],
+                "captions": {
+                    "bayesian_network": "A Bayesian Network consists of nodes (variables) and edges (dependencies). Probabilistic relationships between nodes are represented by conditional probability tables (CPTs). These networks can be used to propogate evidence throughout a network based on known values, but are difficult to interpret for non-technical users. This is a simple 4-variable example of a Bayesian Network, but the EVAGRAIN network features 25 sensory and quantile metrics.",
+                    "full_network": "The visualization platform was implemented as an React web application. The platform consists of a scrollable network pane and accompanying options bar. The network is represented a set of nodes and edges.",
+                    "node_design": "Variables, or nodes, in the network are represented as circles. The name and bread-making step of a variable are encircled by a ring of marginal probabilities representing its likelihood. The EVAGRAIN network is unique in that all nodes can be represented using the same legend scale.",
+                    "evidence_prop": "Clicking on a probability ring will propagate evidence for the node, allowing for a user to see how a set piece of evidence affects the likelihood of other nodes in the network. The thickness of relations, represented as arrows, adjusts according to the mutual information between nodes. Evidence propogation was consistently considered the biggest strength of the platform during validation sessions.",
+                    "alternative_settings": "The options bar at the top of the screen allows users to customize their preferred view of the network. Users can toggle network type (either including or not including an all-encompassing PROFIL variable), node color, layout, and significance calculations. Users consistently used the customization toggles to adjust the network view to their liking.",
+                    "sig_threshold": "Only nodes that are considered to have 'significantly' changed due to evidence propagation will expand to show both current and prior marginal probabilities. Users can easily change the threshold for significance using the top bar, enabling them to identify degrees of change without relying on complex numerical charts."
+                }
             },
             "bigelow": {
                 "miniTitle": "Research article, <i>Elementa: Science of the Anthropocene</i>",
@@ -41,6 +50,14 @@
                     "Read the paper for free!",
                     "View the source code on GitHub."
                 ],
+                "captions": {
+                    "Rightwhale": "North Atlantic Right Whale. These whales boast beautiful, smooth tails that make them easy to identify. Photo: Peter Crosson, licensed under CC BY-NC-SA 2.0.",
+                    "Cfinmarchicus": "Calanus Finmarchicus, a lipid-rich copepod fed upon by right whales. These and C. Hyperboreus were used as input prey layers for the model. Photo: David Fields.",
+                    "cfin_abund": "Data of C. Finmarchicus abundance sourced from the National Oceanic and Atmospheric Administration's (NOAA's) Fisheries Ecosystem Monitoring Program (MARMAP/EcoMon) survey and the Fisheries and Oceans Canada (DFO) Atlantic Zone Monitoring Program (AZMP) survey. Blue points represent absences, red presences relative to a minimum bioenergetic threshold. A similar dataset was used for C. Hyperboreus.",
+                    "resp_curves": "Response curves from a preliminary version of the final C. finmarchicus model. Lines represent how each fold of the boosted regression tree model responded to variation in a covariate while all other covariates were held constant. Vertical lines represent median variable values. This is one example of original model analyses described in the final manuscript.",
+                    "pres_jul": "Historical (1990-2015) projections of combined Calanus spp. τh-patch probabilities in July. Combined probabilities are calculated as the summed likelihood of either C. finmarchicus or C. hyperboreus constituting suitable foraging habitat at a point. Areas highlighted here, for example the Gulf of Maine and Gulf of Saint Lawrence, have been historically documented as foraging areas.",
+                    "future_preds": "Habitat shift maps for future combined Calanus spp. projections, May through October. Colors represent how combined projected foraging habitat suitability shifted between historical (1990-2015) and representative concentration pathway RCP 8.5 year-2075 (2066-2085) climate projections relative to a habitat probability threshold of 20%. These projections highlight areas of change for future foraging suitability, for example loss of foraging habitat suitability in the Gulf of Maine."
+                },
                 "additional": {
                     "title": "Related Projects",
                     "tutorial": {
@@ -67,14 +84,30 @@
                 "links": [
                     "Watch the video presentation given at ACI 2025.",
                     "Read the paper for free!"
-                ]
+                ],
+                "captions": {
+                    "c_guereza": "Colobus Guereza. These monkeys are native to Africa and are known for their long tails and black and white fur. They are arboreal and live in social groups. Photo: Flickr",
+                    "primates_mirrors": "Primates, including Colobus Guereza, have demonstrated interest in mirror-based enrichment. Colobus Guereza in particular are not food-motivated, so mirror-based enrichment is a promising avenue. Photo: Looky Lou",
+                    "init_design": "Initial designs featured one large mirror rather than the final modular design. A key component retained through all designs was giving the monkeys agency to hide the mirror, preventing undue stress.",
+                    "3Dmodel": "A detailed 3D model of the final prototype, built using Fusion 360. The interior view shows each module and module locking system, inaccessible to Colobus. The 3D model allows for easy examination and design iteration of the prototype and improved both planning and communication with zoo staff.",
+                    "leaf_modules": "Leaf module examination. In this pilot prototype, various module cover options are demonstrated which cover flat mirrored compartments. Covers pictured: synthetic rope, silicone leaf (later scrapped due to durability concerns), hard plastic leaf, firehose drapes.",
+                    "prototype_HDPE": "In-construction prototype, built using sturdy HDPE plastic and stainless steel, weatherproof fastenings. We narrowed down the module cover selection to just firehose leaves and synthetic rope. Various mirror modules are hidden behind covers."
+                }
             },
             "fmframes": {
                 "miniTitle": "October - December 2023",
                 "mainTitle": "Five Minute Frames",
                 "subTitle": "D programming language, Networking, Unit Testing, Agile",
                 "description": 
-                "<par>This application lets everyone have a chance to be an artist! Five Minute Frames is a game application that lets users chat, upload images, and view the work of others in an interactive gallery. Images only last five minutes, so everyone can get a turn! Users can choose their own sprite and move around a map to view different frames.\n\n The program is built using the D programming language, which is related to C++. The application is built using a client-server architecture, where the server is responsible for managing the game state and the clients are responsible for rendering the game. Chats over the terminal are managed using a custom protocol. The map and images are rendered with a GUI and sprite-based animation. This project was completed in a group using Agile development methodology and thorough unit testing.</par><parSm><i>This project repository is private.</i></parSm>"
+                "<par>This application lets everyone have a chance to be an artist! Five Minute Frames is a game application that lets users chat, upload images, and view the work of others in an interactive gallery. Images only last five minutes, so everyone can get a turn! Users can choose their own sprite and move around a map to view different frames.\n\n The program is built using the D programming language, which is related to C++. The application is built using a client-server architecture, where the server is responsible for managing the game state and the clients are responsible for rendering the game. Chats over the terminal are managed using a custom protocol. The map and images are rendered with a GUI and sprite-based animation. This project was completed in a group using Agile development methodology and thorough unit testing.</par><parSm><i>This project repository is private.</i></parSm>",
+                "captions": {
+                    "char": "Booting the application up shows a character select screen.",
+                    "map": "Players are dropped onto a map with a tile-based rendering system and collidable objects. Frames are scattered about the map. Multiple players can log on at a time.",
+                    "chat": "Players can chat to each other through the terminal.",
+                    "move": "Players can move around the map using arrow keys. Standing in front of a frame will trigger a view button.",
+                    "upload": "Users can upload new images to any empty frames. These images will be visible to everyone and disappear after five minutes.",
+                    "viewart": "Once an image is populated, the frame will fill on the map and other users can view your work!"
+                }
             },
             "parkour": {
                 "miniTitle": "July - August 2022",
@@ -86,7 +119,15 @@
                     "View the live demo.",
                     "View the frontend source code on GitHub.",
                     "View the backend source code on GitHub."
-                ]
+                ],
+                "captions": {
+                    "homepage": "The homepage of the Parkour application shows current National Parks news served by their API as well as content from followed accounts, if logged in.",
+                    "register": "New users can register for an account using the registration page. The application uses a MongoDB database to store user information.",
+                    "profile": "The profile page contains user posts, followed accounts, and likes. Users can create new posts, delete posts, and edit their profile information.",
+                    "parkprofile": "Navigating to the profile of a park shows specialized headers and posts as well as park-specific posting options. Rangers also have a special icon.",
+                    "search": "The search page allows users to search for parks and users by name. Results are pulled from the National Parks API.",
+                    "parkinfo": "Detailed information on all parks is available through the National Parks API. If a park is also a member on the application, posts from their profile are also shown."
+                }
             },
             "gdoodle": {
                 "miniTitle": "November 2021",
@@ -94,7 +135,11 @@
                 "subTitle": "HTML, CSS, Hand-drawn Imagery",
                 "description": 
                 "<par>A short and simple HTML/CSS project to design a custom Google Doodle. The doodle leverages hand-drawn designs and CSS transitions to create a fun and interactive experience celebrating International Shark Awareness Day.</par>",
-                "links": ["View the live demo."]
+                "links": ["View the live demo."],
+                "captions": {
+                    "up": "Google Doodle, up position",
+                    "down": "Google Doodle, down position"
+                }
             }
         },
         "contact": {

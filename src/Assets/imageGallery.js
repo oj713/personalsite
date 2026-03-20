@@ -1,8 +1,11 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
+import { useTranslation } from "react-i18next";
 import "./imageGallery.css";
 
-const ImageGallery = ({ images }) => {
+const ImageGallery = ({ id, images }) => {
+  const {t} = useTranslation();
+
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -10,7 +13,6 @@ const ImageGallery = ({ images }) => {
     setCurrentIndex(index);
     setLightboxOpen(true);
   };
-
   const closeLightbox = () => {
     setLightboxOpen(false);
   };
@@ -18,9 +20,19 @@ const ImageGallery = ({ images }) => {
   const showPrev = () => {
     setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
   };
-
   const showNext = () => {
     setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+  };
+
+  // get a file path from filename
+  const getFile = (filename) => {
+    if (filename == undefined) return undefined;
+    return `/Images/${id}/${filename}`;
+  }
+  // "char.png" → "char"
+  const getCaption = (filename) => {
+    const key = filename.replace(/\.[^.]+$/, "");
+    return t(`projBlock.${id}.captions.${key}`);
   };
 
   useEffect(() => {
@@ -59,12 +71,12 @@ const ImageGallery = ({ images }) => {
 
   if (!images || images.length === 0) return <p>No images to display.</p>;
 
-  const { src, caption } = images[currentIndex];
+  const { src } = images[currentIndex];
 
   // Create the lightbox portal if open
   return (
     <div>
-      <h2>Image Gallery</h2>
+      <h2>{t("projBlock.general.imageGallery")}</h2>
       <div className="gallery-grid">
         {images.map((img, index) => (
           <div
@@ -72,7 +84,7 @@ const ImageGallery = ({ images }) => {
             className="gallery-item"
             onClick={() => openLightbox(index)}
           >
-            <img src={img.preview || img.src} alt={img.caption} />
+            <img src={getFile(img.preview) || getFile(img.src)} alt={getCaption(img.src)} />
           </div>
         ))}
       </div>
@@ -88,8 +100,8 @@ const ImageGallery = ({ images }) => {
               <span className="close-btn" onClick={closeLightbox}>
                 &times;
               </span>
-              <img src={src} alt={caption} />
-              <div className="lightbox-caption text-smaller"><i>{caption}</i></div>
+              <img src={getFile(src)} alt={getCaption(src)} />
+              <div className="lightbox-caption text-smaller"><i>{getCaption(src)}</i></div>
             </div>
           </div>,
           document.body // Render the lightbox at the root of the DOM
