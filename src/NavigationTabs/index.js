@@ -12,7 +12,7 @@ const NavigationTabs = () => {
     const {t} = useTranslation();
 
     const { pathname } = useLocation();
-    let [ignore, active] = pathname.split("/");
+    let active = pathname.split("/")[1];
     const [menuOpen, setMenuOpen] = useState(false);
 
     const tabs = [

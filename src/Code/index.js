@@ -2,6 +2,7 @@ import { GiSharkFin } from "react-icons/gi";
 import { BiSolidTreeAlt } from "react-icons/bi";
 import {AiFillGithub} from 'react-icons/ai';
 import { IoColorPaletteSharp } from "react-icons/io5";
+import { BiNetworkChart } from "react-icons/bi";
 import BackToTop from '../Assets/backToTop.js';
 import ProjectBlock from "../Assets/projBlock.js";
 import { useTranslation } from "react-i18next";
@@ -34,7 +35,7 @@ const Code = () => {
         {/* jsAgrum */}
         <ProjectBlock
           id = "jsagrum"
-          Icon = {IoColorPaletteSharp}
+          Icon = {BiNetworkChart}
           paperLink = {undefined}
           descriptionComponents = {{
             par: <p/>, // paragraph

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import ReactDOM from "react-dom";
 import { useTranslation } from "react-i18next";
 import "./imageGallery.css";
@@ -17,16 +17,17 @@ const ImageGallery = ({ id, images }) => {
     setLightboxOpen(false);
   };
 
-  const showPrev = () => {
-    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
-  };
-  const showNext = () => {
-    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-  };
+  const showPrev = useCallback(() => {
+      setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  }, [images.length]);
+
+  const showNext = useCallback(() => {
+      setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+  }, [images.length]);
 
   // get a file path from filename
   const getFile = (filename) => {
-    if (filename == undefined) return undefined;
+    if (filename === undefined) return undefined;
     return `/Images/${id}/${filename}`;
   }
   // "char.png" → "char"
@@ -46,7 +47,7 @@ const ImageGallery = ({ id, images }) => {
     return () => {
       document.body.style.overflow = "auto";
     };
-  }, [lightboxOpen]);
+  }, [lightboxOpen, showPrev, showNext]);
 
   // Handle keydown events for escape and arrows
   useEffect(() => {
@@ -67,7 +68,7 @@ const ImageGallery = ({ id, images }) => {
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [lightboxOpen]);
+  }, [lightboxOpen, showPrev, showNext]);
 
   if (!images || images.length === 0) return <p>No images to display.</p>;
 
