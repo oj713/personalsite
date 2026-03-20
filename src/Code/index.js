@@ -7,33 +7,6 @@ import ImageGallery from '../Assets/imageGallery.js';
 import BackToTop from '../Assets/backToTop.js';
 import "./index.css";
 
-const ccc_images = [
-    {
-        src: "/Images/CCC/c_guereza.jpg",
-        caption: "Colobus Guereza. These monkeys are native to Africa and are known for their long tails and black and white fur. They are arboreal and live in social groups. Photo: Flickr"
-    },
-    {
-        src: "/Images/CCC/primates_mirrors.jpg",
-        caption: "Primates, including Colobus Guereza, have demonstrated interest in mirror-based enrichment. Colobus Guereza in particular are not food-motivated, so mirror-based enrichment is a promising avenue. Photo: Looky Lou"
-    },
-    {
-        src: "/Images/CCC/init_design.png",
-        caption: "Initial designs featured one large mirror rather than the final modular design. A key component retained through all designs was giving the monkeys agency to hide the mirror, preventing undue stress."
-    },
-    {
-        src: "/Images/CCC/3Dmodel.png",
-        caption: "A detailed 3D model of the final prototype, built using Fusion 360. The interior view shows each module and module locking system, inaccessible to Colobus. The 3D model allows for easy examination and design iteration of the prototype and improved both planning and communication with zoo staff."
-    },
-    {
-        src: "/Images/CCC/leaf_modules.png",
-        caption: "Leaf module examination. In this pilot prototype, various module cover options are demonstrated which cover flat mirrored compartments. Covers pictured: synthetic rope, silicone leaf (later scrapped due to durability concerns), hard plastic leaf, firehose drapes."
-    },
-    {
-        src: "/Images/CCC/prototype_HDPE.png",
-        caption: "In-construction prototype, built using sturdy HDPE plastic and stainless steel, weatherproof fastenings. We narrowed down the module cover selection to just firehose leaves and synthetic rope. Various mirror modules are hidden behind covers."
-    }
-];
-
 const parkour_images = [
     {
         src: "/Images/Parkour/homepage.png",
@@ -93,38 +66,6 @@ const fmf_images = [
 const Code = () => {
     return (
     <div className = "mainPane eighty">
-
-        {/* ACI */}
-        <div>
-            {/* Header */}
-            <p className = "block d-inline-block accent1-bg">March 2025 - <i>Present</i></p>
-            <div className = "row">
-                <div className = "col-12">
-                    <h2 className = "mx-0 mt-2 mb-3"><GiMirrorMirror className = "up"/> Animal-Computer Interaction: Sensor-enabled, Mirror-based enrichment for <i>Colobus Guereza</i> monkeys</h2>
-                    <p className = "text-smaller ps-1"><i>Raspberry Pi, HTML/CSS, User-Centered Design, Physical Fabrication</i></p>
-                </div>
-            </div>
-            <div className = "row mt-2">
-                <div className = "col-sm-none col-md-1"></div>
-                <div className = "col-sm-12 col-md-11">
-                    {/* Description */}
-                    <div className = "block background2">
-                    <p>
-                        In the modern age, animals are increasingly interacting with technology: service dogs must navigate automatic doors, smart collars can inform animal health, and zoo animals can interact with touch screens. Animal-Computer Interaction is a recently emerged field of research that studies the intersection of animals and technology. A key tenant of this field is that technology should be created using the principles of user-centered design and human-computer interaction, thus enabling natural and consented use of technology by animals.
-                    </p>
-                    <p>
-                        In this project within the <a className = "accent1" href = "https://www.interactanimallab.com/" target = "_blank" rel="noreferrer"> Interact Animal Lab </a>, we are constructing a sensor-enabled, screen- and mirror-based enrichment device for <i>Colobus Guereza</i> monkeys. The device consists of modular mirror components covered by movable flaps. The device is intended to encourage natural behaviors in <i>C. Guereza</i>, such as foraging and exploration of novel enrichment. Sensors and touch-screen modules would be used to collect data on effectiveness and add extra depth to play. This project is conducted in collaboration with a local zoo and offers critical insights on effective communication between zookeepers and researchers as well as best non-food enrichment strategies for primates.
-                    </p>
-                    </div>
-
-                    <div style = {{"height":"2em"}}></div>
-
-                    <ImageGallery images={ccc_images}/>
-                </div>
-            </div>
-        </div>
-
-        <div style = {{"height":"3em"}}></div>
 
         {/* Five Minute Frames */}
         <div>

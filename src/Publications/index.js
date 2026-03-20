@@ -1,7 +1,7 @@
 import {IoMdOpen} from 'react-icons/io';
 import {AiFillGithub, AiOutlineFilePdf} from 'react-icons/ai';
 import { FaRegNewspaper } from "react-icons/fa6";
-import {GiWhaleTail, GiSlicedBread} from 'react-icons/gi';
+import {GiWhaleTail, GiSlicedBread, GiMirrorMirror} from 'react-icons/gi';
 import BackToTop from '../Assets/backToTop.js';
 import "./index.css";
 import ProjectBlock from '../Assets/projBlock.js';
@@ -61,6 +61,33 @@ const imagesParisSaclay = [
       preview: "/Images/ParisSaclay/sig_threshold.jpg",
       caption: "Only nodes that are considered to have 'significantly' changed due to evidence propagation will expand to show both current and prior marginal probabilities. Users can easily change the threshold for significance using the top bar, enabling them to identify degrees of change without relying on complex numerical charts."
     },
+];
+
+const ccc_images = [
+    {
+        src: "/Images/CCC/c_guereza.jpg",
+        caption: "Colobus Guereza. These monkeys are native to Africa and are known for their long tails and black and white fur. They are arboreal and live in social groups. Photo: Flickr"
+    },
+    {
+        src: "/Images/CCC/primates_mirrors.jpg",
+        caption: "Primates, including Colobus Guereza, have demonstrated interest in mirror-based enrichment. Colobus Guereza in particular are not food-motivated, so mirror-based enrichment is a promising avenue. Photo: Looky Lou"
+    },
+    {
+        src: "/Images/CCC/init_design.png",
+        caption: "Initial designs featured one large mirror rather than the final modular design. A key component retained through all designs was giving the monkeys agency to hide the mirror, preventing undue stress."
+    },
+    {
+        src: "/Images/CCC/3Dmodel.png",
+        caption: "A detailed 3D model of the final prototype, built using Fusion 360. The interior view shows each module and module locking system, inaccessible to Colobus. The 3D model allows for easy examination and design iteration of the prototype and improved both planning and communication with zoo staff."
+    },
+    {
+        src: "/Images/CCC/leaf_modules.png",
+        caption: "Leaf module examination. In this pilot prototype, various module cover options are demonstrated which cover flat mirrored compartments. Covers pictured: synthetic rope, silicone leaf (later scrapped due to durability concerns), hard plastic leaf, firehose drapes."
+    },
+    {
+        src: "/Images/CCC/prototype_HDPE.png",
+        caption: "In-construction prototype, built using sturdy HDPE plastic and stainless steel, weatherproof fastenings. We narrowed down the module cover selection to just firehose leaves and synthetic rope. Various mirror modules are hidden behind covers."
+    }
 ];
 
 const Publications = () => {
@@ -147,6 +174,25 @@ const Publications = () => {
           </div>
         </div>
       }
+    />
+
+    <div style = {{"height":"5em"}}></div>
+
+    {/* INTERACT ANIMAL LAB */}
+    <ProjectBlock
+      id = "colobus"
+      Icon = {GiMirrorMirror}
+      paperLink = "https://dl.acm.org/doi/10.1145/3706599.3720102"
+      descriptionComponents = {{
+        par: <p/>, // paragraph
+        ialLink: <a className = "accent1" href = "https://www.interactanimallab.com/" target = "_blank" rel="noreferrer"/>
+      }}
+      hasAbstract = {true}
+      linkComponents = {[
+        {link: "https://www.interactanimallab.com/publications/colobus-curio-cabinet", icon: GiMirrorMirror},
+        {link: "https://doi.org/10.1145/3768539.376855", icon: AiOutlineFilePdf}
+      ]}
+      images = {ccc_images}
     />
 
     {/* Back to top */}
