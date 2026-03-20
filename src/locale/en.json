@@ -142,6 +142,82 @@
                 }
             }
         },
+        "cv": {
+            "download": "Omi H. Johnson CV Download",
+            "education": {
+                "title": "Education",
+                "name": "Northeastern University",
+                "location": "Boston, Massachusetts, USA",
+                "degree": "Bachelor of Science in Computer Science and Environmental and Sustainability Studies",
+                "date": "April 2025",
+                "relevantCoursework": "Relevant Coursework",
+                "rCourseList": "Web Development (graduate) | Software Engineering (graduate) | Database Management Systems (graduate) | Advanced Biostatistics (graduate) | Algorithms and Data | Animal-Computer Interaction | Object Oriented Design | Experience and Interaction | Typography | Technology and the Blue Economy (graduate)",
+                "honors": "Honors",
+                "honorsList": "GPA: 3.96 / 4.0 | Honors Scholarship | Dean's List"
+            },
+            "techKnowledge": {
+                "title": "Technical Knowledge",
+                "frontend": "Frontend",
+                "backend": "Backend",
+                "dbsoftware": "Databases/Software"
+            },
+            "work": {
+                "title": "Research & Work Experience",
+                "published": " Published Work! See <i> Publications </i>",
+                "lip6": {
+                    "institution": "LIP6 at Sorbonne Université", 
+                    "location": "Paris, France",
+                    "date": "November 2025 — Present",
+                    "jobTitle": "Research Engineer",
+                    "bullets": 
+                    "<li>Developing software <i>jsAgrum</i> to port the C++ Bayesian reasoning library <i>aGrUM</i> to the web</li> <li>Creating a multiplatform npm package using TypeScript, Node.js, and Emscripten, which supports three modular backends ranging between in-process execution to parallel Web Workers</li> <li>Designing and implementing a standalone/web application using React, Electron, and <i>jsAgrum</i> meant to present interactive visualization of Bayesian Networks accessible to non-programmers</li>"
+                },
+                "bigelow": {
+                    "institution": "Bigelow Laboratory of Ocean Sciences", 
+                    "location": "East Boothbay, Maine, USA",
+                    "date": "February 2022 — October 2025",
+                    "jobTitle": "Research Intern, Research Technician",
+                    "bullets": 
+                    "<li>Forecasted North Atlantic right whale foraging habitat suitability using a bioenergetics-based approach across the species' cross-boundary foraging range for 2055 and 2075 climate scenarios</li> <li>Integrated zooplankton and environmental datasets to derive two species-specific modeling datasets with 20K data points each</li> <li>Built 100+ experimental prey distribution models using Tidymodels in R with 4+ ML engines such as boosted regression trees (BRTs), neural networks, and generalized linear models, achieving AUCs > 90%</li> <li>Developed original visualizations in <i>ggplot2</i> illustrating model projections, key habitat shifts, and model performance</li> <li>First author on research paper detailing final cross-validated BRT ensemble projections, model performance, uncertainty sources, and conservation implications for right whale management</li> <li>Building daily, real-time forecast layers in interactive web map application using updated data layers</li>"
+                },
+                "colobus": {
+                    "institution": "Interact Animal Lab at Northeastern University", 
+                    "location": "Boston, Massachusetts, USA",
+                    "date": "April — July 2025",
+                    "jobTitle": "Volunteer Researcher",
+                    "bullets": 
+                    "<li>Developed and deployed a modular, mirror- and screen-based enrichment toy for <i>Colobus guereza</i></li> <li>Assessed design requirements through extensive literature review and discussion with zookeepers</li> <li>Designed and built prototype using iterative methodology using AutoCAD blueprints and physical fabrication</li><li>Published first-author research paper describing design process and proposal</li><li>Deployed prototype at Stone Zoo, Stoneham, Massachusetts over a period of 6 weeks with their troop of Colobus monkeys, recording behavior for future analysis</li>"
+                },
+                "parissaclay": {
+                    "institution": "INRAE/LISN at Université Paris-Saclay", 
+                    "location": "Orsay, France",
+                    "date": "April — August 2024",
+                    "jobTitle": "Research Intern (M1-equivalent)",
+                    "bullets": 
+                    "<li>Designed and developed an explainable web visualization platform for decision-support, visualizing a bread-making Bayesian network linking 25 sensory and quantitative metrics</li> <li>Conducted literature review and led four expert brainstorming workshops to assess design requirements</li> <li>Implemented full-stack web application using JavaScript (React, Node.js) and D3.js for interactive network visualizations, integrated with backend Bayesian data in pyAgrum.py via a Python Flask server</li> <li>Enabled click-based evidence propagation and incorporated design elements, animations, dynamic thresholds, exposed data composition, and customization toggles to enhance user comprehension</li> <li>Led iterative prototype demos with six domain experts, receiving extremely positive feedback on usability and clarity</li>"
+                },
+                "taNu": {
+                    "institution": "Northeastern University", 
+                    "location": "Boston, Massachusetts, USA",
+                    "date": "August - December 2024",
+                    "jobTitle": "Lead Teaching Assistant, Professional Development",
+                    "bullets": 
+                    "<li>Supported and advised computer science undergraduates during their first co-op job search through one-on-one sessions, resume reviews, and mock interviews</li> <li>Led workshops and panels on the co-op experience, offering practical guidance and peer insights</li> <li>Directed and communicated with 13 sections and 28 course TAs via weekly announcements and management of the TA Microsoft Teams channel</li> <li>Collaborated with co-op advisors, section instructor, and co-TA to develop lesson plans and coordinate responsibilities</li> <li>Identified strengths and weaknesses in TA support and course curriculum and brainstormed improvements for future iterations</li>"
+                },
+                "gingerlabs": {
+                    "institution": "Ginger Labs", 
+                    "location": "San Francisco, California, USA",
+                    "date": "January - August 2023",
+                    "jobTitle": "Quality Assurance Engineer Intern",
+                    "bullets": 
+                    "<li>Quality tested beta versions of Notability, a top-rated iOS note-taking app with 10+ million active users</li> <li>Performed experimental and regression testing on the Swift-based app using TestFlight and Xcode simulators</li> <li>Co-led testing for a major app redesign, identifying 200+ issues including 50+ release blockers, and processing feedback from internal and external sources</li> <li>Managed 3,000+ beta testers and reported user feedback through beta support channels and App Store Connect</li> <li>Collaborated with product, engineering, design, and support teams on issue tracking, prioritization, pull request testing, design iterations, and user workaround documentation</li>"
+                }
+            },
+            "interests": {
+                "title": "Interests", 
+                "content": "English (Native) | French (CEFR B2/C1) | Bouldering | Fiber Arts | DIY | Hiking"
+            }
+        },
         "contact": {
             "thankyou": "Thanks for stopping by!"
         }

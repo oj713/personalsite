@@ -43,7 +43,7 @@ const ProjectBlock = ({
     }
 
     return (
-    <div>
+    <div id={id}>
         {/* Header */}
         <p className = "block d-inline-block accent1-bg">
             {paperLink ?
