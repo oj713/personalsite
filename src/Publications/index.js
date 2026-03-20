@@ -48,9 +48,9 @@ const Publications = () => {
       paperLink = "https://dl.acm.org/doi/10.1145/3706599.3720102"
       descriptionComponents = {{
         par: <p/>, // paragraph
-        inraeLink: <a className = 'accent1' href = 'https://www.inrae.fr/' target = '_blank' rel='noreferrer'/>,
-        lisnLink: <a className = 'accent1' href = 'https://www.lisn.upsaclay.fr' target = '_blank' rel='noreferrer'/>,
-        evagrainLink: <a className = 'accent1' href = 'https://evagrain.hub.inrae.fr/' target = '_blank' rel='noreferrer'/>,
+        inraeLink: <a className = 'accent1' href = 'https://www.inrae.fr/' target = '_blank' rel='noreferrer' aria-label="INRAE Website"/>,
+        lisnLink: <a className = 'accent1' href = 'https://www.lisn.upsaclay.fr' target = '_blank' rel='noreferrer' aria-label="LISN Website"/>,
+        evagrainLink: <a className = 'accent1' href = 'https://evagrain.hub.inrae.fr/' target = '_blank' rel='noreferrer' aria-label="EVAGRAIN Website"/>,
       }}
       hasAbstract = {true}
       linkComponents = {[
@@ -72,8 +72,8 @@ const Publications = () => {
         par: <p/>, // paragraph
         parSm: <p className = "text-smaller pt-3"/>, // smaller text
         i: <i/>, // italics
-        bigelowLink: <a className = 'accent1' href = "https://www.bigelow.org/" target = '_blank' rel='noreferrer'/>,
-        copLink: <a className = 'accent1' href = "https://data.marine.copernicus.eu/products" target = '_blank' rel='noreferrer'/>
+        bigelowLink: <a className = 'accent1' href = "https://www.bigelow.org/" target = '_blank' rel='noreferrer' aria-label="Bigelow Website"/>,
+        copLink: <a className = 'accent1' href = "https://data.marine.copernicus.eu/products" target = '_blank' rel='noreferrer' aria-label="Copernicus Website"/>
       }}
       hasAbstract = {true}
       linkComponents = {[
@@ -95,7 +95,7 @@ const Publications = () => {
                   </a>
                   <p> { <Trans
                       i18nKey={"projBlock.bigelow.additional.tutorial.description"}
-                      components={{ tmLink: <a href = "https://www.tidymodels.org/" target = "_blank" rel = "noreferrer" className = "accent1"/> }}
+                      components={{ tmLink: <a href = "https://www.tidymodels.org/" target = "_blank" rel = "noreferrer" className = "accent1" aria-label="Tidymodels Website"/> }}
                       /> } 
                   </p>
               </div>
@@ -113,7 +113,7 @@ const Publications = () => {
                   <p> 
                      { <Trans
                     i18nKey={"projBlock.bigelow.additional.walkthrough.description"}
-                    components={{ bLink: <a href = "https://online.ucpress.edu/elementa/article/9/1/00055/116900/Projections-of-physical-conditions-in-the-Gulf-of" target = "_blank" rel = "noreferrer" className = "accent1"/> }}
+                    components={{ bLink: <a href = "https://online.ucpress.edu/elementa/article/9/1/00055/116900/Projections-of-physical-conditions-in-the-Gulf-of" target = "_blank" rel = "noreferrer" className = "accent1" aria-label="Brickman Paper Link"/> }}
                     /> }
                   </p>
               </div>
@@ -131,7 +131,7 @@ const Publications = () => {
       paperLink = "https://dl.acm.org/doi/10.1145/3706599.3720102"
       descriptionComponents = {{
         par: <p/>, // paragraph
-        ialLink: <a className = "accent1" href = "https://www.interactanimallab.com/" target = "_blank" rel="noreferrer"/>
+        ialLink: <a className = "accent1" href = "https://www.interactanimallab.com/" target = "_blank" rel="noreferrer" aria-label="Interact Animal Lab Website"/>
       }}
       hasAbstract = {true}
       linkComponents = {[

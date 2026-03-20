@@ -39,8 +39,8 @@ const Code = () => {
           descriptionComponents = {{
             par: <p/>, // paragraph
             parSm: <p className = "text-smaller pt-3"/>, // smaller text
-            lip6Link: <a className = 'accent1' href = "https://www.lip6.fr/" target = '_blank' rel='noreferrer'/>,
-            agLink: <a className = 'accent1' href = "https://pyagrum.gitlab.io/agrum/" target = '_blank' rel='noreferrer'/>
+            lip6Link: <a className = 'accent1' href = "https://www.lip6.fr/" target = '_blank' rel='noreferrer' aria-label="LIP6 Website"/>,
+            agLink: <a className = 'accent1' href = "https://pyagrum.gitlab.io/agrum/" target = '_blank' rel='noreferrer' aria-label="aGrUM Website"/>
           }}
           hasAbstract = {false}
           linkComponents = {[]}
