@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 import "./index.css";
 
 const Settings = () => {
-    const {i18n, t} = useTranslation();
+    const {i18n} = useTranslation();
     const {isDarkMode, setIsDarkMode} = useColorScheme();
 
     return (

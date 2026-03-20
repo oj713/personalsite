@@ -25,15 +25,15 @@ const Contact = () => {
                 </div>
                 <div className = "d-flex pb-3">
                     <AiFillGithub className = "icon accent2"/>
-                    <a className = "accent2hover ps-3" target="_blank" href = "https://github.com/oj713">https://github.com/oj713</a>
+                    <a className = "accent2hover ps-3" target="_blank" rel="noreferrer" href = "https://github.com/oj713">https://github.com/oj713</a>
                 </div>
                 <div className = "d-flex pb-3">
                     <FaLinkedin className = "icon accent2"/>
-                    <a className = "accent2hover ps-3"  target="_blank" href = "https://www.linkedin.com/in/omi-johnson/">https://www.linkedin.com/in/omi-johnson/</a>
+                    <a className = "accent2hover ps-3"  target="_blank" rel="noreferrer" href = "https://www.linkedin.com/in/omi-johnson/">https://www.linkedin.com/in/omi-johnson/</a>
                 </div>
                 <div className = "d-flex">
                     <FaOrcid className = "icon accent2"/>
-                    <a className = "accent2hover ps-3" target="_blank" href = "https://orcid.org/0009-0005-9978-980X">https://orcid.org/0009-0005-9978-980X</a>
+                    <a className = "accent2hover ps-3" target="_blank" rel="noreferrer" href = "https://orcid.org/0009-0005-9978-980X">https://orcid.org/0009-0005-9978-980X</a>
                 </div>
             </div>
         </div>
