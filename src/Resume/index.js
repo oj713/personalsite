@@ -1,8 +1,8 @@
-import React from 'react';
 import PdfDownload from '../Assets/pdfDownload';
 import {GiWhaleTail, GiSlicedBread} from 'react-icons/gi';
 import BackToTop from '../Assets/backToTop';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import "./index.css";
 
 const techKnowledge = [
@@ -25,10 +25,12 @@ const techKnowledge = [
 ]
 
 const Resume = () => {
+    const {t, i18n} = useTranslation();
+
     return (
     <div className = "mainPane eighty">
         <div className = "background2 block p-0">
-        <PdfDownload filepath = "/PDFfiles/OJohnson_CV_Resume.pdf">Omi H. Johnson CV/Resume Download </PdfDownload>
+        <PdfDownload filepath = {`/PDFfiles/OJohnson_CV_${i18n.language}.pdf`}>Omi H. Johnson CV Download </PdfDownload>
         </div>
 
         {/* Education */}
