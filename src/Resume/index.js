@@ -87,7 +87,7 @@ const Resume = () => {
                         <div>
                             <h4>{t("cv.education.name")},</h4>
                             <span class="location-text">{t("cv.education.location")}</span>
-                            <p><i>{t("degree")}</i></p>
+                            <p><i>{t("cv.education.degree")}</i></p>
                         </div>
                         <div class="vertcenter text-right text-md-end mt-2 mt-md-0">{t("cv.education.date")}</div>
                     </div>
