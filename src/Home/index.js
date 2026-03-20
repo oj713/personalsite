@@ -1,7 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { AiFillGithub } from 'react-icons/ai';
-import {useTranslation} from 'react-i18next';
+import {Trans, useTranslation} from 'react-i18next';
 
 const Home = () => {
     const {t} = useTranslation();
@@ -21,10 +20,19 @@ const Home = () => {
         <div className = "row mt-2">
             <div className = "col-sm-none col-md-2"></div>
             <div className = "col-sm-12 col-md-10">
-                <p>{t("home.body")}</p>
+                <Trans
+                    i18nKey="home.body"
+                    components={{
+                        par: <p/>, // paragraph
+                        parSm: <p className = "text-smaller pt-3"/>, // smaller text
+                        i: <i/>
+                    }}
+                />
                 <br/>
                 <div>
-                    <p className = "text-right text-smaller"><a className = "accent2hover" href = "https://github.com/oj713/personalsite" target = "_blank" rel="noreferrer"><AiFillGithub class = "icon up accent2"/><i> {t("home.buildWithReact")}</i></a></p>
+                    <p className = "text-right text-smaller">
+                        <a className = "accent2hover" href = "https://github.com/oj713/personalsite" target = "_blank" rel="noreferrer"><AiFillGithub class = "icon up accent2"/><i> {t("home.buildWithReact")}</i></a>
+                    </p>
                 </div>
             </div>
         </div>

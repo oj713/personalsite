@@ -31,6 +31,24 @@ const Code = () => {
     return (
     <div className = "mainPane eighty">
 
+        {/* jsAgrum */}
+        <ProjectBlock
+          id = "jsagrum"
+          Icon = {IoColorPaletteSharp}
+          paperLink = {undefined}
+          descriptionComponents = {{
+            par: <p/>, // paragraph
+            parSm: <p className = "text-smaller pt-3"/>, // smaller text
+            lip6Link: <a className = 'accent1' href = "https://www.lip6.fr/" target = '_blank' rel='noreferrer'/>,
+            agLink: <a className = 'accent1' href = "https://pyagrum.gitlab.io/agrum/" target = '_blank' rel='noreferrer'/>
+          }}
+          hasAbstract = {false}
+          linkComponents = {[]}
+          images = {undefined}
+        />
+
+        <div style = {{"height":"3em"}}></div>
+
         {/* Five Minute Frames */}
         <ProjectBlock
           id = "fmframes"

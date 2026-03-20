@@ -72,13 +72,15 @@ const Publications = () => {
         par: <p/>, // paragraph
         parSm: <p className = "text-smaller pt-3"/>, // smaller text
         i: <i/>, // italics
-        bigelowLink: <a className = 'accent1' href = "https://www.bigelow.org/" target = '_blank' rel='noreferrer'/>
+        bigelowLink: <a className = 'accent1' href = "https://www.bigelow.org/" target = '_blank' rel='noreferrer'/>,
+        copLink: <a className = 'accent1' href = "https://data.marine.copernicus.eu/products" target = '_blank' rel='noreferrer'/>
       }}
       hasAbstract = {true}
       linkComponents = {[
         {link: "/PDFfiles/NARWC_Poster.pdf", icon: GiWhaleTail},
         {link: "https://doi.org/10.1525/elementa.2024.00044", icon: AiOutlineFilePdf},
         {link: "https://github.com/BigelowLab/predicting_NARW", icon: AiFillGithub},
+        {link: "https://github.com/oj713/daily_NARW_prey_forecasts", icon: AiFillGithub}
       ]}
       images = {imagesBigelow}
       additionalContent = {
