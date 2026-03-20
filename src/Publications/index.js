@@ -163,7 +163,7 @@ const Publications = () => {
                 </div>
               </div>
               <div className = "block accent2-bg mt-3">
-                  <a href = "https://github.com/oj713/brickman-walkthrough" target="_blank" rel = "noreferrer"><h3 className = "m-1">Brickman Data Walkthrough<IoMdOpen className = "up"/></h3></a>
+                  <a href = "https://github.com/oj713/brickman-walkthrough" target="_blank" rel = "noreferrer"><h3 className = "m-1">{t("projBlock.bigelow.additional.walkthrough.title")}<IoMdOpen className = "up"/></h3></a>
                   <p> 
                      { <Trans
                     i18nKey={"projBlock.bigelow.additional.walkthrough.description"}

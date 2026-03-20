@@ -1,10 +1,9 @@
-import React from 'react';
-import { GiMirrorMirror, GiSharkFin } from "react-icons/gi";
+import { GiSharkFin } from "react-icons/gi";
 import { BiSolidTreeAlt } from "react-icons/bi";
 import {AiFillGithub} from 'react-icons/ai';
 import { IoColorPaletteSharp } from "react-icons/io5";
-import ImageGallery from '../Assets/imageGallery.js';
 import BackToTop from '../Assets/backToTop.js';
+import ProjectBlock from "../Assets/projBlock.js";
 import "./index.css";
 
 const parkour_images = [
@@ -68,120 +67,75 @@ const Code = () => {
     <div className = "mainPane eighty">
 
         {/* Five Minute Frames */}
-        <div>
-            {/* Header */}
-            <p className = "block d-inline-block accent1-bg">October - December 2023</p>
-            <div className = "row">
-                <div className = "col-12">
-                    <h2 className = "mx-0 mt-2 mb-3"><IoColorPaletteSharp className = "up"/> Five Minute Frames</h2>
-                    <p className = "text-smaller ps-1"><i>D programming language, Networking, Unit Testing, Agile</i></p>
-                </div>
-            </div>
-            <div className = "row mt-2">
-                <div className = "col-sm-none col-md-1"></div>
-                <div className = "col-sm-12 col-md-11">
-                    {/* Description */}
-                    <div className = "block background2">
-                    <p>
-                        This application lets everyone have a chance to be an artist! Five Minute Frames is a game application that lets users chat, upload images, and view the work of others in an interactive gallery. Images only last five minutes, so everyone can get a turn! Users can choose their own sprite and move around a map to view different frames.
-                    </p>
-                    <p>
-                        The program is built using the D programming language, which is related to C++. The application is built using a client-server architecture, where the server is responsible for managing the game state and the clients are responsible for rendering the game. Chats over the terminal are managed using a custom protocol. The map and images are rendered with a GUI and sprite-based animation. This project was completed in a group using Agile development methodology and thorough unit testing.
-                    </p>
-                    </div>
-
-                    <div style = {{"height":"2em"}}></div>
-
-                    <ImageGallery images={fmf_images}/>
-                </div>
-            </div>
-        </div>
+        <ProjectBlock
+          id = "fmframes"
+          Icon = {IoColorPaletteSharp}
+          paperLink = {undefined}
+          descriptionComponents = {{
+            par: <p/>, // paragraph
+            parSm: <p className = "text-smaller pt-3"/> // smaller text
+          }}
+          hasAbstract = {false}
+          linkComponents = {[]}
+          images = {fmf_images}
+        />
 
         <div style = {{"height":"3em"}}></div>
 
         {/* Parkour */}
-        <div>
-            {/* Header */}
-            <p className = "block d-inline-block accent1-bg">July - August 2022</p>
-            <div className = "row">
-                <div className = "col-12">
-                    <a href = "https://parkour-social-media-site.netlify.app/" target="_blank" rel="noopener noreferrer"><h2 className = "mx-0 mt-2 mb-3"><BiSolidTreeAlt className = "up"/> Parkour: U.S. National Parks Social Media</h2></a>
-                    <p className = "text-smaller ps-1"><i>Node.js, MongoDB, Bootstrap, Redux.js, React.js, Full-Stack Development</i></p>
-                </div>
-            </div>
-            <div className = "row mt-2">
-                <div className = "col-sm-none col-md-1"></div>
-                <div className = "col-sm-12 col-md-11">
-                    {/* Description */}
-                    <div className = "block background2">
-                    <p>
-                        The U.S. National Parks are a point of national pride and spark fierce appreciation for the natural world. This web-based social media platform demo allows users to share their favorite parks, post photos, and connect directly with parks, rangers, and hikers alike. The application also connects directly to the National Parks API to display the latest news and information about each park.
-                    </p>
-                    <p>
-                        This project is a full-stack web application built within Javascript. The backend server, built using Node.js connected to a MongoDB database, stores user and park information and transmits it to the front end via RESTful APIs. The frontend, built using React, Redux, and Bootstrap, supports user registration, login, and CRUD operations on posts. The application is fully responsive and includes custom CSS styling.
-                    </p>
-                    </div>
-                    {/* Primary links */}
-                    <div>
-                        <a className="accent2hover" href = "https://parkour-social-media-site.netlify.app/" target="_blank" rel="noopener noreferrer"><p className = "pt-3"><BiSolidTreeAlt className = "icon accent2 up"/> View the live demo. </p></a>
-                        <a className="accent2hover" href = "https://github.com/oj713/parkour-frontend" target = "_blank" rel = "noopener noreferrer"><p className = "pt-2"><AiFillGithub className = "icon accent2 up"/> View the frontend source code on GitHub. </p></a>
-                        <a className="accent2hover" href = "https://github.com/oj713/parkour-backend" target = "_blank" rel = "noopener noreferrer"><p className = "pt-2"><AiFillGithub className = "icon accent2 up"/> View the backend source code on GitHub. </p></a>
-                    </div>
-
-                    <div style = {{"height":"2em"}}></div>
-
-                    <ImageGallery images={parkour_images}/>
-                </div>
-            </div>
-        </div>
+        <ProjectBlock
+          id = "parkour"
+          Icon = {BiSolidTreeAlt}
+          paperLink = {undefined}
+          descriptionComponents = {{
+            par: <p/>, // paragraph
+          }}
+          hasAbstract = {false}
+          linkComponents = {[
+            {link: "https://parkour-social-media-site.netlify.app/", icon: BiSolidTreeAlt},
+            {link: "https://github.com/oj713/parkour-frontend", icon: AiFillGithub},
+            {link: "https://github.com/oj713/parkour-backend", icon: AiFillGithub}
+          ]}
+          images = {parkour_images}
+        /> 
 
         <div style = {{"height":"3em"}}></div>
 
         {/* Google Doodle */}
-        <div>
-            {/* Header */}
-            <p className = "block d-inline-block accent1-bg">November 2021</p>
-            <div className = "row">
-                <div className = "col-12">
-                    <a href = "https://oj713.github.io/Web-Design/google_doodle/index.html" target="_blank" rel="noopener noreferrer"><h2 className = "mx-0 mt-2 mb-3"><GiSharkFin className = "up"/> Google Doodle</h2></a>
-                    <p className = "text-smaller ps-1"><i>HTML, CSS, hand-drawn imagery</i></p>
+        <ProjectBlock
+          id = "gdoodle"
+          Icon = {GiSharkFin}
+          paperLink = {undefined}
+          descriptionComponents = {{
+            par: <p/>, // paragraph
+          }}
+          hasAbstract = {false}
+          linkComponents = {[
+            {link: "https://oj713.github.io/Web-Design/google_doodle/index.html", icon: GiSharkFin}
+          ]}
+          images = {undefined}
+          additionalContent = {
+            <div>
+                <div style = {{"height":"2em"}}></div>
+                <div className="row">
+                  <div className="col-12 col-sm-6 mb-2 mb-sm-0">
+                    <img
+                      src="./Images/GD/up.png"
+                      alt="Google Doodle, up position"
+                      className="img-fluid rounded"
+                    />
+                  </div>
+                  <div className="col-12 col-sm-6">
+                    <img
+                      src="./Images/GD/down.png"
+                      alt="Google Doodle, down position"
+                      className="img-fluid rounded"
+                    />
+                  </div>
                 </div>
             </div>
-            <div className = "row mt-2">
-                <div className = "col-sm-none col-md-1"></div>
-                <div className = "col-sm-12 col-md-11">
-                    {/* Description */}
-                    <div className = "block background2">
-                    <p>
-                        A short and simple HTML/CSS project to design a custom Google Doodle. The doodle leverages hand-drawn designs and CSS transitions to create a fun and interactive experience celebrating International Shark Awareness Day.
-                    </p>
-                    </div>
-                    {/* Primary links */}
-                    <div>
-                        <a className="accent2hover" href = "https://oj713.github.io/Web-Design/google_doodle/index.html" target="_blank" rel="noopener noreferrer"><p className = "pt-3"><GiSharkFin className = "icon accent2 up"/> View the live demo. </p></a>
-                    </div>
-
-                    <div style = {{"height":"2em"}}></div>
-
-                    <div className="row">
-                      <div className="col-12 col-sm-6 mb-2 mb-sm-0">
-                        <img
-                          src="./Images/GD/up.png"
-                          alt="Google Doodle, up position"
-                          className="img-fluid rounded"
-                        />
-                      </div>
-                      <div className="col-12 col-sm-6">
-                        <img
-                          src="./Images/GD/down.png"
-                          alt="Google Doodle, down position"
-                          className="img-fluid rounded"
-                        />
-                      </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+          }
+        /> 
             
         <BackToTop/>
     </div>

@@ -22,7 +22,7 @@ const ProjectBlock = ({
     descriptionComponents,
     hasAbstract,
     linkComponents = [],
-    images = [],
+    images = undefined,
     additionalContent = undefined
 }) => {
     const {t} = useTranslation();
@@ -90,7 +90,7 @@ const ProjectBlock = ({
                     })
                 }
                 <div style = {{"height":"2em"}}></div>
-                <ImageGallery images = {images}/>
+                {images && <ImageGallery images = {images}/>}
                 {additionalContent}
             </div>
         </div>

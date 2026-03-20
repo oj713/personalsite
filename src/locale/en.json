@@ -68,6 +68,33 @@
                     "Watch the video presentation given at ACI 2025.",
                     "Read the paper for free!"
                 ]
+            },
+            "fmframes": {
+                "miniTitle": "October - December 2023",
+                "mainTitle": "Five Minute Frames",
+                "subTitle": "D programming language, Networking, Unit Testing, Agile",
+                "description": 
+                "<par>This application lets everyone have a chance to be an artist! Five Minute Frames is a game application that lets users chat, upload images, and view the work of others in an interactive gallery. Images only last five minutes, so everyone can get a turn! Users can choose their own sprite and move around a map to view different frames.\n\n The program is built using the D programming language, which is related to C++. The application is built using a client-server architecture, where the server is responsible for managing the game state and the clients are responsible for rendering the game. Chats over the terminal are managed using a custom protocol. The map and images are rendered with a GUI and sprite-based animation. This project was completed in a group using Agile development methodology and thorough unit testing.</par><parSm><i>This project repository is private.</i></parSm>"
+            },
+            "parkour": {
+                "miniTitle": "July - August 2022",
+                "mainTitle": "Parkour: U.S. National Parks Social Media",
+                "subTitle": "Node.js, MongoDB, Bootstrap, Redux.js, React.js, Full-Stack Development",
+                "description": 
+                "<par>The U.S. National Parks are a point of national pride and spark fierce appreciation for the natural world. This web-based social media platform demo allows users to share their favorite parks, post photos, and connect directly with parks, rangers, and hikers alike. The application also connects directly to the National Parks API to display the latest news and information about each park.</par><par>This project is a full-stack web application built within Javascript. The backend server, built using Node.js connected to a MongoDB database, stores user and park information and transmits it to the front end via RESTful APIs. The frontend, built using React, Redux, and Bootstrap, supports user registration, login, and CRUD operations on posts. The application is fully responsive and includes custom CSS styling.</par>",
+                "links": [
+                    "View the live demo.",
+                    "View the frontend source code on GitHub.",
+                    "View the backend source code on GitHub."
+                ]
+            },
+            "gdoodle": {
+                "miniTitle": "November 2021",
+                "mainTitle": "Google Doodle",
+                "subTitle": "HTML, CSS, Hand-drawn Imagery",
+                "description": 
+                "<par>A short and simple HTML/CSS project to design a custom Google Doodle. The doodle leverages hand-drawn designs and CSS transitions to create a fun and interactive experience celebrating International Shark Awareness Day.</par>",
+                "links": ["View the live demo."]
             }
         },
         "contact": {
