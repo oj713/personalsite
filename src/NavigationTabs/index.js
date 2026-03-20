@@ -5,18 +5,21 @@ import { AiOutlineHome, AiOutlineMail, AiOutlineMenu, AiOutlineClose } from 'rea
 import { IoDocumentTextOutline } from 'react-icons/io5';
 import { BiCodeAlt } from 'react-icons/bi';
 import { GiWhaleTail } from 'react-icons/gi';
-import LightDarkToggle from '../LightDarkToggle';
+import Settings from '../Settings';
+import {useTranslation} from 'react-i18next';
 
 const NavigationTabs = () => {
+    const {t} = useTranslation();
+
     const { pathname } = useLocation();
     let [ignore, active] = pathname.split("/");
     const [menuOpen, setMenuOpen] = useState(false);
 
     const tabs = [
-        { name: "contact", label: "Contact", icon: <AiOutlineMail className="icon me-2" /> },
-        { name: "resume", label: "Resume", icon: <IoDocumentTextOutline className="icon me-2" /> },
-        { name: "projects", label: "Projects", icon: <BiCodeAlt className="icon me-2" /> },
-        { name: "publications", label: "Publications", icon: <GiWhaleTail className="icon me-2" /> }
+        { name: "contact", label: t("nav.contact"), icon: <AiOutlineMail className="icon me-2" /> },
+        { name: "resume", label: t("nav.resume"), icon: <IoDocumentTextOutline className="icon me-2" /> },
+        { name: "code", label: t("nav.code"), icon: <BiCodeAlt className="icon me-2" /> },
+        { name: "publications", label: t("nav.publications"), icon: <GiWhaleTail className="icon me-2" /> }
     ];
 
     const toggleMenu = () => setMenuOpen(!menuOpen);
@@ -26,7 +29,7 @@ const NavigationTabs = () => {
         <div className="navigation-wrapper">
             {/* Pills-style nav for medium+ screens */}
             <div className="d-none d-md-flex justify-content-between p-3">
-                <LightDarkToggle />
+                <Settings />
                 <ul className="nav flex-row-reverse nav-pills">
                     {tabs.map(tab => (
                         <Link
@@ -45,7 +48,7 @@ const NavigationTabs = () => {
 
             {/* Hamburger menu for small screens */}
             <div className="d-flex justify-content-between d-md-none p-3">
-                <LightDarkToggle />
+                <Settings />
                 <span>
                     <Link to="/" className={`${active ? "" : "hidden"} homeButton fs-4`}>
                         <AiOutlineHome />

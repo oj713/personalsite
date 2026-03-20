@@ -1,0 +1,15 @@
+#settings-menu {
+    display: flex;
+}
+
+#settings-menu select {
+    background-color: transparent;
+    border: none;
+    color: var(--text-col);
+}
+
+#settings-menu span.divider {
+    border-left: 1px var(--text-col) solid; 
+    margin: 0 0.5rem;
+    opacity: .5;
+}

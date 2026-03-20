@@ -1,8 +1,10 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { AiFillGithub } from 'react-icons/ai';
+import {Trans, useTranslation} from 'react-i18next';
 
 const Home = () => {
+    const {t} = useTranslation();
+
     return (
     <>
     <div className = "mainPane sixty" >
@@ -12,25 +14,32 @@ const Home = () => {
         <div className = "row">
             <div>
                 <h1 className = "m-1 pb-0"><b>Omi H. Johnson</b></h1>
-                <p className = "m-1"><i>Research technician, software engineer, environmental scientist </i></p>
+                <p className = "m-1"><i>{t("home.subtitle")}</i></p>
             </div>
         </div>
         <div className = "row mt-2">
             <div className = "col-sm-none col-md-2"></div>
             <div className = "col-sm-12 col-md-10">
-                <p>
-                    Welcome to my professional portfolio. I'm a recent graduate from Northeastern University, with a Bachelor's in Computer Science and Environmental and Sustainability Studies. I have benefitted from an intensive curriculum including 7 graduate courses and over 1.5 years of full-time internships. I have well-rounded expertise in full-stack development, machine learning, and user centric design. Through my professional work experience in research and software, I have published two first-author research papers and developed exceptional skills in communication, problem-solving, and attention to detail. Please use this portfolio to explore my work!
-                </p>
+                <Trans
+                    i18nKey="home.body"
+                    components={{
+                        par: <p/>, // paragraph
+                        parSm: <p className = "text-smaller pt-3"/>, // smaller text
+                        i: <i/>
+                    }}
+                />
                 <br/>
                 <div>
-                    <p className = "text-right text-smaller"><a className = "accent2hover" href = "https://github.com/oj713/personalsite" target = "_blank" rel="noreferrer"><AiFillGithub class = "icon up accent2"/><i> Built with React</i></a></p>
+                    <p className = "text-right text-smaller">
+                        <a className = "accent2hover" href = "https://github.com/oj713/personalsite" target = "_blank" rel="noreferrer"><AiFillGithub class = "icon up accent2"/><i> {t("home.buildWithReact")}</i></a>
+                    </p>
                 </div>
             </div>
         </div>
         </div>
     </div>
     </div>
-    <div className = "bottomCorner d-none d-md-block"><p class="accent2 ps-3 text-smaller"><i>Background: Original forecasts. See <Link to = "/publications#bigelow">Publications</Link>.</i></p></div>
+    <div className = "bottomCorner d-none d-md-block"><p class="accent2 ps-3 text-smaller"><i>{t("home.legend")} <Link to = "/publications#bigelow">{t("nav.publications")}</Link>.</i></p></div>
     </>
     )
 }

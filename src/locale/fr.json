@@ -1,0 +1,233 @@
+{
+    "translation": {
+        "nav": {
+            "contact": "Contact",
+            "resume": "CV", 
+            "code": "Codage",
+            "publications": "Publications"
+        },
+        "home": {
+            "subtitle": "Chercheur, ingénieur logiciel, océanographe",
+            "body": "<par>Bienvenue à mon portfolio professionel. Je suis ingénieur de recherche à LIP6 — Sorbonne Université et diplôme de Northeastern University (États-Unis) en 2025 en informatique et en sciences de l'environnement et du développement durable. Pendant ma licence, j'ai suivi un cursus intensif, y compris des cours au niveau Master et des stages de longue durée. Je me passionne pour le potentiel du machine learning et l'informatique à relever les défis urgents du développement durables et les espèces en danger. Grâce à mon éxperience professionelle, je suis l'auteur principal de trois articles de recherche et j'ai une connaissance approfondie du développement full-stack, du machine learning, et des sciences environnementales. Veuillez utiliser ce portfolio pour découvrir mon travail !</par><parSm>Veuillez noter : la version française de ce portfolio est incomplète. La plupart des textes descriptifs n'ont pas encore été traduits. J'y travaille actuellement ; merci de votre patience et n'hésitez pas à réessayer dans quelques jours !</parSm>",
+            "buildWithReact": " Construit avec React",
+            "legend": "Arrière-plan: prévisions originales. Voyez "
+        },
+        "projBlock": {
+            "general": {
+                "abstract": "Résumé",
+                "imageGallery": "Galerie d'Images"
+            },
+            "parissaclay": {
+                "miniTitle": "Late-Breaking Work, ACM Computer-Human Interaction (CHI) 2025",
+                "mainTitle": "Bridging Modeling and Domain Expertise Through Visualization: A Case Study on Bread-Making with Bayesian Networks",
+                "subTitle": "Omi H. Johnson, Melanie Munch, Kamal Kansou, Cedric Baudit, Anastasia Bezerianos, Nadia Boukhelifa",
+                "description": 
+                "<par> What makes a decision support tool effective? How can we ensure that users of a support tool trust the model behind it? In this research, I collaborated with researchers at the <inraeLink>INRAE</inraeLink> and <lisnLink>LISN</lisnLink> labs within Université Paris-Saclay to develop a visualization platform for a Bayesian Network model. We focused our research around the concept of 'explainability': enabling non-technical users of the network to understand how decisions are made and the accuracy of the model. Explainability is critical to establish trust and usage of decision support tools, especially complex structures like Bayesian Networks. </par> <par> This research was conducted in Spring 2024 as an M1-level internship. I worked to develop a JavaScript-based web visualization platform that leverages D3.js visualizations and customization toggles to portray a Bayesian Network to domain experts. This research was conducted using an <evagrainLink>EVAGRAIN</evagrainLink> Bayesian Network hosted within the pyAgrum.py library. The EVAGRAIN network aims to model the behavior of bread dough as proxy for French wheat quality and climate resilience. To develop the web platform, I conducted an extensive literature review; hosted multiple design sessions with domain expert proxies; and finally led iterative evaluations of the platform with 5 domain experts and 1 Bayesian Network specialist. The resulting platform was well received by experts and uses familiar, interactive visualizations to convey evidence propogation and dataset information. We conclude that the visualizaiton increases explainability for experts and fostered cross-disipline dialogue, with unique considerations for dataset access and complexity. </par>",
+                "abstract": "Decision support tools based on Bayesian Networks (BN) are capable of simply representing complex relationships within data. We use a BN network to model bread-dough behavior, reflecting the bread-making process. Such a network must be validated using domain knowledge, but domain experts often lack the necessary statistical backgrounds to understand BNs. We propose a visualization to enable domain experts without technical background to explain and critically analyze the network. Our platform uses familiar visualizations and focuses on interactive evidence propagation, view customization, and access to the underlying dataset as key features to facilitate understanding. Design workshops and a preliminary evaluation with domain experts and BN specialists showed its potential for exploring and validating the model. We report on lessons learned in creating a visualization for making complex models accessible to domain experts, and how its design can foster interdisciplinary dialogue between modelers and domain experts.",
+                "links": [
+                    "Je lis la page d'accueil officielle du site web de CHI.",
+                    "Je lis l'article gratuitement !",
+                    "Je lis la couverture médiatique de Northeastern University."
+                ],
+                "captions": {
+                    "bayesian_network": "A Bayesian Network consists of nodes (variables) and edges (dependencies). Probabilistic relationships between nodes are represented by conditional probability tables (CPTs). These networks can be used to propogate evidence throughout a network based on known values, but are difficult to interpret for non-technical users. This is a simple 4-variable example of a Bayesian Network, but the EVAGRAIN network features 25 sensory and quantile metrics.",
+                    "full_network": "The visualization platform was implemented as an React web application. The platform consists of a scrollable network pane and accompanying options bar. The network is represented a set of nodes and edges.",
+                    "node_design": "Variables, or nodes, in the network are represented as circles. The name and bread-making step of a variable are encircled by a ring of marginal probabilities representing its likelihood. The EVAGRAIN network is unique in that all nodes can be represented using the same legend scale.",
+                    "evidence_prop": "Clicking on a probability ring will propagate evidence for the node, allowing for a user to see how a set piece of evidence affects the likelihood of other nodes in the network. The thickness of relations, represented as arrows, adjusts according to the mutual information between nodes. Evidence propogation was consistently considered the biggest strength of the platform during validation sessions.",
+                    "alternative_settings": "The options bar at the top of the screen allows users to customize their preferred view of the network. Users can toggle network type (either including or not including an all-encompassing PROFIL variable), node color, layout, and significance calculations. Users consistently used the customization toggles to adjust the network view to their liking.",
+                    "sig_threshold": "Only nodes that are considered to have 'significantly' changed due to evidence propagation will expand to show both current and prior marginal probabilities. Users can easily change the threshold for significance using the top bar, enabling them to identify degrees of change without relying on complex numerical charts."
+                }
+            },
+            "bigelow": {
+                "miniTitle": "Article de Recherche, <i>Elementa: Science of the Anthropocene</i>",
+                "mainTitle": "Suitability of foraging habitat for <i>Eubalaena glacialis</i> under future climate scenarios in the Northwest Atlantic",
+                "subTitle": "Omi H. Johnson, Stéphane Plourde, Caroline Lehoux, Camille H. Ross, Benjamin Tupper, Christopher D. Orphanides, Harvey J. Walsh, Nicholas R. Record",
+                "description": 
+                "<par> Machine learning can be a powerful tool to anticipate and counteract rapid phenomena like climate change. In the case of the critically endangered North Atlantic Right Whale (<i>Eubalaena Glacialis</i>), recent climate shifts in the Gulf Stream have disrupted historical foraging patterns and challenged conservation tactics. In this research, conducted within the <bigelowLink>Bigelow Laboratory of Ocean Sciences</bigelowLink>, we sought to leverage boosted regression trees and modeled environmental covariates to predict <i>E. glacialis</i> foraging suitability for 2055 and 2075. This research is unique in that it covers the entire, cross-boundary foraging range of <i>E. glacialis</i> at a finely detailed 1/12° resolution. The research also leverages a bioenergetics-threshold approach to deliver more insightful predictions based on multiple prey species. This research can be used to inform survey effort and help protect <i>E. glacialis</i> from anthropogenic threats such as ship strikes and entanglement in fishing gear. </par> <par> This research began as an internship project in Spring 2022 and continued part-time through Spring 2025. To reach the finished paper, I built 100+ experimental models in R using a variety of modeling algorithms such as GAMs, Neural Networks, Random Forests, and GLMs to determine an optimal algorithm. I also developed a comprehensive, modular modeling pipeline to easily facilitate version creation and plot generation. The final forecasts are based on two independent, 100-fold boosted regression tree models representing the two most abundant prey species in the region, <i>Calanus finmarchicus</i> and <i>C. hyperboreus</i>. The completed models displayed high performance, with AUCs > 90%. The resulting paper thoughtfully details results such as model performance, caveats like overfitting and spatial autocorrelation, final forecast results, and implications for right whale conservation. </par><par>After publication of the research manuscript, I developped a second generation of models leveraging a generalised workflow for modeling zooplankton distribution using <copLink>Copernicus</copLink> oceanographic covariates. These models are currently being used in ongoing projets exploring leatherback turtle and right whale distributions at other laboratoires.</par><parSm><i>This work has been presented at the 2022 Ecological Forecasting Initiative Conference; the 2024 Northeastern University RISE Conference; and the 2024 North Atlantic Right Whale Consortium</i></parSm>",
+                "abstract": "The critically endangered North Atlantic right whale (<i>Eubalaena glacialis</i>) faces significant anthropogenic mortality. Recent climatic shifts in traditional habitats have caused abrupt changes in right whale distributions, challenging traditional conservation strategies. Tools that can help anticipate new areas where <i>E. glacialis</i> might forage could inform proactive management. In this study, we trained boosted regression tree algorithms with fine-resolution modeled environmental covariates to build prey copepod (<i>Calanus</i>) species-specific models of historical and future distributions of <i>E. glacialis</i> foraging habitat on the northwest Atlantic shelf, from the Mid-Atlantic Bight to the Labrador Shelf. We determined foraging suitability using <i>E. glacialis</i> foraging thresholds for <i>Calanus</i> spp. adjusted by a bathymetry-dependent bioenergetic correction factor based on known foraging behavior constraints. Models were then projected to 2046-2065 and 2066-2085 modeled climatologies for representative concentration pathway scenarios RCP 4.5 and RCP 8.5 with the goal of identifying potential shifts in foraging habitat. The models had generally high performance (area under the receiver operating characteristic curve > 0.9) and indicated ocean bottom conditions and bathymetry as important covariates. Historical (1990-2015) projections aligned with known areas of high foraging habitat suitability as well as potential suitable areas on the Labrador Shelf. Future projections suggested that the suitability of potential foraging habitat would decrease in parts of the Gulf of Maine and southwestern Gulf of Saint Lawrence, while potential habitat would be maintained or improved on the western Scotian Shelf, in the Bay of Fundy, on the Newfoundland and Labrador shelves, and at some locations along the continental shelf breaks. Overall, suitable habitat is projected to decline. Directing some survey efforts towards emerging potential foraging habitats can enable conservation management to anticipate the type of distribution shifts that have led to high mortality in the past.",
+                "links": [
+                    "Je télécharge l'affiche présentée au Consortium sur la baleine franche de l'Atlantique Nord 2024.",
+                    "Je lis l'article gratuitement !",
+                    "Je consulte le code source de l'article sur GitHub.",
+                    "Je consulte le code source du flux de travail généralisé sur GitHub."
+                ],
+                "captions": {
+                    "Rightwhale": "North Atlantic Right Whale. These whales boast beautiful, smooth tails that make them easy to identify. Photo: Peter Crosson, licensed under CC BY-NC-SA 2.0.",
+                    "Cfinmarchicus": "Calanus Finmarchicus, a lipid-rich copepod fed upon by right whales. These and C. Hyperboreus were used as input prey layers for the model. Photo: David Fields.",
+                    "cfin_abund": "Data of C. Finmarchicus abundance sourced from the National Oceanic and Atmospheric Administration's (NOAA's) Fisheries Ecosystem Monitoring Program (MARMAP/EcoMon) survey and the Fisheries and Oceans Canada (DFO) Atlantic Zone Monitoring Program (AZMP) survey. Blue points represent absences, red presences relative to a minimum bioenergetic threshold. A similar dataset was used for C. Hyperboreus.",
+                    "resp_curves": "Response curves from a preliminary version of the final C. finmarchicus model. Lines represent how each fold of the boosted regression tree model responded to variation in a covariate while all other covariates were held constant. Vertical lines represent median variable values. This is one example of original model analyses described in the final manuscript.",
+                    "pres_jul": "Historical (1990-2015) projections of combined Calanus spp. τh-patch probabilities in July. Combined probabilities are calculated as the summed likelihood of either C. finmarchicus or C. hyperboreus constituting suitable foraging habitat at a point. Areas highlighted here, for example the Gulf of Maine and Gulf of Saint Lawrence, have been historically documented as foraging areas.",
+                    "future_preds": "Habitat shift maps for future combined Calanus spp. projections, May through October. Colors represent how combined projected foraging habitat suitability shifted between historical (1990-2015) and representative concentration pathway RCP 8.5 year-2075 (2066-2085) climate projections relative to a habitat probability threshold of 20%. These projections highlight areas of change for future foraging suitability, for example loss of foraging habitat suitability in the Gulf of Maine."
+                },
+                "additional": {
+                    "title": "Projets Connexes",
+                    "tutorial": {
+                        "title": "Tidymodels Tutorial Website",
+                        "description": "A website thoroughly detailing the capabilities of <tmLink>Tidymodels</tmLink>, a set of R modeling packages designed to increase modularity and align modeling paradigms with \"tidy\" data principles. This package was instrumental in the development of my modeling pipeline. The walkthrough is built using RMarkdown and is specialized for ecological forecasting, including thorough coding examples and links to outside resources."
+                    },
+                    "savingNARW": {
+                        "title": "Saving the North Atlantic right whale",
+                        "description": "What does it mean to save the North Atlantic right whale? How does reducing ship strike collisions and fishing gear entanglements complicate the work of other industries in the Gulf of Maine? In this ArcGIS StoryMap, I use peer-reviewed sources and current events news to construct a narrative about effective strategies for right whale conservation, recent protests from the American Lobster Industry, and technological innovations driving the story forward. Forecasts like my published research are just one piece of the puzzle."
+                    },
+                    "walkthrough": {
+                        "title": "Brickman Modeling Walkthrough",
+                        "description": "My research relies on modelled environmental covariates sourced from <bLink>Brickman et al. 2021</bLink>, which features 1/12°, high-resolution projections of key covariates across the Northern Atlantic. This dataset has plenty of potential beyond my own work for use in other ecological forecast scenarios. This walkthrough presents a set of prepackaged functions and clear explanations for how anyone with a presence/absence dataset can build their own high resolution forecasts using the Brickman covariates."
+                    }
+                }
+            },
+            "colobus": {
+                "miniTitle": "Emerging Work, ACM Animal-Computer Interaction (ACI) 2025",
+                "mainTitle": "Colobus Curio Cabinet: A Modular, Mirror-Based, Co-Designed Enrichment Proposal for <i>Colobus guereza</i>",
+                "subTitle": "Omi H. Johnson, Victoria Klimkowski, Shannon Haley, Cailigh MacDonald, Sarah Woodruff, Rebecca Kleinberger",
+                "description": 
+                "<par> In the modern age, animals are increasingly interacting with technology: service dogs must navigate automatic doors, smart collars can inform animal health, and zoo animals can interact with touch screens. Animal-Computer Interaction is a recently emerged field of research that studies the intersection of animals and technology. A key tenant of this field is that technology should be created using the principles of user-centered design and human-computer interaction, thus enabling natural and consented use of technology by animals. </par> <par> In this project within the <ialLink> Interact Animal Lab </ialLink>, constructed a sensor-enabled, screen- and mirror-based enrichment device for <i>Colobus Guereza</i> monkeys. The device consists of modular mirror and screen components covered by movable flaps. The device is intended to encourage natural behaviors in <i>C. Guereza</i>, such as foraging and exploration of novel enrichment. The research paper details our design methodology and proposal informed by thorough literature review and discussion with zookeepers, offering critical insight on best enrichment design practices. After the design, we conducted a 6-week deployment at Stone Zoo, Stoneham, Massachusetts with a troop of 6 Colobus monkeys to assess efficacy and enable further work. </par>",
+                "abstract": "This work explores complex non-food based enrichment for zoo-housed primates through the design, iterative co-design process, and proposed evaluation of a modular, mirror-based enrichment system developed for zoo-housed <i>Colobus guereza monkeys</i>. The interactive enrichment proposal, which leverages the Colobus troop's interest in reflective surfaces, proposes modular inserts containing various mirrors and screen-based interfaces within a wall-mounted \"Curio Cabinet\" with natural-looking module covers. The design of the Curio Cabinet aims to simulate natural exploration and problem-solving behaviors while promoting physical, cognitive, and sensory engagement. Drawing from principles in Animal-Computer Interaction (ACI) and animal enrichment literature, the proposal was iteratively co-designed with zoo professionals. This design contributes to the broader application of animal-centered design in zoo settings toward a new paradigm that supports animal's choice and control in their environmental interactions. The design also challenges conventional \"mirror-test\" approaches by exploring an animal's agency-driven, personal sense-making journey with reflective surfaces. The proposed deployment protocol opens opportunities to investigate new research questions around mirror enrichment and long-term engagement. Finally, the work provides a detailed account of a collaborative design pipeline and recommendations for future iterative co-design processes in complex zoo enrichment.",
+                "links": [
+                    "Je regarde la présentation vidéo donnée lors de l'ACI 2025.",
+                    "Je lis l'article gratuitement !"
+                ],
+                "captions": {
+                    "c_guereza": "Colobus Guereza. These monkeys are native to Africa and are known for their long tails and black and white fur. They are arboreal and live in social groups. Photo: Flickr",
+                    "primates_mirrors": "Primates, including Colobus Guereza, have demonstrated interest in mirror-based enrichment. Colobus Guereza in particular are not food-motivated, so mirror-based enrichment is a promising avenue. Photo: Looky Lou",
+                    "init_design": "Initial designs featured one large mirror rather than the final modular design. A key component retained through all designs was giving the monkeys agency to hide the mirror, preventing undue stress.",
+                    "3Dmodel": "A detailed 3D model of the final prototype, built using Fusion 360. The interior view shows each module and module locking system, inaccessible to Colobus. The 3D model allows for easy examination and design iteration of the prototype and improved both planning and communication with zoo staff.",
+                    "leaf_modules": "Leaf module examination. In this pilot prototype, various module cover options are demonstrated which cover flat mirrored compartments. Covers pictured: synthetic rope, silicone leaf (later scrapped due to durability concerns), hard plastic leaf, firehose drapes.",
+                    "prototype_HDPE": "In-construction prototype, built using sturdy HDPE plastic and stainless steel, weatherproof fastenings. We narrowed down the module cover selection to just firehose leaves and synthetic rope. Various mirror modules are hidden behind covers."
+                }
+            },
+            "jsagrum": {
+                "miniTitle": "novembre 2025 - présent",
+                "mainTitle": "jsAgrum: Browser-hosted execution of Bayesian reasoning",
+                "subTitle": "C++, Emscripten, WebAssembly, TypeScript, npm, génie logiciel",
+                "description": 
+                "<par> Machine learning, a domaine which used to be confined to high-powered computing centers, is becoming increasingly ubiquitous in day-to-day tasks. Machine learning within the browser, a relatively new field made possible due to recent advances in WebAssembly and JavaScript, is rapidly gaining traction due to its portability and security enhancements compared to traditional methods sending data over a server. In my current role working as a Project Engineer at <lip6Link>LIP6</lip6Link>, within Sorbonne Université, I am developping software to port the C++ Bayesian reasoning library <agLink>aGrUM</agLink> to web environments. The resulting npm package will use TypeScript and Emscripten to enable creation, inference, and learning with Bayesian Networks using modular backends according to system preferences.</par><parSm>jsAgrum 1.0 sera officiellement disponible pour le public à la fin du printemps 2026. Restez à l'écoute !</parSm>"
+            },
+            "fmframes": {
+                "miniTitle": "octobre - décembre 2023",
+                "mainTitle": "Five Minute Frames",
+                "subTitle": "Langage de programmation D, Réseaux, Tests unitaires, Méthode Agile",
+                "description": 
+                "<par>This application lets everyone have a chance to be an artist! Five Minute Frames is a game application that lets users chat, upload images, and view the work of others in an interactive gallery. Images only last five minutes, so everyone can get a turn! Users can choose their own sprite and move around a map to view different frames.\n\n The program is built using the D programming language, which is related to C++. The application is built using a client-server architecture, where the server is responsible for managing the game state and the clients are responsible for rendering the game. Chats over the terminal are managed using a custom protocol. The map and images are rendered with a GUI and sprite-based animation. This project was completed in a group using Agile development methodology and thorough unit testing.</par><parSm><i>Ce dépôt de projet est privé.</i></parSm>",
+                "captions": {
+                    "char": "Booting the application up shows a character select screen.",
+                    "map": "Players are dropped onto a map with a tile-based rendering system and collidable objects. Frames are scattered about the map. Multiple players can log on at a time.",
+                    "chat": "Players can chat to each other through the terminal.",
+                    "move": "Players can move around the map using arrow keys. Standing in front of a frame will trigger a view button.",
+                    "upload": "Users can upload new images to any empty frames. These images will be visible to everyone and disappear after five minutes.",
+                    "viewart": "Once an image is populated, the frame will fill on the map and other users can view your work!"
+                }
+            },
+            "parkour": {
+                "miniTitle": "juillet - août 2022",
+                "mainTitle": "Parkour: U.S. National Parks Social Media",
+                "subTitle": "Node.js, MongoDB, Bootstrap, Redux.js, React.js, Développement full-stack",
+                "description": 
+                "<par>The U.S. National Parks are a point of national pride and spark fierce appreciation for the natural world. This web-based social media platform demo allows users to share their favorite parks, post photos, and connect directly with parks, rangers, and hikers alike. The application also connects directly to the National Parks API to display the latest news and information about each park.</par><par>This project is a full-stack web application built within Javascript. The backend server, built using Node.js connected to a MongoDB database, stores user and park information and transmits it to the front end via RESTful APIs. The frontend, built using React, Redux, and Bootstrap, supports user registration, login, and CRUD operations on posts. The application is fully responsive and includes custom CSS styling.</par>",
+                "links": [
+                    "Je visite le démo en direct !",
+                    "Je consulte le code source front-end sur GitHub.",
+                    "Je consulte le code source back-end sur GitHub."
+                ],
+                "captions": {
+                    "homepage": "The homepage of the Parkour application shows current National Parks news served by their API as well as content from followed accounts, if logged in.",
+                    "register": "New users can register for an account using the registration page. The application uses a MongoDB database to store user information.",
+                    "profile": "The profile page contains user posts, followed accounts, and likes. Users can create new posts, delete posts, and edit their profile information.",
+                    "parkprofile": "Navigating to the profile of a park shows specialized headers and posts as well as park-specific posting options. Rangers also have a special icon.",
+                    "search": "The search page allows users to search for parks and users by name. Results are pulled from the National Parks API.",
+                    "parkinfo": "Detailed information on all parks is available through the National Parks API. If a park is also a member on the application, posts from their profile are also shown."
+                }
+            },
+            "gdoodle": {
+                "miniTitle": "novembre 2021",
+                "mainTitle": "Google Doodle",
+                "subTitle": "HTML, CSS, Images dessinées à la main",
+                "description": 
+                "<par>A short and simple HTML/CSS project to design a custom Google Doodle. The doodle leverages hand-drawn designs and CSS transitions to create a fun and interactive experience celebrating International Shark Awareness Day.</par>",
+                "links": ["Je visite le démo en direct !"],
+                "captions": {
+                    "up": "Google Doodle, position en haut",
+                    "down": "Google Doodle, position en bas"
+                }
+            }
+        },
+        "cv": {
+            "download": "Téléchargment de CV de Omi H. Johnson",
+            "education": {
+                "title": "Éducation",
+                "name": "Northeastern University",
+                "location": "Boston, Massachusetts, États-Unis",
+                "degree": "Undergraduate en Sciences de l'Informatique et Sciences Environnementales et Durables",
+                "date": "avril 2025",
+                "relevantCoursework": "Cours pertinents",
+                "rCourseList": "Développement web (Master) | Génie logiciel (Master) | Systèmes de gestion de base de données (Master) | Biostatistiques avancées (Master) | Algorithmes et données | Algèbre linéaire | Conception orientée objet | Théorie de calcul | Océanographie | SIG (Master) | Technologie et économie bleue (Master) | Écologie des cours d'eau (Master) | Interaction animal-machine",
+                "honors": "Distinctions",
+                "honorsList": "Moyenne Cumulative: 3,96 / 4,00 | Bourse d'excellence | Liste du doyen"
+            },
+            "techKnowledge": {
+                "title": "Connaissances Techniques",
+                "frontend": "Front-End",
+                "backend": "Back-End",
+                "dbsoftware": "Base de données/logiciels"
+            },
+            "work": {
+                "title": "Expérience Professionelle et de Recherche",
+                "published": " Article publié! Voyez <i> Publications </i>",
+                "lip6": {
+                    "institution": "LIP6 à Sorbonne Université", 
+                    "location": "Paris, France",
+                    "date": "novembre 2025 - présent",
+                    "jobTitle": "Ingénieur de projet, jsAgrum",
+                    "bullets": 
+                    "<li> Développement du logiciel jsAgrum pour exécuter la bibliothèque de modélisation graphique C++ aGrUM dans les environnements web </li><li>Utilisation de Bash et Emscripten pour convertir la bibliothèque C++ en WebAssembly afin de permettre son exécution dans le navigateur</li><li>Création d'un package npm multiplateforme utilisant TypeScript et Node.js, intégrant trois backends modulaires allant de l'exécution en interne aux Web Workers parallèles</li><li>Maintenance d'une suite de tests complète et documentation de 50+ fonctions avec Vitest et JSDoc</li><li>Conception d'une application web/autonome utilisant React, Electiron, et jsAgrum, destinée à permettre la visualisation interactive de réseaux bayésiens accessibles aux non-programmeurs</li>"
+                },
+                "bigelow": {
+                    "institution": "Bigelow Laboratory of Ocean Sciences", 
+                    "location": "East Boothbay, Maine, États-Unis",
+                    "date": "février 2022 - octobre 2025",
+                    "jobTitle": "Stagiaire de recherche, Technicien de recherche",
+                    "bullets": 
+                    "<li>Prévision de l'adéquation de l'habitat pour l'alimentation de la baleine franche de l'Atlantique Nord par une approche bioénergétique, sur l'ensemble de son aire de répartition transfrontalière, pour les scénarios climatiques de 2055 et 2075 <li>Transformation et intégration de données zooplanctoniques et environnementales dans 4 formats de fichiers afin d'obtenir des jeux de données pour la modélisation de 2 espèces de proies, comportant chacune 20 000 points de données</li> <li>Auteur principal d'un article de recherche détaillant les projections finales du modèle BRT validées par validation croisée, à partir d'analyses et de visualisations originales des projections, de l'incertitude, et de la performance</li> <li>Développement d'une deuxième génération de modèles exploitant les données océanographiques de Copernicus afin de créer un flux de travail généralisé pour la modélisation des distributions de zooplancton</li>"
+                },
+                "colobus": {
+                    "institution": "Interact Animal Lab à Northeastern University", 
+                    "location": "Boston, Massachusetts, États-Unis",
+                    "date": "avril - juillet 2025",
+                    "jobTitle": "Chercheur bénévole",
+                    "bullets": 
+                    "<li>Conception et déploiement d'un jouet d'enrichissement modulaire basé sur les miroirs et les écrans pour <i>Colobus guereza</i></li> <li>Évaluation des exigences du design en appuyant sur une analyse approfondie de la littérature scientifique et des discussions avec des gardiens de zoo</li><Réalisation d'un prototype avec une méthodologie itératives, des plans AutoCAD et la fabrication physique</li><li>Auteur principal d'un article de recherche détaillant les projections le processus du design et la proposition d'enrichissement</li>"
+                },
+                "parissaclay": {
+                    "institution": "INRAE/LISN à l'Université Paris-Saclay", 
+                    "location": "Orsay, France",
+                    "date": "avril - août 2024",
+                    "jobTitle": "Stagiaire de recherche, équivalent M1",
+                    "bullets": 
+                    "<li>Conception et développement d'une plateforme de visualisation explicable pour un modèle de réseau bayésien pour la fabrication du pain, reposant sur 25 métriques sensorielles et quantitatives <li>Création d'une revue de la littérature et l'organisation de 4 ateliers de brainstorming afin d'évaluer les exigences de conception.</li> <li>Implémentation d'une application web complète en JavaScript (React, Node.js et D3.js) avec des visualisations connectées aux données du réseau backend via un serveur Flask en Python</li> <li>Animation de démonstrations du prototype avec 6 experts, avec des retours extrêmement positifs</li>"
+                },
+                "taNu": {
+                    "institution": "Northeastern University", 
+                    "location": "Boston, Massachusetts, États-Unis",
+                    "date": "août - décembre 2024",
+                    "jobTitle": "Assistant pédagogique principal, développement professionnel",
+                    "bullets": 
+                    "<li>Sélectionné comme assistant pédagogique principal parmi les employés précédents <li>Accompagner les étudiants de premier cycle en informatique dans leur recherche de premier stage</li> <li>Gestion de 21 autres assistants d'enseignement en fournissant des annonces et ressources hebdomadaires</li> <li>Identification des points forts et des points faibles du programme de cours et proposition des pistes d'amélioration</li> <li>Animation des évaluations de CV, des simulations d'entretiens, et des tables rondes sur l'expérience de stage</li>"
+                },
+                "gingerlabs": {
+                    "institution": "Ginger Labs", 
+                    "location": "San Francisco, Californie, États-Unis",
+                    "date": "janvier - août 2023",
+                    "jobTitle": "Stagiaire d'ingénieur en assurance qualité",
+                    "bullets": 
+                    "<li>Tests de qualité des versions bêta de Notability, application de prise de notes iOS très bien notée <li>Exécution des tests expérimentaux et de régression sur une application Swift à l'aide de XCode et de TestFlight</li> <li>Co-direction des tests pour un projet de refonte majeure de l'application : identification de 200+ problèmes (dont 50+ bloqués) et traitement des retours internes et externes</li> <li>Gestion de 3000+ bêta-testeurs et leurs commentaires par courriel</li> <li>Collaboration avec les équipes produit, ingénierie, design, et support sur les détails de problèmes, leur priorisation, les retours de design, et les solutions de contournement pour les utilisateurs.</li>"
+                }
+            },
+            "interests": {
+                "title": "Intêréts", 
+                "content": "Anglais (Natif) | Français (CECRL B2/C1) | Escalade de bloc | Arts créatifs | Bricolage | Randonnée"
+            }
+        },
+        "contact": {
+            "thankyou": "Merci de votre visite!"
+        }
+    }
+}

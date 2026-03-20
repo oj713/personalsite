@@ -1,15 +1,18 @@
 import React from 'react';
 import {AiOutlineMail, AiFillGithub} from 'react-icons/ai';
 import { FaLinkedin, FaOrcid } from "react-icons/fa";
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+    const {t} = useTranslation();
+
     return (
     <div className = "mainPane forty" >
     <div className = "block background2">
         <div className = "row">
             <div className = "col-10">
-                <h1><b>Contact</b></h1>
-                <p className = "m-1"><i>Thanks for stopping by!</i></p>
+                <h1><b>{t("nav.contact")}</b></h1>
+                <p className = "m-1"><i>{t("contact.thankyou")}</i></p>
             </div>
             <div className = "col-2"></div>
         </div>
@@ -18,7 +21,7 @@ const Contact = () => {
             <div className = "col-sm-12 col-lg-9">
                 <div className = "d-flex pb-3">
                     <AiOutlineMail className = "icon accent2"/>
-                    <span className = "ps-3"> johnson.omi@northeastern.edu </span>
+                    <span className = "ps-3"> omi.johnson@lip6.fr </span>
                 </div>
                 <div className = "d-flex pb-3">
                     <AiFillGithub className = "icon accent2"/>
