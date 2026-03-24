@@ -1,6 +1,6 @@
 import {IoMdOpen} from 'react-icons/io';
 import {AiFillGithub, AiOutlineFilePdf} from 'react-icons/ai';
-import { FaRegNewspaper } from "react-icons/fa6";
+import { FaRegNewspaper, FaVideo } from "react-icons/fa6";
 import {GiWhaleTail, GiSlicedBread, GiMirrorMirror} from 'react-icons/gi';
 import BackToTop from '../Assets/backToTop.js';
 import "./index.css";
@@ -26,12 +26,12 @@ const imagesParissaclay = [
 ];
 
 const imagesColobus = [
-    { src: "c_guereza.jpg" },
-    { src: "primates_mirrors.jpg" },
+    { src: "colobus.jpeg" },
     { src: "init_design.png" },
-    { src: "3Dmodel.png" },
-    { src: "leaf_modules.png" },
-    { src: "prototype_HDPE.png" }
+    { src: "model.jpg" },
+    { src: "prototype.jpeg" },
+    { src: "interaction.jpeg" },
+    { src: "watch_screen.jpeg" }
 ];
 
 const Publications = () => {
@@ -128,7 +128,7 @@ const Publications = () => {
     <ProjectBlock
       id = "colobus"
       Icon = {GiMirrorMirror}
-      paperLink = "https://dl.acm.org/doi/10.1145/3706599.3720102"
+      paperLink = "https://dl.acm.org/doi/10.1145/3768539.3768555"
       descriptionComponents = {{
         par: <p/>, // paragraph
         ialLink: <a className = "accent1" href = "https://www.interactanimallab.com/" target = "_blank" rel="noreferrer" aria-label="Interact Animal Lab Website"/>
@@ -136,7 +136,8 @@ const Publications = () => {
       hasAbstract = {true}
       linkComponents = {[
         {link: "https://www.interactanimallab.com/publications/colobus-curio-cabinet", icon: GiMirrorMirror},
-        {link: "https://doi.org/10.1145/3768539.376855", icon: AiOutlineFilePdf}
+        {link: "https://dl.acm.org/doi/10.1145/3768539.3768555", icon: AiOutlineFilePdf},
+        {link: "https://www.linkedin.com/posts/interact-animal-lab_aci2025-animalcomputerinteraction-hci-activity-7408255698398138369-Iy7f?utm_source=share&utm_medium=member_desktop&rcm=ACoAADeNkpcB0rojqtGaBsyHFSDK0kCFjbt6AnU", icon: FaVideo}
       ]}
       images = {imagesColobus}
     />
