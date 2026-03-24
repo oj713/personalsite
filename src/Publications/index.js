@@ -128,7 +128,7 @@ const Publications = () => {
     <ProjectBlock
       id = "colobus"
       Icon = {GiMirrorMirror}
-      paperLink = "https://dl.acm.org/doi/10.1145/3706599.3720102"
+      paperLink = "https://dl.acm.org/doi/10.1145/3768539.3768555"
       descriptionComponents = {{
         par: <p/>, // paragraph
         ialLink: <a className = "accent1" href = "https://www.interactanimallab.com/" target = "_blank" rel="noreferrer" aria-label="Interact Animal Lab Website"/>
@@ -136,7 +136,7 @@ const Publications = () => {
       hasAbstract = {true}
       linkComponents = {[
         {link: "https://www.interactanimallab.com/publications/colobus-curio-cabinet", icon: GiMirrorMirror},
-        {link: "https://doi.org/10.1145/3768539.376855", icon: AiOutlineFilePdf}
+        {link: "https://dl.acm.org/doi/10.1145/3768539.3768555", icon: AiOutlineFilePdf}
       ]}
       images = {imagesColobus}
     />

@@ -100,14 +100,14 @@
                 "mainTitle": "jsAgrum: Browser-hosted execution of Bayesian reasoning",
                 "subTitle": "C++, Emscripten, WebAssembly, TypeScript, npm, Software design",
                 "description": 
-                "<par> Machine learning, a domaine which used to be confined to high-powered computing centers, is becoming increasingly ubiquitous in day-to-day tasks. Machine learning within the browser, a relatively new field made possible due to recent advances in WebAssembly and JavaScript, is rapidly gaining traction due to its portability and security enhancements compared to traditional methods sending data over a server. In my current role working as a Project Engineer at <lip6Link>LIP6</lip6Link>, within Sorbonne Université, I am developping software to port the C++ Bayesian reasoning library <agLink>aGrUM</agLink> to web environments. The resulting npm package will use TypeScript and Emscripten to enable creation, inference, and learning with Bayesian Networks using modular backends according to system preferences.</par><parSm>jsAgrum v1.0 will be officially released to the public in late spring 2026. Stay tuned!</parSm>"
+                "<par> Machine learning, a domain which used to be confined to high-powered computing centers, is becoming increasingly ubiquitous in day-to-day tasks. With recent advances in WebAssembly and web technologies, machine learning within the browser is rapidly gaining traction due to its portability and data privacy compared to traditional methods sending data over a server. In my current role working as a Project Engineer at <lip6Link>LIP6</lip6Link> at Sorbonne Université, I am developing software to port the C++ Bayesian reasoning library <agLink>aGrUM</agLink> to web environments. The resulting npm package will use TypeScript and Emscripten to enable creation, inference, and learning with Bayesian Networks and leverage a modular backend design to optimise execution according to system requirements.</par><parSm><i>jsAgrum v1.0 will be officially released to the public in late spring 2026. Stay tuned!</i></parSm>"
             },
             "fmframes": {
                 "miniTitle": "October - December 2023",
                 "mainTitle": "Five Minute Frames",
-                "subTitle": "D programming language, Networking, Unit Testing, Agile",
+                "subTitle": "D programming language, Networking, Unit testing, Agile",
                 "description": 
-                "<par>This application lets everyone have a chance to be an artist! Five Minute Frames is a game application that lets users chat, upload images, and view the work of others in an interactive gallery. Images only last five minutes, so everyone can get a turn! Users can choose their own sprite and move around a map to view different frames.\n\n The program is built using the D programming language, which is related to C++. The application is built using a client-server architecture, where the server is responsible for managing the game state and the clients are responsible for rendering the game. Chats over the terminal are managed using a custom protocol. The map and images are rendered with a GUI and sprite-based animation. This project was completed in a group using Agile development methodology and thorough unit testing.</par><parSm><i>This project repository is private.</i></parSm>",
+                "<par>This application lets everyone have a chance to be an artist! Five Minute Frames is a game application that lets users chat, upload images, and view the work of others in an interactive gallery. Images only last five minutes, so everyone can get a turn! Users can choose their own sprite and move around a map to view different frames.</par><par>This program is built using the D programming language, which is related to C++. The application is built using a client-server architecture where the server manages game state and clients render the game. Chats over the terminal are managed using a custom protocol, while map and images are rendered with a GUI and sprite-based animation. This project was completed in a group using Agile development methodology and thorough unit testing.</par><parSm><i>This project repository is private.</i></parSm>",
                 "captions": {
                     "char": "Booting the application up shows a character select screen.",
                     "map": "Players are dropped onto a map with a tile-based rendering system and collidable objects. Frames are scattered about the map. Multiple players can log on at a time.",
@@ -120,7 +120,7 @@
             "parkour": {
                 "miniTitle": "July - August 2022",
                 "mainTitle": "Parkour: U.S. National Parks Social Media",
-                "subTitle": "Node.js, MongoDB, Bootstrap, Redux.js, React.js, Full-Stack Development",
+                "subTitle": "Node.js, MongoDB, Bootstrap, Redux.js, React.js, Full-Stack development",
                 "description": 
                 "<par>The U.S. National Parks are a point of national pride and spark fierce appreciation for the natural world. This web-based social media platform demo allows users to share their favorite parks, post photos, and connect directly with parks, rangers, and hikers alike. The application also connects directly to the National Parks API to display the latest news and information about each park.</par><par>This project is a full-stack web application built within Javascript. The backend server, built using Node.js connected to a MongoDB database, stores user and park information and transmits it to the front end via RESTful APIs. The frontend, built using React, Redux, and Bootstrap, supports user registration, login, and CRUD operations on posts. The application is fully responsive and includes custom CSS styling.</par>",
                 "links": [
@@ -139,9 +139,9 @@
             "gdoodle": {
                 "miniTitle": "November 2021",
                 "mainTitle": "Google Doodle",
-                "subTitle": "HTML, CSS, Hand-drawn Imagery",
+                "subTitle": "HTML, CSS, Hand-drawn imagery",
                 "description": 
-                "<par>A short and simple HTML/CSS project to design a custom Google Doodle. The doodle leverages hand-drawn designs and CSS transitions to create a fun and interactive experience celebrating International Shark Awareness Day.</par>",
+                "<par>A short and simple HTML/CSS project to design a custom Google Doodle. The doodle uses hand-drawn designs and CSS transitions to create a fun and interactive experience celebrating International Shark Awareness Day.</par>",
                 "links": ["View the live demo."],
                 "captions": {
                     "up": "Google Doodle, up position",
